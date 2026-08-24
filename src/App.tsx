@@ -265,7 +265,7 @@ export const App: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-1.5">
-            <span className="text-[11px] text-slate-400 hidden sm:inline">(全 {SENTENCE_DATABASE.length} 問)</span>
+            <span className="text-[11px] text-slate-400 hidden sm:inline">(全 {SENTENCE_DATABASE.length.toLocaleString()} 問)</span>
             <span className="font-semibold text-slate-200">{currentIndex + 1}</span>
             <span>/ {levelSentences.length} 問</span>
           </div>
