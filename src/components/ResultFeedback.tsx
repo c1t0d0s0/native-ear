@@ -1,0 +1,247 @@
+import React, { useEffect } from 'react';
+import { CheckCircle2, Bookmark, ArrowRight, Volume2, BookOpen, MessageSquareQuote } from 'lucide-react';
+import { Sentence, EvaluationResult } from '../types';
+import confetti from 'canvas-confetti';
+
+interface ResultFeedbackProps {
+  sentence: Sentence;
+  result: EvaluationResult;
+  onNext: () => void;
+  onReplay: (speed?: number) => void;
+  isBookmarked: boolean;
+  onToggleBookmark: () => void;
+}
+
+export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
+  sentence,
+  result,
+  onNext,
+  onReplay,
+  isBookmarked,
+  onToggleBookmark,
+}) => {
+  useEffect(() => {
+    if (result.score === 100) {
+      try {
+        confetti({
+          particleCount: 80,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      } catch (e) {
+        // ignore confetti errors
+      }
+    }
+  }, [result.score]);
+
+  const getScoreBadge = () => {
+    if (result.score === 100) {
+      return {
+        text: 'Perfect! 完全正解 ✨',
+        color: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30'
+      };
+    } else if (result.score >= 80) {
+      return {
+        text: 'Great Job! 高精度 🎯',
+        color: 'text-sky-400 bg-sky-500/10 border-sky-500/30'
+      };
+    } else if (result.score >= 50) {
+      return {
+        text: 'Good Effort! おしい 💡',
+        color: 'text-amber-400 bg-amber-500/10 border-amber-500/30'
+      };
+    } else {
+      return {
+        text: 'Keep Practicing! 要復習 💪',
+        color: 'text-rose-400 bg-rose-500/10 border-rose-500/30'
+      };
+    }
+  };
+
+  const badge = getScoreBadge();
+
+  return (
+    <div className="w-full bg-slate-800/90 border border-slate-700/80 rounded-2xl p-4 sm:p-6 shadow-2xl space-y-5 animate-in fade-in slide-in-from-bottom-2 duration-300">
+      {/* Header: Score & Badge */}
+      <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-700/60">
+        <div className="flex items-center gap-3">
+          <div className="flex items-baseline gap-1 bg-slate-900/80 px-3.5 py-1.5 rounded-xl border border-slate-700/60">
+            <span className="text-xs text-slate-400 font-medium">一致率:</span>
+            <span className={`text-xl font-black ${result.score >= 90 ? 'text-emerald-400' : result.score >= 60 ? 'text-amber-400' : 'text-rose-400'}`}>
+              {result.score}%
+            </span>
+          </div>
+          <span className={`text-xs font-semibold px-3 py-1.5 rounded-xl border ${badge.color}`}>
+            {badge.text}
+          </span>
+        </div>
+
+        <div className="flex items-center gap-2">
+          {/* Bookmark Button */}
+          <button
+            onClick={onToggleBookmark}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium border transition ${
+              isBookmarked
+                ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-sm'
+                : 'bg-slate-900/60 text-slate-400 hover:text-slate-200 border-slate-700/60 hover:bg-slate-700/50'
+            }`}
+          >
+            <Bookmark className={`w-3.5 h-3.5 ${isBookmarked ? 'fill-amber-400 text-amber-400' : ''}`} />
+            <span>{isBookmarked ? '苦手保存中' : '苦手保存'}</span>
+          </button>
+
+          {/* Next Question Button */}
+          <button
+            onClick={onNext}
+            className="flex items-center gap-2 px-5 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-400 hover:to-purple-500 text-white shadow-lg shadow-indigo-500/20 active:scale-95 transition"
+          >
+            <span>次の問題へ (Next)</span>
+            <ArrowRight className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+
+      {/* Diff Analysis Block */}
+      <div className="space-y-2">
+        <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-slate-400">
+          <span>単語判定 (Word-by-Word Diff)</span>
+          <div className="flex items-center gap-3 text-[11px] font-normal normal-case">
+            <span className="flex items-center gap-1 text-emerald-400">
+              <span className="w-2 h-2 rounded-full bg-emerald-400" /> 正解
+            </span>
+            <span className="flex items-center gap-1 text-rose-400">
+              <span className="w-2 h-2 rounded-full bg-rose-400" /> 誤り
+            </span>
+            <span className="flex items-center gap-1 text-amber-400">
+              <span className="w-2 h-2 rounded-full bg-amber-400" /> 脱落
+            </span>
+          </div>
+        </div>
+
+        <div className="p-4 bg-slate-900/80 rounded-xl border border-slate-700/80 flex flex-wrap gap-2 text-base sm:text-lg leading-relaxed font-mono">
+          {result.tokens.map((token, index) => {
+            if (token.type === 'correct') {
+              return (
+                <span
+                  key={index}
+                  className="px-2 py-0.5 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-semibold"
+                >
+                  {token.text}
+                </span>
+              );
+            } else if (token.type === 'wrong') {
+              return (
+                <span
+                  key={index}
+                  className="px-2 py-0.5 rounded-lg bg-rose-500/20 text-rose-300 border border-rose-500/40 line-through decoration-rose-400 font-semibold flex items-center gap-1"
+                  title={`入力: ${token.actual} → 正解: ${token.expected}`}
+                >
+                  <span>{token.actual}</span>
+                  <span className="text-[11px] text-emerald-300 font-normal no-underline ml-1">
+                    (正: {token.expected})
+                  </span>
+                </span>
+              );
+            } else if (token.type === 'missing') {
+              return (
+                <span
+                  key={index}
+                  className="px-2 py-0.5 rounded-lg bg-amber-500/20 text-amber-300 border border-dashed border-amber-500/50 font-semibold"
+                  title="聞き逃した単語"
+                >
+                  [{token.expected}]
+                </span>
+              );
+            } else if (token.type === 'extra') {
+              return (
+                <span
+                  key={index}
+                  className="px-2 py-0.5 rounded-lg bg-slate-700/60 text-slate-400 line-through border border-slate-600"
+                  title="余計な単語"
+                >
+                  {token.actual}
+                </span>
+              );
+            }
+            return null;
+          })}
+        </div>
+      </div>
+
+      {/* Full Sentence & Audio Replay Section */}
+      <div className="p-4 bg-indigo-950/30 border border-indigo-500/20 rounded-xl space-y-2">
+        <div className="flex items-center justify-between">
+          <span className="text-xs font-bold text-indigo-300 flex items-center gap-1.5">
+            <CheckCircle2 className="w-4 h-4 text-indigo-400" />
+            模範英文 & 発音復習
+          </span>
+          <div className="flex items-center gap-1.5">
+            <button
+              onClick={() => onReplay(1.0)}
+              className="flex items-center gap-1 px-2.5 py-1 bg-indigo-600/30 hover:bg-indigo-600/50 border border-indigo-500/30 rounded-lg text-xs text-indigo-200 transition"
+              title="通常速度で再生"
+            >
+              <Volume2 className="w-3.5 h-3.5" />
+              <span>等速</span>
+            </button>
+            <button
+              onClick={() => onReplay(0.8)}
+              className="flex items-center gap-1 px-2.5 py-1 bg-indigo-600/30 hover:bg-indigo-600/50 border border-indigo-500/30 rounded-lg text-xs text-indigo-200 transition"
+              title="ゆっくり再生 (0.8x)"
+            >
+              <Volume2 className="w-3.5 h-3.5" />
+              <span>0.8x</span>
+            </button>
+          </div>
+        </div>
+        <p className="text-base sm:text-lg font-bold text-white tracking-wide">
+          {sentence.english}
+        </p>
+        <p className="text-sm text-slate-300 pt-1 border-t border-slate-700/40">
+          {sentence.japanese}
+        </p>
+      </div>
+
+      {/* TOEIC Tips & Key Vocab */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {/* Vocabulary Breakdown */}
+        {sentence.vocabNotes && sentence.vocabNotes.length > 0 && (
+          <div className="p-3.5 bg-slate-900/60 rounded-xl border border-slate-700/60 space-y-2">
+            <span className="text-xs font-semibold text-amber-400 flex items-center gap-1">
+              <BookOpen className="w-3.5 h-3.5" />
+              重要語彙・頻出フレーズ
+            </span>
+            <div className="space-y-1 text-xs">
+              {sentence.vocabNotes.map((vocab, i) => (
+                <div key={i} className="flex items-baseline justify-between gap-2 py-0.5">
+                  <span className="font-semibold text-slate-200">{vocab.word}</span>
+                  <span className="text-slate-400 text-right">{vocab.meaning}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Grammar & Linking Tips */}
+        <div className="p-3.5 bg-slate-900/60 rounded-xl border border-slate-700/60 space-y-2">
+          <span className="text-xs font-semibold text-purple-400 flex items-center gap-1">
+            <MessageSquareQuote className="w-3.5 h-3.5" />
+            TOEIC リスニング攻略ポイント
+          </span>
+          {sentence.grammarTip && (
+            <p className="text-xs text-slate-300 leading-relaxed">
+              <strong className="text-slate-200">文法・構造: </strong>
+              {sentence.grammarTip}
+            </p>
+          )}
+          {sentence.linkingTip && (
+            <p className="text-xs text-indigo-300 leading-relaxed bg-indigo-500/10 p-2 rounded-lg border border-indigo-500/20">
+              <strong className="text-indigo-200">音の連結 (Linking): </strong>
+              {sentence.linkingTip}
+            </p>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
