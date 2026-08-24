@@ -18589,44 +18589,44 @@ export const LEVEL_INFO: Record<number, { title: string; subtitle: string; descr
     subtitle: '基礎・短文・クリア発音',
     description: '写真描写・質問応答・日常オフィスの短い一文。明瞭で聞き取りやすいスピード。',
     target: 'TOEIC 400〜550',
-    color: 'text-emerald-400',
-    bg: 'bg-emerald-500/10 hover:bg-emerald-500/20',
-    border: 'border-emerald-500/30'
+    color: 'text-emerald-600 dark:text-emerald-400',
+    bg: 'bg-emerald-50 dark:bg-emerald-500/10 hover:bg-emerald-100 dark:hover:bg-emerald-500/20',
+    border: 'border-emerald-200 dark:border-emerald-500/30'
   },
   600: {
     title: '600点クラス',
     subtitle: '日常業務・標準スピード',
     description: '社内連絡・メール・旅行・接客など実務で頻出の表現。標準的なネイティブ速度。',
     target: 'TOEIC 550〜650',
-    color: 'text-sky-400',
-    bg: 'bg-sky-500/10 hover:bg-sky-500/20',
-    border: 'border-sky-500/30'
+    color: 'text-sky-600 dark:text-sky-400',
+    bg: 'bg-sky-50 dark:bg-sky-500/10 hover:bg-sky-100 dark:hover:bg-sky-500/20',
+    border: 'border-sky-200 dark:border-sky-500/30'
   },
   700: {
     title: '700点クラス',
     subtitle: '実務討議・重要イディオム',
     description: 'プレゼン、会議、交渉、定型表現や連結音（リンキング）を含む実践的な英文。',
     target: 'TOEIC 650〜750',
-    color: 'text-indigo-400',
-    bg: 'bg-indigo-500/10 hover:bg-indigo-500/20',
-    border: 'border-indigo-500/30'
+    color: 'text-indigo-600 dark:text-indigo-400',
+    bg: 'bg-indigo-50 dark:bg-indigo-500/10 hover:bg-indigo-100 dark:hover:bg-indigo-500/20',
+    border: 'border-indigo-200 dark:border-indigo-500/30'
   },
   800: {
     title: '800点クラス',
     subtitle: '高度ビジネス・複文構造',
     description: '長めの複文、経営・市場・分析など一段上のビジネス語彙と自然な速さ。',
     target: 'TOEIC 750〜850',
-    color: 'text-amber-400',
-    bg: 'bg-amber-500/10 hover:bg-amber-500/20',
-    border: 'border-amber-500/30'
+    color: 'text-amber-600 dark:text-amber-400',
+    bg: 'bg-amber-50 dark:bg-amber-500/10 hover:bg-amber-100 dark:hover:bg-amber-500/20',
+    border: 'border-amber-200 dark:border-amber-500/30'
   },
   900: {
     title: '900点クラス',
     subtitle: 'ネイティブ最速・難関語彙',
     description: '倒置や高度な語彙、音の脱落（リダクション）を含むハイレベルな実戦英語。',
     target: 'TOEIC 850〜990',
-    color: 'text-rose-400',
-    bg: 'bg-rose-500/10 hover:bg-rose-500/20',
-    border: 'border-rose-500/30'
+    color: 'text-rose-600 dark:text-rose-400',
+    bg: 'bg-rose-50 dark:bg-rose-500/10 hover:bg-rose-100 dark:hover:bg-rose-500/20',
+    border: 'border-rose-200 dark:border-rose-500/30'
   }
 };

@@ -20,8 +20,25 @@ export const App: React.FC = () => {
   const [currentLevel, setCurrentLevel] = useState<Level>(600);
   const [voiceSettings, setVoiceSettings] = useState<VoiceSettings>(() => StorageService.getSettings());
   const [stats, setStats] = useState<UserStats>(() => StorageService.getStats());
-  const [isDark, setIsDark] = useState<boolean>(true);
+  const [isDark, setIsDark] = useState<boolean>(() => {
+    const saved = localStorage.getItem('native_ear_theme');
+    if (saved !== null) {
+      return saved === 'dark';
+    }
+    return true; // Default to Dark mode
+  });
   const [isShuffle, setIsShuffle] = useState<boolean>(true);
+
+  // Sync theme class with <html> element
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('native_ear_theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('native_ear_theme', 'light');
+    }
+  }, [isDark]);
 
   // Modals
   const [isStatsOpen, setIsStatsOpen] = useState<boolean>(false);
@@ -217,7 +234,7 @@ export const App: React.FC = () => {
   const isCurrentBookmarked = currentSentence ? stats.bookmarks.includes(currentSentence.id) : false;
 
   return (
-    <div className={`min-h-screen ${isDark ? 'dark bg-slate-950 text-slate-100' : 'bg-slate-50 text-slate-900'} flex flex-col transition-colors duration-200`}>
+    <div className="min-h-screen bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col transition-colors duration-200">
       {/* App Header */}
       <Header
         stats={stats}
@@ -239,14 +256,14 @@ export const App: React.FC = () => {
         />
 
         {/* Shuffle & Progress Controls */}
-        <div className="flex items-center justify-between px-1 text-xs text-slate-400">
+        <div className="flex items-center justify-between px-1 text-xs text-slate-600 dark:text-slate-400">
           <div className="flex items-center gap-2">
             <button
               onClick={() => setIsShuffle(!isShuffle)}
-              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg border transition ${
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg border font-semibold transition ${
                 isShuffle
-                  ? 'bg-indigo-500/20 text-indigo-300 border-indigo-500/40'
-                  : 'bg-slate-800/40 border-slate-700/40 text-slate-400 hover:text-slate-200'
+                  ? 'bg-indigo-100 dark:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border-indigo-300 dark:border-indigo-500/40 shadow-sm'
+                  : 'bg-white dark:bg-slate-800/40 border-slate-200 dark:border-slate-700/40 text-slate-700 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-50'
               }`}
               title="問題のランダム出題"
             >
@@ -256,17 +273,17 @@ export const App: React.FC = () => {
 
             <button
               onClick={handleNext}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-lg border border-slate-700/40 bg-slate-800/40 hover:bg-slate-700/50 text-slate-300 hover:text-white transition text-xs"
+              className="flex items-center gap-1 px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700/40 bg-white dark:bg-slate-800/40 hover:bg-slate-50 dark:hover:bg-slate-700/50 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-semibold transition text-xs shadow-sm"
               title="別の問題を引く"
             >
-              <SkipForward className="w-3.5 h-3.5 text-indigo-400" />
+              <SkipForward className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
               <span>別の問題</span>
             </button>
           </div>
 
-          <div className="flex items-center gap-1.5">
-            <span className="text-[11px] text-slate-400 hidden sm:inline">(全 {SENTENCE_DATABASE.length.toLocaleString()} 問)</span>
-            <span className="font-semibold text-slate-200">{currentIndex + 1}</span>
+          <div className="flex items-center gap-1.5 font-medium">
+            <span className="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:inline">(全 {SENTENCE_DATABASE.length.toLocaleString()} 問)</span>
+            <span className="font-bold text-slate-900 dark:text-slate-200">{currentIndex + 1}</span>
             <span>/ {levelSentences.length} 問</span>
           </div>
         </div>
@@ -311,13 +328,13 @@ export const App: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <footer className="py-6 border-t border-slate-800/60 text-center text-xs text-slate-500 space-y-1.5">
-        <p>NativeEar © cuio.net</p>
-        <p className="text-[11px] text-slate-600">アメリカ英語ネイティブ音声 / 500〜900点レベル別対応</p>
+      <footer className="py-6 border-t border-slate-200 dark:border-slate-800/60 text-center text-xs text-slate-600 dark:text-slate-500 space-y-1.5 transition-colors">
+        <p className="font-semibold text-slate-700 dark:text-slate-400">NativeEar © cuio.net</p>
+        <p className="text-[11px] text-slate-500 dark:text-slate-600">アメリカ英語ネイティブ音声 / 500〜900点レベル別対応</p>
         <div className="pt-1">
           <button
             onClick={() => setIsLicenseOpen(true)}
-            className="text-[11px] text-slate-400 hover:text-indigo-400 underline underline-offset-2 transition"
+            className="text-[11px] text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 underline underline-offset-2 transition font-medium"
           >
             OSSライセンス・著作権表記
           </button>
