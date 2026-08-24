@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { X, ShieldCheck, ExternalLink, ChevronDown, ChevronUp, Code } from 'lucide-react';
 import { OSS_LICENSES, LicenseItem } from '../data/licenses';
+import { Translations } from '../data/i18n';
 
 interface LicenseModalProps {
   isOpen: boolean;
   onClose: () => void;
+  t: Translations;
 }
 
-export const LicenseModal: React.FC<LicenseModalProps> = ({ isOpen, onClose }) => {
+export const LicenseModal: React.FC<LicenseModalProps> = ({ isOpen, onClose, t }) => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   if (!isOpen) return null;
@@ -26,14 +28,14 @@ export const LicenseModal: React.FC<LicenseModalProps> = ({ isOpen, onClose }) =
               <ShieldCheck className="w-4 h-4" />
             </div>
             <div>
-              <h2 className="text-base font-bold text-slate-900 dark:text-white tracking-tight">オープンソースライセンス (OSS Licenses)</h2>
-              <p className="text-xs text-slate-600 dark:text-slate-400 font-medium">本アプリケーションで使用しているオープンソースソフトウェアの著作権および許諾表示</p>
+              <h2 className="text-base font-bold text-slate-900 dark:text-white tracking-tight">{t.licenseModal.title}</h2>
+              <p className="text-xs text-slate-600 dark:text-slate-400 font-medium">{t.licenseModal.subtitle}</p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition"
-            aria-label="閉じる"
+            className="p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer"
+            aria-label={t.licenseModal.close}
           >
             <X className="w-5 h-5" />
           </button>
@@ -81,7 +83,7 @@ export const LicenseModal: React.FC<LicenseModalProps> = ({ isOpen, onClose }) =
                   <div className="px-4 pb-4 pt-2 border-t border-slate-200 dark:border-slate-700/40 space-y-2.5 bg-slate-100/70 dark:bg-slate-900/40">
                     {item.repository && (
                       <div className="flex items-center justify-between text-xs pt-1">
-                        <span className="text-slate-600 dark:text-slate-400 font-medium">リポジトリ:</span>
+                        <span className="text-slate-600 dark:text-slate-400 font-medium">{t.licenseModal.repo}</span>
                         <a
                           href={item.repository}
                           target="_blank"
@@ -108,9 +110,9 @@ export const LicenseModal: React.FC<LicenseModalProps> = ({ isOpen, onClose }) =
         <div className="p-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/90 flex justify-end shrink-0">
           <button
             onClick={onClose}
-            className="px-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-bold transition shadow-md"
+            className="px-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-bold transition shadow-md cursor-pointer"
           >
-            閉じる
+            {t.licenseModal.close}
           </button>
         </div>
       </div>

@@ -3,17 +3,19 @@ import { Header } from './components/Header';
 import { LevelSelector } from './components/LevelSelector';
 import { AudioPlayer } from './components/AudioPlayer';
 import { DictationInput } from './components/DictationInput';
+import { ShadowingInput } from './components/ShadowingInput';
 import { ResultFeedback } from './components/ResultFeedback';
 import { StatsModal } from './components/StatsModal';
 import { ReviewModal } from './components/ReviewModal';
 import { SettingsModal } from './components/SettingsModal';
 import { LicenseModal } from './components/LicenseModal';
 import { SENTENCE_DATABASE } from './data/sentences';
-import { Level, Sentence, EvaluationResult, VoiceSettings, UserStats } from './types';
+import { Level, Sentence, EvaluationResult, VoiceSettings, UserStats, PracticeMode } from './types';
 import { audioService } from './services/audioService';
 import { EvaluationService } from './services/evaluationService';
 import { StorageService } from './services/storageService';
-import { Shuffle, SkipForward } from 'lucide-react';
+import { Language, TRANSLATIONS, detectBrowserLanguage } from './data/i18n';
+import { Shuffle, SkipForward, Keyboard, Mic } from 'lucide-react';
 
 export const App: React.FC = () => {
   // Application State
@@ -27,7 +29,26 @@ export const App: React.FC = () => {
     }
     return true; // Default to Dark mode
   });
+  const [lang, setLang] = useState<Language>(() => detectBrowserLanguage());
+  const [practiceMode, setPracticeMode] = useState<PracticeMode>(() => {
+    const saved = localStorage.getItem('native_ear_practice_mode') as PracticeMode;
+    return saved === 'shadowing' || saved === 'dictation' ? saved : 'dictation';
+  });
   const [isShuffle, setIsShuffle] = useState<boolean>(true);
+
+  // Active translation dictionary
+  const t = useMemo(() => TRANSLATIONS[lang] || TRANSLATIONS.en, [lang]);
+
+  // Sync practice mode with localStorage
+  useEffect(() => {
+    localStorage.setItem('native_ear_practice_mode', practiceMode);
+  }, [practiceMode]);
+
+  // Sync language with <html> element and localStorage
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    localStorage.setItem('native_ear_lang', lang);
+  }, [lang]);
 
   // Sync theme class with <html> element
   useEffect(() => {
@@ -144,12 +165,12 @@ export const App: React.FC = () => {
     const updatedStats = StorageService.recordQuestionResult(
       currentSentence.id,
       currentSentence.level,
-      inputValue || '(未入力)',
+      inputValue || t.statsModal.notSubmitted,
       result.score
     );
     setStats(updatedStats);
     audioService.playPartialSound();
-  }, [currentSentence, inputValue, voiceSettings]);
+  }, [currentSentence, inputValue, voiceSettings, t]);
 
   // Next Question handler
   const handleNext = useCallback(() => {
@@ -244,15 +265,19 @@ export const App: React.FC = () => {
         isDark={isDark}
         onToggleTheme={() => setIsDark(!isDark)}
         bookmarkCount={stats.bookmarks.length}
+        t={t}
+        lang={lang}
+        onToggleLang={() => setLang(lang === 'ja' ? 'en' : 'ja')}
       />
 
       {/* Main Container */}
-      <main className="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6">
+      <main className="flex-1 max-w-4xl w-full mx-auto px-2.5 sm:px-6 py-2 sm:py-4 space-y-2 sm:space-y-3">
         {/* Level Selector */}
         <LevelSelector
           currentLevel={currentLevel}
           onSelectLevel={(lvl) => setCurrentLevel(lvl)}
           stats={stats}
+          t={t}
         />
 
         {/* Shuffle & Progress Controls */}
@@ -260,31 +285,33 @@ export const App: React.FC = () => {
           <div className="flex items-center gap-2">
             <button
               onClick={() => setIsShuffle(!isShuffle)}
-              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg border font-semibold transition ${
+              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg border font-semibold transition cursor-pointer ${
                 isShuffle
                   ? 'bg-indigo-100 dark:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border-indigo-300 dark:border-indigo-500/40 shadow-sm'
                   : 'bg-white dark:bg-slate-800/40 border-slate-200 dark:border-slate-700/40 text-slate-700 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-50'
               }`}
-              title="問題のランダム出題"
+              title={t.controls.shuffleTitle}
             >
               <Shuffle className="w-3.5 h-3.5" />
-              <span>{isShuffle ? 'ランダム出題: ON' : '順番通り出題'}</span>
+              <span>{isShuffle ? t.controls.shuffleOn : t.controls.shuffleOff}</span>
             </button>
 
             <button
               onClick={handleNext}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700/40 bg-white dark:bg-slate-800/40 hover:bg-slate-50 dark:hover:bg-slate-700/50 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-semibold transition text-xs shadow-sm"
-              title="別の問題を引く"
+              className="flex items-center gap-1 px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-700/40 bg-white dark:bg-slate-800/40 hover:bg-slate-50 dark:hover:bg-slate-700/50 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-semibold transition text-xs shadow-sm cursor-pointer"
+              title={t.controls.skipTitle}
             >
               <SkipForward className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
-              <span>別の問題</span>
+              <span>{t.controls.skip}</span>
             </button>
           </div>
 
           <div className="flex items-center gap-1.5 font-medium">
-            <span className="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:inline">(全 {SENTENCE_DATABASE.length.toLocaleString()} 問)</span>
+            <span className="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:inline">
+              (全 {SENTENCE_DATABASE.length.toLocaleString()} {t.controls.questionsUnit})
+            </span>
             <span className="font-bold text-slate-900 dark:text-slate-200">{currentIndex + 1}</span>
-            <span>/ {levelSentences.length} 問</span>
+            <span>/ {levelSentences.length} {t.controls.questionsUnit}</span>
           </div>
         </div>
 
@@ -299,7 +326,44 @@ export const App: React.FC = () => {
             playCount={playCount}
             totalQuestionsInLevel={levelSentences.length}
             currentIndex={currentIndex}
+            t={t}
           />
+        )}
+
+        {/* Practice Mode Tabs (Dictation vs Shadowing) */}
+        {!evaluationResult && (
+          <div className="flex items-center justify-center pt-0.5">
+            <div className="inline-flex p-0.5 bg-slate-200/90 dark:bg-slate-800/90 rounded-xl border border-slate-300 dark:border-slate-700/60 shadow-inner">
+              <button
+                onClick={() => {
+                  setPracticeMode('dictation');
+                  setInputValue('');
+                }}
+                className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
+                  practiceMode === 'dictation'
+                    ? 'bg-white dark:bg-slate-900 text-indigo-700 dark:text-indigo-300 shadow-sm border border-slate-200/80 dark:border-slate-700'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
+                }`}
+              >
+                <Keyboard className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
+                <span>{t.modeTabs.dictation}</span>
+              </button>
+              <button
+                onClick={() => {
+                  setPracticeMode('shadowing');
+                  setInputValue('');
+                }}
+                className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
+                  practiceMode === 'shadowing'
+                    ? 'bg-white dark:bg-slate-900 text-indigo-700 dark:text-indigo-300 shadow-sm border border-slate-200/80 dark:border-slate-700'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
+                }`}
+              >
+                <Mic className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
+                <span>{t.modeTabs.shadowing}</span>
+              </button>
+            </div>
+          </div>
         )}
 
         {/* Question Area: Input vs Evaluation Result */}
@@ -311,6 +375,20 @@ export const App: React.FC = () => {
             onReplay={(spd) => handlePlayAudio(spd)}
             isBookmarked={isCurrentBookmarked}
             onToggleBookmark={handleToggleBookmark}
+            t={t}
+          />
+        ) : practiceMode === 'shadowing' ? (
+          <ShadowingInput
+            value={inputValue}
+            onChange={(val) => setInputValue(val)}
+            onSubmit={handleSubmit}
+            onGiveUp={handleGiveUp}
+            onClear={() => setInputValue('')}
+            sentence={currentSentence}
+            showHints={showHints}
+            onToggleHints={() => setShowHints(!showHints)}
+            t={t}
+            onPlayAudio={() => handlePlayAudio()}
           />
         ) : (
           <DictationInput
@@ -319,24 +397,24 @@ export const App: React.FC = () => {
             onSubmit={handleSubmit}
             onGiveUp={handleGiveUp}
             onClear={() => setInputValue('')}
-            disabled={isPlaying}
             sentence={currentSentence}
             showHints={showHints}
             onToggleHints={() => setShowHints(!showHints)}
+            t={t}
           />
         )}
       </main>
 
       {/* Footer */}
-      <footer className="py-6 border-t border-slate-200 dark:border-slate-800/60 text-center text-xs text-slate-600 dark:text-slate-500 space-y-1.5 transition-colors">
-        <p className="font-semibold text-slate-700 dark:text-slate-400">NativeEar © cuio.net</p>
-        <p className="text-[11px] text-slate-500 dark:text-slate-600">アメリカ英語ネイティブ音声 / 500〜900点レベル別対応</p>
-        <div className="pt-1">
+      <footer className="py-4 border-t border-slate-200 dark:border-slate-800/60 text-center text-xs text-slate-600 dark:text-slate-500 space-y-1 transition-colors">
+        <p className="font-semibold text-slate-700 dark:text-slate-400">{t.footer.copyright}</p>
+        <p className="text-[11px] text-slate-500 dark:text-slate-600">{t.footer.subtitle}</p>
+        <div>
           <button
             onClick={() => setIsLicenseOpen(true)}
-            className="text-[11px] text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 underline underline-offset-2 transition font-medium"
+            className="text-[11px] text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 underline underline-offset-2 transition font-medium cursor-pointer"
           >
-            OSSライセンス・著作権表記
+            {t.footer.licenseLink}
           </button>
         </div>
       </footer>
@@ -350,6 +428,7 @@ export const App: React.FC = () => {
           StorageService.clearStats();
           setStats(StorageService.getStats());
         }}
+        t={t}
       />
 
       <ReviewModal
@@ -370,6 +449,7 @@ export const App: React.FC = () => {
         onPlayPreview={(sentence) => {
           audioService.speak(sentence.english, voiceSettings);
         }}
+        t={t}
       />
 
       <SettingsModal
@@ -378,11 +458,15 @@ export const App: React.FC = () => {
         settings={voiceSettings}
         onUpdateSettings={handleUpdateSettings}
         onTestVoice={handleTestVoice}
+        t={t}
+        lang={lang}
+        onChangeLang={(l) => setLang(l)}
       />
 
       <LicenseModal
         isOpen={isLicenseOpen}
         onClose={() => setIsLicenseOpen(false)}
+        t={t}
       />
     </div>
   );

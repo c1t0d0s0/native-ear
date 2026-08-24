@@ -20,6 +20,8 @@ const DEFAULT_STATS: UserStats = {
   streakDays: 0,
   lastPracticedDate: '',
   byLevel: {
+    300: { answered: 0, totalScore: 0, perfect: 0 },
+    400: { answered: 0, totalScore: 0, perfect: 0 },
     500: { answered: 0, totalScore: 0, perfect: 0 },
     600: { answered: 0, totalScore: 0, perfect: 0 },
     700: { answered: 0, totalScore: 0, perfect: 0 },

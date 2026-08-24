@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { CheckCircle2, Bookmark, ArrowRight, Volume2, BookOpen, MessageSquareQuote } from 'lucide-react';
 import { Sentence, EvaluationResult } from '../types';
+import { Translations } from '../data/i18n';
 import confetti from 'canvas-confetti';
 
 interface ResultFeedbackProps {
@@ -10,6 +11,7 @@ interface ResultFeedbackProps {
   onReplay: (speed?: number) => void;
   isBookmarked: boolean;
   onToggleBookmark: () => void;
+  t: Translations;
 }
 
 export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
@@ -19,6 +21,7 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
   onReplay,
   isBookmarked,
   onToggleBookmark,
+  t,
 }) => {
   useEffect(() => {
     if (result.score === 100) {
@@ -37,23 +40,23 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
   const getScoreBadge = () => {
     if (result.score === 100) {
       return {
-        text: 'Perfect! 完全正解 ✨',
-        color: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30'
+        text: t.resultFeedback.badgePerfect,
+        color: 'text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-500/10 border-emerald-300 dark:border-emerald-500/30'
       };
     } else if (result.score >= 80) {
       return {
-        text: 'Great Job! 高精度 🎯',
-        color: 'text-sky-400 bg-sky-500/10 border-sky-500/30'
+        text: t.resultFeedback.badgeGreat,
+        color: 'text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-sky-500/10 border-sky-300 dark:border-sky-500/30'
       };
     } else if (result.score >= 50) {
       return {
-        text: 'Good Effort! おしい 💡',
-        color: 'text-amber-400 bg-amber-500/10 border-amber-500/30'
+        text: t.resultFeedback.badgeGood,
+        color: 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-500/10 border-amber-300 dark:border-amber-500/30'
       };
     } else {
       return {
-        text: 'Keep Practicing! 要復習 💪',
-        color: 'text-rose-400 bg-rose-500/10 border-rose-500/30'
+        text: t.resultFeedback.badgePractice,
+        color: 'text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-500/10 border-rose-300 dark:border-rose-500/30'
       };
     }
   };
@@ -66,7 +69,7 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
       <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-200 dark:border-slate-700/60">
         <div className="flex items-center gap-3">
           <div className="flex items-baseline gap-1 bg-slate-100 dark:bg-slate-900/80 px-3.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700/60">
-            <span className="text-xs text-slate-600 dark:text-slate-400 font-semibold">一致率:</span>
+            <span className="text-xs text-slate-600 dark:text-slate-400 font-semibold">{t.resultFeedback.accuracy}</span>
             <span className={`text-xl font-black ${result.score >= 90 ? 'text-emerald-600 dark:text-emerald-400' : result.score >= 60 ? 'text-amber-600 dark:text-amber-400' : 'text-rose-600 dark:text-rose-400'}`}>
               {result.score}%
             </span>
@@ -87,7 +90,7 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
             }`}
           >
             <Bookmark className={`w-3.5 h-3.5 ${isBookmarked ? 'fill-amber-500 text-amber-500 dark:fill-amber-400 dark:text-amber-400' : ''}`} />
-            <span>{isBookmarked ? '苦手保存中' : '苦手保存'}</span>
+            <span>{isBookmarked ? t.resultFeedback.bookmarkSaved : t.resultFeedback.bookmarkSave}</span>
           </button>
 
           {/* Next Question Button */}
@@ -95,7 +98,7 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
             onClick={onNext}
             className="flex items-center gap-2 px-5 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white shadow-md shadow-indigo-500/20 active:scale-95 transition"
           >
-            <span>次の問題へ (Next)</span>
+            <span>{t.resultFeedback.next}</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
@@ -104,16 +107,16 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
       {/* Diff Analysis Block */}
       <div className="space-y-2">
         <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-400">
-          <span>単語判定 (Word-by-Word Diff)</span>
+          <span>{t.resultFeedback.diffTitle}</span>
           <div className="flex items-center gap-3 text-[11px] font-semibold normal-case">
             <span className="flex items-center gap-1 text-emerald-700 dark:text-emerald-400">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 dark:bg-emerald-400" /> 正解
+              <span className="w-2 h-2 rounded-full bg-emerald-500 dark:bg-emerald-400" /> {t.resultFeedback.diffCorrect}
             </span>
             <span className="flex items-center gap-1 text-rose-700 dark:text-rose-400">
-              <span className="w-2 h-2 rounded-full bg-rose-500 dark:bg-rose-400" /> 誤り
+              <span className="w-2 h-2 rounded-full bg-rose-500 dark:bg-rose-400" /> {t.resultFeedback.diffWrong}
             </span>
             <span className="flex items-center gap-1 text-amber-700 dark:text-amber-400">
-              <span className="w-2 h-2 rounded-full bg-amber-500 dark:bg-amber-400" /> 脱落
+              <span className="w-2 h-2 rounded-full bg-amber-500 dark:bg-amber-400" /> {t.resultFeedback.diffMissing}
             </span>
           </div>
         </div>
@@ -134,11 +137,11 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
                 <span
                   key={index}
                   className="px-2 py-0.5 rounded-lg bg-rose-100 dark:bg-rose-500/20 text-rose-800 dark:text-rose-300 border border-rose-300 dark:border-rose-500/40 line-through decoration-rose-500 font-bold flex items-center gap-1"
-                  title={`入力: ${token.actual} → 正解: ${token.expected}`}
+                  title={`Input: ${token.actual} → Expected: ${token.expected}`}
                 >
                   <span>{token.actual}</span>
                   <span className="text-[11px] text-emerald-800 dark:text-emerald-300 font-bold no-underline ml-1">
-                    (正: {token.expected})
+                    ({t.resultFeedback.diffExpectedPrefix} {token.expected})
                   </span>
                 </span>
               );
@@ -147,7 +150,6 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
                 <span
                   key={index}
                   className="px-2 py-0.5 rounded-lg bg-amber-100 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border border-dashed border-amber-400 dark:border-amber-500/50 font-bold"
-                  title="聞き逃した単語"
                 >
                   [{token.expected}]
                 </span>
@@ -157,7 +159,6 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
                 <span
                   key={index}
                   className="px-2 py-0.5 rounded-lg bg-slate-200 dark:bg-slate-700/60 text-slate-700 dark:text-slate-400 line-through border border-slate-300 dark:border-slate-600 font-medium"
-                  title="余計な単語"
                 >
                   {token.actual}
                 </span>
@@ -173,24 +174,24 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
         <div className="flex items-center justify-between">
           <span className="text-xs font-bold text-indigo-800 dark:text-indigo-300 flex items-center gap-1.5">
             <CheckCircle2 className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-            模範英文 & 発音復習
+            {t.resultFeedback.modelSentenceTitle}
           </span>
           <div className="flex items-center gap-1.5">
             <button
               onClick={() => onReplay(1.0)}
               className="flex items-center gap-1 px-2.5 py-1 bg-white dark:bg-indigo-600/30 hover:bg-indigo-50 dark:hover:bg-indigo-600/50 border border-indigo-200 dark:border-indigo-500/30 rounded-lg text-xs font-semibold text-indigo-700 dark:text-indigo-200 transition shadow-sm dark:shadow-none"
-              title="通常速度で再生"
+              title="1.0x"
             >
               <Volume2 className="w-3.5 h-3.5" />
-              <span>等速</span>
+              <span>{t.resultFeedback.speedNormal}</span>
             </button>
             <button
               onClick={() => onReplay(0.8)}
               className="flex items-center gap-1 px-2.5 py-1 bg-white dark:bg-indigo-600/30 hover:bg-indigo-50 dark:hover:bg-indigo-600/50 border border-indigo-200 dark:border-indigo-500/30 rounded-lg text-xs font-semibold text-indigo-700 dark:text-indigo-200 transition shadow-sm dark:shadow-none"
-              title="ゆっくり再生 (0.8x)"
+              title="0.8x"
             >
               <Volume2 className="w-3.5 h-3.5" />
-              <span>0.8x</span>
+              <span>{t.resultFeedback.speedSlow}</span>
             </button>
           </div>
         </div>
@@ -209,7 +210,7 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
           <div className="p-3.5 bg-slate-50 dark:bg-slate-900/60 rounded-xl border border-slate-200 dark:border-slate-700/60 space-y-2">
             <span className="text-xs font-bold text-amber-700 dark:text-amber-400 flex items-center gap-1">
               <BookOpen className="w-3.5 h-3.5" />
-              重要語彙・頻出フレーズ
+              {t.resultFeedback.vocabTitle}
             </span>
             <div className="space-y-1 text-xs">
               {sentence.vocabNotes.map((vocab, i) => (
@@ -226,17 +227,17 @@ export const ResultFeedback: React.FC<ResultFeedbackProps> = ({
         <div className="p-3.5 bg-slate-50 dark:bg-slate-900/60 rounded-xl border border-slate-200 dark:border-slate-700/60 space-y-2">
           <span className="text-xs font-bold text-purple-700 dark:text-purple-400 flex items-center gap-1">
             <MessageSquareQuote className="w-3.5 h-3.5" />
-            TOEIC リスニング攻略ポイント
+            {t.resultFeedback.tipsTitle}
           </span>
           {sentence.grammarTip && (
             <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-              <strong className="text-slate-900 dark:text-slate-200 font-semibold">文法・構造: </strong>
+              <strong className="text-slate-900 dark:text-slate-200 font-semibold">{t.resultFeedback.grammarLabel} </strong>
               {sentence.grammarTip}
             </p>
           )}
           {sentence.linkingTip && (
             <p className="text-xs text-indigo-900 dark:text-indigo-300 leading-relaxed bg-indigo-50 dark:bg-indigo-500/10 p-2 rounded-lg border border-indigo-200 dark:border-indigo-500/20 font-medium">
-              <strong className="text-indigo-800 dark:text-indigo-200 font-bold">音の連結 (Linking): </strong>
+              <strong className="text-indigo-800 dark:text-indigo-200 font-bold">{t.resultFeedback.linkingLabel} </strong>
               {sentence.linkingTip}
             </p>
           )}

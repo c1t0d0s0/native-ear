@@ -31,41 +31,93 @@ export class AudioService {
 
   private loadVoices() {
     if (!this.synth) return;
-    this.voices = this.synth.getVoices();
+    const v = this.synth.getVoices();
+    if (v.length > 0) {
+      this.voices = v;
+    }
   }
 
   public getVoices(): SpeechSynthesisVoice[] {
-    if (this.voices.length === 0 && this.synth) {
-      this.voices = this.synth.getVoices();
+    if (this.synth) {
+      const v = this.synth.getVoices();
+      if (v.length > 0) {
+        this.voices = v;
+      }
     }
     return this.voices;
   }
 
   public getUSVoices(): SpeechSynthesisVoice[] {
     const all = this.getVoices();
-    const usVoices = all.filter(v => v.lang === 'en-US' || v.lang.startsWith('en_US') || v.lang.startsWith('en-'));
-    return usVoices.length > 0 ? usVoices : all;
+    const usVoices = all.filter(v => v.lang === 'en-US' || v.lang.startsWith('en_US'));
+    if (usVoices.length > 0) return usVoices;
+    const generalEn = all.filter(v => v.lang.toLowerCase().startsWith('en'));
+    return generalEn.length > 0 ? generalEn : all;
   }
 
-  public findVoice(gender: VoiceGender): SpeechSynthesisVoice | null {
+  public findVoice(gender: VoiceGender): { voice: SpeechSynthesisVoice | null; isMaleVoiceFound: boolean } {
     const usVoices = this.getUSVoices();
-    if (usVoices.length === 0) return null;
-
-    if (gender === 'female') {
-      const femaleKeywords = ['female', 'samantha', 'victoria', 'karen', 'zira', 'susan', 'ava', 'allison', 'kate', 'natural'];
-      const found = usVoices.find(v => femaleKeywords.some(kw => v.name.toLowerCase().includes(kw)));
-      if (found) return found;
-      // Fallback: pick first voice if female specific not found
-      return usVoices[0];
-    } else if (gender === 'male') {
-      const maleKeywords = ['male', 'david', 'alex', 'fred', 'daniel', 'mark', 'tom', 'george', 'guy'];
-      const found = usVoices.find(v => maleKeywords.some(kw => v.name.toLowerCase().includes(kw)));
-      if (found) return found;
-      // Fallback: try second voice or first
-      return usVoices.length > 1 ? usVoices[1] : usVoices[0];
+    const allVoices = this.getVoices();
+    if (usVoices.length === 0 && allVoices.length === 0) {
+      return { voice: null, isMaleVoiceFound: false };
     }
 
-    return usVoices[0];
+    const maleKeywords = [
+      'male', 'david', 'alex', 'fred', 'daniel', 'mark', 'tom', 'george', 'guy',
+      'brian', 'richard', 'james', 'john', 'oliver', 'aaron', 'arthur', 'gordon',
+      'evan', 'nathan', 'standard-b', 'standard-d', 'standard-j', 'wavenet-b',
+      'wavenet-d', 'wavenet-j', 'neural2-d', 'neural2-j', 'journey-d', 'polyglot-1',
+      'studio-b', 'studio-d', 'uk english male', 'us male', 'guy online', 'christopher',
+      'eric', 'andrew', 'ryan', 'thomas'
+    ];
+
+    const femaleKeywords = [
+      'female', 'samantha', 'victoria', 'karen', 'zira', 'susan', 'ava', 'allison',
+      'kate', 'natural', 'jenny', 'aria', 'sonia', 'libby', 'clara', 'emma', 'ana',
+      'steffi', 'standard-a', 'standard-c', 'standard-e', 'standard-f', 'standard-g',
+      'standard-h', 'standard-i', 'wavenet-a', 'wavenet-c', 'wavenet-e', 'wavenet-f',
+      'neural2-a', 'neural2-c', 'neural2-e', 'neural2-f', 'uk english female'
+    ];
+
+    if (gender === 'male') {
+      // 1. Search in US voices for explicit male keywords
+      let found = usVoices.find(v => {
+        const name = v.name.toLowerCase();
+        return maleKeywords.some(kw => name.includes(kw)) && !femaleKeywords.some(kw => name.includes(kw));
+      });
+      if (found) return { voice: found, isMaleVoiceFound: true };
+
+      // 2. Search in all English voices for explicit male keywords
+      found = allVoices.find(v => {
+        const name = v.name.toLowerCase();
+        return (v.lang.toLowerCase().startsWith('en')) &&
+          maleKeywords.some(kw => name.includes(kw)) &&
+          !femaleKeywords.some(kw => name.includes(kw));
+      });
+      if (found) return { voice: found, isMaleVoiceFound: true };
+
+      // 3. Fallback: If multiple voices exist, try a voice not labeled female
+      const nonFemale = usVoices.find(v => !femaleKeywords.some(kw => v.name.toLowerCase().includes(kw)));
+      if (nonFemale) return { voice: nonFemale, isMaleVoiceFound: false };
+
+      return { voice: usVoices[0] || null, isMaleVoiceFound: false };
+    } else {
+      // Female voice search
+      let found = usVoices.find(v => {
+        const name = v.name.toLowerCase();
+        return femaleKeywords.some(kw => name.includes(kw)) && !maleKeywords.some(kw => name.includes(kw));
+      });
+      if (found) return { voice: found, isMaleVoiceFound: false };
+
+      found = allVoices.find(v => {
+        const name = v.name.toLowerCase();
+        return (v.lang.toLowerCase().startsWith('en')) &&
+          femaleKeywords.some(kw => name.includes(kw));
+      });
+      if (found) return { voice: found, isMaleVoiceFound: false };
+
+      return { voice: usVoices[0] || null, isMaleVoiceFound: false };
+    }
   }
 
   public speak(
@@ -85,12 +137,28 @@ export class AudioService {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US';
     utterance.rate = settings.speed ?? 1.0;
-    utterance.pitch = settings.pitch ?? 1.0;
     utterance.volume = settings.volume ?? 1.0;
 
-    const voice = this.findVoice(settings.gender ?? 'female');
+    const gender = settings.gender ?? 'female';
+    const { voice, isMaleVoiceFound } = this.findVoice(gender);
+
     if (voice) {
       utterance.voice = voice;
+    }
+
+    // Acoustic pitch modulation for clear male / female distinction on all OS/browsers
+    if (gender === 'male') {
+      if (isMaleVoiceFound) {
+        utterance.pitch = settings.pitch ?? 0.88;
+      } else {
+        // Fallback pitch lowering to create a clear, natural masculine tone
+        utterance.pitch = settings.pitch ?? 0.78;
+        utterance.rate = (settings.speed ?? 1.0) * 0.95;
+      }
+    } else {
+      // Female tone
+      utterance.pitch = settings.pitch ?? 1.12;
+      utterance.rate = (settings.speed ?? 1.0) * 1.02;
     }
 
     utterance.onstart = () => {

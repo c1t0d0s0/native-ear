@@ -1,6 +1,6999 @@
 import { Sentence } from '../types';
 
-export const SENTENCE_DATABASE: Sentence[] = [
+export const SENTENCE_DATABASE: Sentence[] = ([
+
+  {
+    "id": "s300-0001",
+    "level": 300,
+    "category": "Office",
+    "english": "Please take a seat.",
+    "japanese": "どうぞお座りください。",
+    "vocabNotes": [
+      {
+        "word": "seat",
+        "meaning": "席"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現（Please + 動詞の原形）です。",
+    "linkingTip": "take a が「テイカ」のように連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0002",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Let's begin the meeting.",
+    "japanese": "会議を始めましょう。",
+    "vocabNotes": [
+      {
+        "word": "begin",
+        "meaning": "始める"
+      }
+    ],
+    "grammarTip": "提案の Let's + 原形動詞です。",
+    "linkingTip": "begin the がスムーズに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0003",
+    "level": 300,
+    "category": "Business",
+    "english": "The office is open.",
+    "japanese": "オフィスは開いています。",
+    "vocabNotes": [
+      {
+        "word": "open",
+        "meaning": "開いている"
+      }
+    ],
+    "grammarTip": "第2文型（SVC）の基本構文です。",
+    "linkingTip": "office is が「オフィシズ」のように連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0004",
+    "level": 300,
+    "category": "Travel",
+    "english": "I received your email.",
+    "japanese": "あなたのメールを受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "receive",
+        "meaning": "受け取る"
+      }
+    ],
+    "grammarTip": "一般動詞の過去形です。",
+    "linkingTip": "received your が「レシーヴジョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0005",
+    "level": 300,
+    "category": "Tech",
+    "english": "Where is the printer?",
+    "japanese": "プリンターはどこですか？",
+    "vocabNotes": [
+      {
+        "word": "printer",
+        "meaning": "プリンター"
+      }
+    ],
+    "grammarTip": "場所を尋ねる疑問詞 Where です。",
+    "linkingTip": "Where is が「ウェアリズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0006",
+    "level": 300,
+    "category": "Daily",
+    "english": "Please sign your name.",
+    "japanese": "お名前をご署名ください。",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "動詞 sign の目的語をとる形です。",
+    "linkingTip": "sign your が「サイニャ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0007",
+    "level": 300,
+    "category": "Finance",
+    "english": "We need more copies.",
+    "japanese": "私たちはコピーがもっと必要です。",
+    "vocabNotes": [
+      {
+        "word": "copy",
+        "meaning": "コピー、部数"
+      }
+    ],
+    "grammarTip": "need + 名詞の基本文です。",
+    "linkingTip": "need more が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0008",
+    "level": 300,
+    "category": "Office",
+    "english": "The printer is ready.",
+    "japanese": "プリンターの準備ができました。",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "be ready の状態表現です。",
+    "linkingTip": "printer is が繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0009",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "I will check it.",
+    "japanese": "私がそれを確認します。",
+    "vocabNotes": [
+      {
+        "word": "check",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "意志未来の will です。",
+    "linkingTip": "check it が「チェキット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0010",
+    "level": 300,
+    "category": "Business",
+    "english": "Please wait a moment.",
+    "japanese": "少々お待ちください。",
+    "vocabNotes": [
+      {
+        "word": "moment",
+        "meaning": "少しの間"
+      }
+    ],
+    "grammarTip": "定型的な依頼フレーズです。",
+    "linkingTip": "wait a が「ウェイタ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0011",
+    "level": 300,
+    "category": "Travel",
+    "english": "The report is finished.",
+    "japanese": "レポートは完成しました。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "完成する"
+      }
+    ],
+    "grammarTip": "受動態（be + 過去分詞）です。",
+    "linkingTip": "report is が「レポーティズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0012",
+    "level": 300,
+    "category": "Tech",
+    "english": "Let's review the data.",
+    "japanese": "データを見直しましょう。",
+    "vocabNotes": [
+      {
+        "word": "review",
+        "meaning": "見直す、検討する"
+      }
+    ],
+    "grammarTip": "Let's を使った提案文です。",
+    "linkingTip": "review the が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0013",
+    "level": 300,
+    "category": "Daily",
+    "english": "The door is locked.",
+    "japanese": "ドアには鍵がかかっています。",
+    "vocabNotes": [
+      {
+        "word": "lock",
+        "meaning": "鍵をかける"
+      }
+    ],
+    "grammarTip": "受動態による状態描写です。",
+    "linkingTip": "door is が「ドーリズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0014",
+    "level": 300,
+    "category": "Finance",
+    "english": "I have a question.",
+    "japanese": "質問が1つあります。",
+    "vocabNotes": [
+      {
+        "word": "question",
+        "meaning": "質問"
+      }
+    ],
+    "grammarTip": "have a + 名詞の基本形です。",
+    "linkingTip": "have a が「ハヴァ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0015",
+    "level": 300,
+    "category": "Office",
+    "english": "He works in sales.",
+    "japanese": "彼は営業部で働いています。",
+    "vocabNotes": [
+      {
+        "word": "sales",
+        "meaning": "営業、販売"
+      }
+    ],
+    "grammarTip": "三人称単数の s が付く現在形です。",
+    "linkingTip": "works in が「ワークスイン」と繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0016",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Please turn off lights.",
+    "japanese": "電気を消してください。",
+    "vocabNotes": [
+      {
+        "word": "turn off",
+        "meaning": "消す"
+      }
+    ],
+    "grammarTip": "群動詞 turn off の命令文です。",
+    "linkingTip": "turn off が「ターノフ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0017",
+    "level": 300,
+    "category": "Business",
+    "english": "The project is complete.",
+    "japanese": "プロジェクトは完了しました。",
+    "vocabNotes": [
+      {
+        "word": "complete",
+        "meaning": "完了した"
+      }
+    ],
+    "grammarTip": "形容詞 complete による補語です。",
+    "linkingTip": "project is が連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0018",
+    "level": 300,
+    "category": "Travel",
+    "english": "I will call back.",
+    "japanese": "折り返しお電話します。",
+    "vocabNotes": [
+      {
+        "word": "call back",
+        "meaning": "折り返す"
+      }
+    ],
+    "grammarTip": "電話応対の定番フレーズです。",
+    "linkingTip": "call back が滑らかに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0019",
+    "level": 300,
+    "category": "Tech",
+    "english": "Who is our client?",
+    "japanese": "私たちのクライアントは誰ですか？",
+    "vocabNotes": [
+      {
+        "word": "client",
+        "meaning": "顧客、クライアント"
+      }
+    ],
+    "grammarTip": "人物を尋ねる Who の疑問文です。",
+    "linkingTip": "Who is が「フーイズ」と繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0020",
+    "level": 300,
+    "category": "Daily",
+    "english": "We need a break.",
+    "japanese": "私たちは休憩が必要です。",
+    "vocabNotes": [
+      {
+        "word": "break",
+        "meaning": "休憩"
+      }
+    ],
+    "grammarTip": "take a break / need a break の用法です。",
+    "linkingTip": "need a が「ニーダ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0021",
+    "level": 300,
+    "category": "Finance",
+    "english": "The files are saved.",
+    "japanese": "ファイルは保存されました。",
+    "vocabNotes": [
+      {
+        "word": "save",
+        "meaning": "保存する"
+      }
+    ],
+    "grammarTip": "受動態の複数形です。",
+    "linkingTip": "files are が「ファイルザー」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0022",
+    "level": 300,
+    "category": "Office",
+    "english": "Please send the invoice.",
+    "japanese": "請求書を送ってください。",
+    "vocabNotes": [
+      {
+        "word": "invoice",
+        "meaning": "請求書"
+      }
+    ],
+    "grammarTip": "ビジネス頻出の名詞 invoice です。",
+    "linkingTip": "send the が滑らかに発声されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0023",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Is the boss here?",
+    "japanese": "上司はここにいますか？",
+    "vocabNotes": [
+      {
+        "word": "boss",
+        "meaning": "上司"
+      }
+    ],
+    "grammarTip": "be動詞の疑問文です。",
+    "linkingTip": "boss here の s と h が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0024",
+    "level": 300,
+    "category": "Business",
+    "english": "I agree with you.",
+    "japanese": "あなたに同意します。",
+    "vocabNotes": [
+      {
+        "word": "agree",
+        "meaning": "同意する"
+      }
+    ],
+    "grammarTip": "agree with + 人 の頻出成句です。",
+    "linkingTip": "agree with がスムーズに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0025",
+    "level": 300,
+    "category": "Travel",
+    "english": "Let's take notes.",
+    "japanese": "メモを取りましょう。",
+    "vocabNotes": [
+      {
+        "word": "note",
+        "meaning": "メモ、記録"
+      }
+    ],
+    "grammarTip": "take notes でメモを取るという意味です。",
+    "linkingTip": "take notes の k が弱まります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0026",
+    "level": 300,
+    "category": "Tech",
+    "english": "The desk is clean.",
+    "japanese": "机の上はきれいです。",
+    "vocabNotes": [
+      {
+        "word": "clean",
+        "meaning": "清潔な、きれいな"
+      }
+    ],
+    "grammarTip": "SVCの第2文型です。",
+    "linkingTip": "desk is が「デスキズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0027",
+    "level": 300,
+    "category": "Daily",
+    "english": "Can I help you?",
+    "japanese": "何かお手伝いしましょうか？",
+    "vocabNotes": [
+      {
+        "word": "help",
+        "meaning": "手伝う"
+      }
+    ],
+    "grammarTip": "申し出を表す Can I です。",
+    "linkingTip": "help you が「ヘルピュー」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0028",
+    "level": 300,
+    "category": "Finance",
+    "english": "Our team did well.",
+    "japanese": "私たちのチームはよくやりました。",
+    "vocabNotes": [
+      {
+        "word": "team",
+        "meaning": "チーム"
+      }
+    ],
+    "grammarTip": "do well（うまくやる）の過去形です。",
+    "linkingTip": "did well が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0029",
+    "level": 300,
+    "category": "Office",
+    "english": "Please close the window.",
+    "japanese": "窓を閉めてください。",
+    "vocabNotes": [
+      {
+        "word": "close",
+        "meaning": "閉める"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現です。",
+    "linkingTip": "close the の音が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0030",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "The meeting went well.",
+    "japanese": "会議はうまくいきました。",
+    "vocabNotes": [
+      {
+        "word": "go well",
+        "meaning": "順調に進む"
+      }
+    ],
+    "grammarTip": "go well の過去形 went well です。",
+    "linkingTip": "went well の t が脱落ぎみになります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0031",
+    "level": 300,
+    "category": "Business",
+    "english": "Welcome to our store.",
+    "japanese": "当店へようこそ。",
+    "vocabNotes": [
+      {
+        "word": "store",
+        "meaning": "店"
+      }
+    ],
+    "grammarTip": "歓迎の定番表現です。",
+    "linkingTip": "Welcome to が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0032",
+    "level": 300,
+    "category": "Travel",
+    "english": "How may I help?",
+    "japanese": "どのようなご用件でしょうか？",
+    "vocabNotes": [
+      {
+        "word": "help",
+        "meaning": "手伝う、助ける"
+      }
+    ],
+    "grammarTip": "丁寧な接客フレーズです。",
+    "linkingTip": "may I が「メイアイ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0033",
+    "level": 300,
+    "category": "Tech",
+    "english": "Your table is ready.",
+    "japanese": "お席のご用意ができました。",
+    "vocabNotes": [
+      {
+        "word": "table",
+        "meaning": "テーブル、席"
+      }
+    ],
+    "grammarTip": "レストラン等の案内表現です。",
+    "linkingTip": "table is が「テイブリズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0034",
+    "level": 300,
+    "category": "Daily",
+    "english": "Please follow me.",
+    "japanese": "私についてきてください。",
+    "vocabNotes": [
+      {
+        "word": "follow",
+        "meaning": "ついていく"
+      }
+    ],
+    "grammarTip": "案内時の定番フレーズです。",
+    "linkingTip": "follow me が一息で発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0035",
+    "level": 300,
+    "category": "Finance",
+    "english": "Here is your receipt.",
+    "japanese": "こちらがレシートです。",
+    "vocabNotes": [
+      {
+        "word": "receipt",
+        "meaning": "領収書、レシート"
+      }
+    ],
+    "grammarTip": "Here is + 名詞の提示表現です。",
+    "linkingTip": "Here is が「ヒアリーズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0036",
+    "level": 300,
+    "category": "Office",
+    "english": "The shop is closed.",
+    "japanese": "その店は閉まっています。",
+    "vocabNotes": [
+      {
+        "word": "close",
+        "meaning": "閉まる"
+      }
+    ],
+    "grammarTip": "形容詞的過去分詞 closed です。",
+    "linkingTip": "shop is が「ショッピズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0037",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Would you like coffee?",
+    "japanese": "コーヒーはいかがですか？",
+    "vocabNotes": [
+      {
+        "word": "coffee",
+        "meaning": "コーヒー"
+      }
+    ],
+    "grammarTip": "丁寧な勧め表現 Would you like です。",
+    "linkingTip": "Would you が「ウッジュ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0038",
+    "level": 300,
+    "category": "Business",
+    "english": "Can I see that?",
+    "japanese": "それを見てもいいですか？",
+    "vocabNotes": [
+      {
+        "word": "see",
+        "meaning": "見る"
+      }
+    ],
+    "grammarTip": "許可を求める Can I の文です。",
+    "linkingTip": "see that が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0039",
+    "level": 300,
+    "category": "Travel",
+    "english": "Thank you very much.",
+    "japanese": "本当にありがとうございます。",
+    "vocabNotes": [
+      {
+        "word": "much",
+        "meaning": "大いに"
+      }
+    ],
+    "grammarTip": "基本の感謝表現です。",
+    "linkingTip": "Thank you が「サンキュー」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0040",
+    "level": 300,
+    "category": "Tech",
+    "english": "It costs ten dollars.",
+    "japanese": "それは10ドルかかります。",
+    "vocabNotes": [
+      {
+        "word": "cost",
+        "meaning": "費用がかかる"
+      }
+    ],
+    "grammarTip": "三人称単数現在形の costs です。",
+    "linkingTip": "costs ten の s と t がスムーズに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0041",
+    "level": 300,
+    "category": "Daily",
+    "english": "We accept credit cards.",
+    "japanese": "クレジットカードがご利用いただけます。",
+    "vocabNotes": [
+      {
+        "word": "accept",
+        "meaning": "受け入れる"
+      }
+    ],
+    "grammarTip": "支払いの案内表現です。",
+    "linkingTip": "accept credit が明瞭に発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0042",
+    "level": 300,
+    "category": "Finance",
+    "english": "Please enjoy your meal.",
+    "japanese": "お食事をお楽しみください。",
+    "vocabNotes": [
+      {
+        "word": "meal",
+        "meaning": "食事"
+      }
+    ],
+    "grammarTip": "レストランでの接客定番文です。",
+    "linkingTip": "enjoy your が「エンジョイヨア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0043",
+    "level": 300,
+    "category": "Office",
+    "english": "The total is twenty.",
+    "japanese": "合計は20ドルです。",
+    "vocabNotes": [
+      {
+        "word": "total",
+        "meaning": "合計"
+      }
+    ],
+    "grammarTip": "会計時の金額提示です。",
+    "linkingTip": "total is が「トータリズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0044",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "May I take orders?",
+    "japanese": "ご注文をお伺いしてもよろしいですか？",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文"
+      }
+    ],
+    "grammarTip": "注文受付の丁寧表現です。",
+    "linkingTip": "take orders が「テイコーダーズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0045",
+    "level": 300,
+    "category": "Business",
+    "english": "This item is popular.",
+    "japanese": "この商品は人気があります。",
+    "vocabNotes": [
+      {
+        "word": "popular",
+        "meaning": "人気のある"
+      }
+    ],
+    "grammarTip": "SVCの構造です。",
+    "linkingTip": "item is が「アイテミズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0046",
+    "level": 300,
+    "category": "Travel",
+    "english": "The soup is hot.",
+    "japanese": "スープは熱いです。",
+    "vocabNotes": [
+      {
+        "word": "soup",
+        "meaning": "スープ"
+      }
+    ],
+    "grammarTip": "基本の描写文です。",
+    "linkingTip": "soup is が「スーピズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0047",
+    "level": 300,
+    "category": "Tech",
+    "english": "Do you have reservations?",
+    "japanese": "ご予約はございますか？",
+    "vocabNotes": [
+      {
+        "word": "reservation",
+        "meaning": "予約"
+      }
+    ],
+    "grammarTip": "予約の有無を尋ねる疑問文です。",
+    "linkingTip": "have reservations が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0048",
+    "level": 300,
+    "category": "Daily",
+    "english": "Please sign the bill.",
+    "japanese": "伝票にご署名ください。",
+    "vocabNotes": [
+      {
+        "word": "bill",
+        "meaning": "請求書、伝票"
+      }
+    ],
+    "grammarTip": "会計時の依頼文です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0049",
+    "level": 300,
+    "category": "Finance",
+    "english": "Have a great day!",
+    "japanese": "良い一日をお過ごしください！",
+    "vocabNotes": [
+      {
+        "word": "great",
+        "meaning": "素晴らしい"
+      }
+    ],
+    "grammarTip": "別れ際の定番挨拶です。",
+    "linkingTip": "Have a が「ハヴァ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0050",
+    "level": 300,
+    "category": "Office",
+    "english": "Water is totally free.",
+    "japanese": "お水は完全に無料です。",
+    "vocabNotes": [
+      {
+        "word": "free",
+        "meaning": "無料の"
+      }
+    ],
+    "grammarTip": "SVC構文に副詞が入った形です。",
+    "linkingTip": "Water is が「ウォータリズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0051",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "The train is late.",
+    "japanese": "電車が遅れています。",
+    "vocabNotes": [
+      {
+        "word": "late",
+        "meaning": "遅れた"
+      }
+    ],
+    "grammarTip": "交通機関の遅延表現です。",
+    "linkingTip": "train is が「トレイニズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0052",
+    "level": 300,
+    "category": "Business",
+    "english": "Flight fifty is boarding.",
+    "japanese": "50便は搭乗中です。",
+    "vocabNotes": [
+      {
+        "word": "board",
+        "meaning": "搭乗する"
+      }
+    ],
+    "grammarTip": "現在進行形（be + -ing）です。",
+    "linkingTip": "is boarding が滑らかに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0053",
+    "level": 300,
+    "category": "Travel",
+    "english": "Where is gate four?",
+    "japanese": "4番搭乗口はどこですか？",
+    "vocabNotes": [
+      {
+        "word": "gate",
+        "meaning": "搭乗口、門"
+      }
+    ],
+    "grammarTip": "場所を尋ねる Where 構文です。",
+    "linkingTip": "Where is が「ウェアリズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0054",
+    "level": 300,
+    "category": "Tech",
+    "english": "Show me your ticket.",
+    "japanese": "チケットをお見せください。",
+    "vocabNotes": [
+      {
+        "word": "ticket",
+        "meaning": "切符、チケット"
+      }
+    ],
+    "grammarTip": "第4文型（SVOO）の命令文です。",
+    "linkingTip": "Show me が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0055",
+    "level": 300,
+    "category": "Daily",
+    "english": "The bus has arrived.",
+    "japanese": "バスが到着しました。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "現在完了形（has + 過去分詞）です。",
+    "linkingTip": "has arrived が「ハザライヴド」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0056",
+    "level": 300,
+    "category": "Finance",
+    "english": "Keep your seatbelt fastened.",
+    "japanese": "シートベルトを締めたままでいてください。",
+    "vocabNotes": [
+      {
+        "word": "fasten",
+        "meaning": "締める"
+      }
+    ],
+    "grammarTip": "keep + O + C の構文です。",
+    "linkingTip": "Keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0057",
+    "level": 300,
+    "category": "Office",
+    "english": "The taxi is waiting.",
+    "japanese": "タクシーが待っています。",
+    "vocabNotes": [
+      {
+        "word": "wait",
+        "meaning": "待つ"
+      }
+    ],
+    "grammarTip": "現在進行形による描写です。",
+    "linkingTip": "taxi is が「タクシーイズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0058",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Here is your passport.",
+    "japanese": "こちらがパスポートです。",
+    "vocabNotes": [
+      {
+        "word": "passport",
+        "meaning": "パスポート"
+      }
+    ],
+    "grammarTip": "提示の Here is 構文です。",
+    "linkingTip": "Here is が連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0059",
+    "level": 300,
+    "category": "Business",
+    "english": "We arrived in Tokyo.",
+    "japanese": "私たちは東京に到着しました。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "arrive in + 都市名 の過去形です。",
+    "linkingTip": "arrived in が「アライヴディン」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0060",
+    "level": 300,
+    "category": "Travel",
+    "english": "The package was delivered.",
+    "japanese": "荷物は配達されました。",
+    "vocabNotes": [
+      {
+        "word": "deliver",
+        "meaning": "配達する"
+      }
+    ],
+    "grammarTip": "過去受動態の文です。",
+    "linkingTip": "was delivered が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0061",
+    "level": 300,
+    "category": "Tech",
+    "english": "Is the luggage heavy?",
+    "japanese": "荷物は重いですか？",
+    "vocabNotes": [
+      {
+        "word": "luggage",
+        "meaning": "手荷物"
+      }
+    ],
+    "grammarTip": "be動詞疑問文です。",
+    "linkingTip": "luggage heavy が自然に発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0062",
+    "level": 300,
+    "category": "Daily",
+    "english": "Turn left at corner.",
+    "japanese": "角を左に曲がってください。",
+    "vocabNotes": [
+      {
+        "word": "corner",
+        "meaning": "角、曲がり角"
+      }
+    ],
+    "grammarTip": "道案内の基本フレーズです。",
+    "linkingTip": "Turn left が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0063",
+    "level": 300,
+    "category": "Finance",
+    "english": "The hotel is nearby.",
+    "japanese": "ホテルは近くにあります。",
+    "vocabNotes": [
+      {
+        "word": "nearby",
+        "meaning": "近くに"
+      }
+    ],
+    "grammarTip": "場所を示す副詞 nearby です。",
+    "linkingTip": "hotel is が「ホテリズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0064",
+    "level": 300,
+    "category": "Office",
+    "english": "Check the departure time.",
+    "japanese": "出発時刻を確認してください。",
+    "vocabNotes": [
+      {
+        "word": "departure",
+        "meaning": "出発"
+      }
+    ],
+    "grammarTip": "動詞 check の命令文です。",
+    "linkingTip": "departure time が明瞭に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0065",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Buy tickets online now.",
+    "japanese": "今すぐネットでチケットを買いましょう。",
+    "vocabNotes": [
+      {
+        "word": "online",
+        "meaning": "オンラインで"
+      }
+    ],
+    "grammarTip": "副詞 online の用法です。",
+    "linkingTip": "tickets online が「チケットゾンライン」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0066",
+    "level": 300,
+    "category": "Business",
+    "english": "The Wi-Fi is working.",
+    "japanese": "Wi-Fiは機能しています。",
+    "vocabNotes": [
+      {
+        "word": "work",
+        "meaning": "作動する、機能する"
+      }
+    ],
+    "grammarTip": "進行形による状態説明です。",
+    "linkingTip": "is working が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0067",
+    "level": 300,
+    "category": "Travel",
+    "english": "Please click this link.",
+    "japanese": "このリンクをクリックしてください。",
+    "vocabNotes": [
+      {
+        "word": "link",
+        "meaning": "リンク"
+      }
+    ],
+    "grammarTip": "IT関連の指示表現です。",
+    "linkingTip": "click this が自然に発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0068",
+    "level": 300,
+    "category": "Tech",
+    "english": "My laptop screen froze.",
+    "japanese": "私のノートPCの画面が固まりました。",
+    "vocabNotes": [
+      {
+        "word": "freeze",
+        "meaning": "凍る、フリーズする"
+      }
+    ],
+    "grammarTip": "freeze の過去形 froze です。",
+    "linkingTip": "screen froze が明瞭に発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0069",
+    "level": 300,
+    "category": "Daily",
+    "english": "Download the mobile app.",
+    "japanese": "モバイルアプリをダウンロードしてください。",
+    "vocabNotes": [
+      {
+        "word": "download",
+        "meaning": "ダウンロードする"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "Download the が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0070",
+    "level": 300,
+    "category": "Finance",
+    "english": "Enter your secret password.",
+    "japanese": "秘密のパスワードを入力してください。",
+    "vocabNotes": [
+      {
+        "word": "password",
+        "meaning": "パスワード"
+      }
+    ],
+    "grammarTip": "IT操作の定型表現です。",
+    "linkingTip": "Enter your が「エンタヨア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0071",
+    "level": 300,
+    "category": "Office",
+    "english": "The battery is low.",
+    "japanese": "バッテリー残量が少ないです。",
+    "vocabNotes": [
+      {
+        "word": "battery",
+        "meaning": "バッテリー"
+      }
+    ],
+    "grammarTip": "日常的な状態表現です。",
+    "linkingTip": "battery is が「バテリイズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0072",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Restart your computer now.",
+    "japanese": "今すぐパソコンを再起動してください。",
+    "vocabNotes": [
+      {
+        "word": "restart",
+        "meaning": "再起動する"
+      }
+    ],
+    "grammarTip": "PC操作の定番表現です。",
+    "linkingTip": "Restart your が「リスターチョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0073",
+    "level": 300,
+    "category": "Business",
+    "english": "The microphone is muted.",
+    "japanese": "マイクがミュートになっています。",
+    "vocabNotes": [
+      {
+        "word": "mute",
+        "meaning": "ミュートにする"
+      }
+    ],
+    "grammarTip": "受動態です。",
+    "linkingTip": "is muted が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0074",
+    "level": 300,
+    "category": "Travel",
+    "english": "I sent a message.",
+    "japanese": "メッセージを送信しました。",
+    "vocabNotes": [
+      {
+        "word": "message",
+        "meaning": "メッセージ"
+      }
+    ],
+    "grammarTip": "send の過去形 sent です。",
+    "linkingTip": "sent a が「センタ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0075",
+    "level": 300,
+    "category": "Tech",
+    "english": "Check your spam folder.",
+    "japanese": "迷惑メールフォルダを確認してください。",
+    "vocabNotes": [
+      {
+        "word": "folder",
+        "meaning": "フォルダ"
+      }
+    ],
+    "grammarTip": "メール確認の指示です。",
+    "linkingTip": "Check your が「チェッキョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0076",
+    "level": 300,
+    "category": "Daily",
+    "english": "The software is updated.",
+    "japanese": "ソフトウェアは更新されました。",
+    "vocabNotes": [
+      {
+        "word": "update",
+        "meaning": "更新する"
+      }
+    ],
+    "grammarTip": "受動態です。",
+    "linkingTip": "is updated が「イズアップデイティド」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0077",
+    "level": 300,
+    "category": "Finance",
+    "english": "Save all open files.",
+    "japanese": "開いている全ファイルを保存してください。",
+    "vocabNotes": [
+      {
+        "word": "save",
+        "meaning": "保存する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "all open が「オーロープン」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0078",
+    "level": 300,
+    "category": "Office",
+    "english": "The budget was approved.",
+    "japanese": "予算は承認されました。",
+    "vocabNotes": [
+      {
+        "word": "budget",
+        "meaning": "予算"
+      },
+      {
+        "word": "approve",
+        "meaning": "承認する"
+      }
+    ],
+    "grammarTip": "過去受動態です。",
+    "linkingTip": "was approved が「ワザプルーヴド」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0079",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Sales increased this month.",
+    "japanese": "今月は売上が増加しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の自動詞用法です。",
+    "linkingTip": "increased this が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0080",
+    "level": 300,
+    "category": "Business",
+    "english": "Profits rose by five.",
+    "japanese": "利益は5%上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "profit",
+        "meaning": "利益"
+      },
+      {
+        "word": "rise",
+        "meaning": "上がる"
+      }
+    ],
+    "grammarTip": "rise の過去形 rose です。",
+    "linkingTip": "rose by が「ローズバイ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0081",
+    "level": 300,
+    "category": "Travel",
+    "english": "We met our target.",
+    "japanese": "私たちは目標を達成しました。",
+    "vocabNotes": [
+      {
+        "word": "target",
+        "meaning": "目標"
+      }
+    ],
+    "grammarTip": "meet the target（目標を達成する）の過去形です。",
+    "linkingTip": "met our が「メッタワー」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0082",
+    "level": 300,
+    "category": "Tech",
+    "english": "The contract is signed.",
+    "japanese": "契約書は締結（署名）されました。",
+    "vocabNotes": [
+      {
+        "word": "contract",
+        "meaning": "契約書"
+      }
+    ],
+    "grammarTip": "受動態です。",
+    "linkingTip": "contract is が「コントラクティズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0083",
+    "level": 300,
+    "category": "Daily",
+    "english": "Prices will go up.",
+    "japanese": "価格は上がる予定です。",
+    "vocabNotes": [
+      {
+        "word": "price",
+        "meaning": "価格"
+      }
+    ],
+    "grammarTip": "go up（上昇する）の未来形です。",
+    "linkingTip": "go up が「ゴーアップ」と繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0084",
+    "level": 300,
+    "category": "Finance",
+    "english": "The stocks look good.",
+    "japanese": "株価は好調に見えます。",
+    "vocabNotes": [
+      {
+        "word": "stock",
+        "meaning": "株、株式"
+      }
+    ],
+    "grammarTip": "look + 形容詞の知覚構文です。",
+    "linkingTip": "look good が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0085",
+    "level": 300,
+    "category": "Office",
+    "english": "We signed the deal.",
+    "japanese": "私たちは取引に合意（署名）しました。",
+    "vocabNotes": [
+      {
+        "word": "deal",
+        "meaning": "取引"
+      }
+    ],
+    "grammarTip": "sign a deal の過去形です。",
+    "linkingTip": "signed the が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0086",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "The cost is low.",
+    "japanese": "費用は安いです。",
+    "vocabNotes": [
+      {
+        "word": "cost",
+        "meaning": "費用、コスト"
+      }
+    ],
+    "grammarTip": "SVCの第2文型です。",
+    "linkingTip": "cost is が「コスティズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0087",
+    "level": 300,
+    "category": "Business",
+    "english": "Send the payment today.",
+    "japanese": "本日支払いを送金してください。",
+    "vocabNotes": [
+      {
+        "word": "payment",
+        "meaning": "支払い"
+      }
+    ],
+    "grammarTip": "ビジネス頻出の名詞 payment です。",
+    "linkingTip": "Send the が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0088",
+    "level": 300,
+    "category": "Travel",
+    "english": "Are you ready now?",
+    "japanese": "今、準備はいいですか？",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "疑問文です。",
+    "linkingTip": "Are you が繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0089",
+    "level": 300,
+    "category": "Tech",
+    "english": "The phone is ringing.",
+    "japanese": "電話が鳴っています。",
+    "vocabNotes": [
+      {
+        "word": "ring",
+        "meaning": "鳴る"
+      }
+    ],
+    "grammarTip": "現在進行形です。",
+    "linkingTip": "phone is が「フォーニズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0090",
+    "level": 300,
+    "category": "Daily",
+    "english": "I love this idea.",
+    "japanese": "このアイデアがとても気に入りました。",
+    "vocabNotes": [
+      {
+        "word": "idea",
+        "meaning": "考え、アイデア"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "love this が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0091",
+    "level": 300,
+    "category": "Finance",
+    "english": "Please call my office.",
+    "japanese": "私のオフィスにお電話ください。",
+    "vocabNotes": [
+      {
+        "word": "office",
+        "meaning": "事務所、オフィス"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "call my が自然に発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0092",
+    "level": 300,
+    "category": "Office",
+    "english": "The lunch was delicious.",
+    "japanese": "昼食はとても美味しかったです。",
+    "vocabNotes": [
+      {
+        "word": "delicious",
+        "meaning": "美味しい"
+      }
+    ],
+    "grammarTip": "SVCの過去形です。",
+    "linkingTip": "was delicious が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0093",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "We start at nine.",
+    "japanese": "私たちは9時に始まります。",
+    "vocabNotes": [
+      {
+        "word": "start",
+        "meaning": "始まる"
+      }
+    ],
+    "grammarTip": "現在時制による確定予定です。",
+    "linkingTip": "start at が「スタータット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0094",
+    "level": 300,
+    "category": "Business",
+    "english": "Can we talk now?",
+    "japanese": "今お話しできますか？",
+    "vocabNotes": [
+      {
+        "word": "talk",
+        "meaning": "話す"
+      }
+    ],
+    "grammarTip": "許可を求める疑問文です。",
+    "linkingTip": "talk now が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0095",
+    "level": 300,
+    "category": "Travel",
+    "english": "The coffee is cold.",
+    "japanese": "コーヒーが冷めています。",
+    "vocabNotes": [
+      {
+        "word": "cold",
+        "meaning": "冷たい"
+      }
+    ],
+    "grammarTip": "SVCの構文です。",
+    "linkingTip": "coffee is が「コーフィイズ」と繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0096",
+    "level": 300,
+    "category": "Tech",
+    "english": "I need your signature.",
+    "japanese": "あなたのご署名が必要です。",
+    "vocabNotes": [
+      {
+        "word": "signature",
+        "meaning": "署名"
+      }
+    ],
+    "grammarTip": "need + 名詞です。",
+    "linkingTip": "need your が「ニージョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0097",
+    "level": 300,
+    "category": "Daily",
+    "english": "Please open the door.",
+    "japanese": "ドアを開けてください。",
+    "vocabNotes": [
+      {
+        "word": "open",
+        "meaning": "開ける"
+      }
+    ],
+    "grammarTip": "依頼文です。",
+    "linkingTip": "open the が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0098",
+    "level": 300,
+    "category": "Finance",
+    "english": "The results are out.",
+    "japanese": "結果が出ました。",
+    "vocabNotes": [
+      {
+        "word": "result",
+        "meaning": "結果"
+      }
+    ],
+    "grammarTip": "SVCの基本文です。",
+    "linkingTip": "results are が「リザルツァー」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0099",
+    "level": 300,
+    "category": "Office",
+    "english": "We have enough copies.",
+    "japanese": "コピーは十分にあります。",
+    "vocabNotes": [
+      {
+        "word": "enough",
+        "meaning": "十分な"
+      }
+    ],
+    "grammarTip": "have + 名詞です。",
+    "linkingTip": "have enough が「ハヴィナフ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0100",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Check the new price.",
+    "japanese": "新しい価格を確認してください。",
+    "vocabNotes": [
+      {
+        "word": "price",
+        "meaning": "価格"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "Check the が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0101",
+    "level": 300,
+    "category": "Business",
+    "english": "The light is on.",
+    "japanese": "明かりがついています。",
+    "vocabNotes": [
+      {
+        "word": "light",
+        "meaning": "明かり、照明"
+      }
+    ],
+    "grammarTip": "状態を表す前置詞 on です。",
+    "linkingTip": "light is が「ライティズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0102",
+    "level": 300,
+    "category": "Travel",
+    "english": "I lost my key.",
+    "japanese": "鍵をなくしてしまいました。",
+    "vocabNotes": [
+      {
+        "word": "lose",
+        "meaning": "失う"
+      }
+    ],
+    "grammarTip": "lose の過去形 lost です。",
+    "linkingTip": "lost my が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0103",
+    "level": 300,
+    "category": "Tech",
+    "english": "The market is growing.",
+    "japanese": "市場は成長しています。",
+    "vocabNotes": [
+      {
+        "word": "market",
+        "meaning": "市場"
+      },
+      {
+        "word": "grow",
+        "meaning": "成長する"
+      }
+    ],
+    "grammarTip": "現在進行形です。",
+    "linkingTip": "is growing が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0104",
+    "level": 300,
+    "category": "Daily",
+    "english": "Can I try this?",
+    "japanese": "これを試してもいいですか？",
+    "vocabNotes": [
+      {
+        "word": "try",
+        "meaning": "試す"
+      }
+    ],
+    "grammarTip": "許可を求める疑問文です。",
+    "linkingTip": "try this が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0105",
+    "level": 300,
+    "category": "Finance",
+    "english": "The staff is friendly.",
+    "japanese": "スタッフは親切です。",
+    "vocabNotes": [
+      {
+        "word": "friendly",
+        "meaning": "親しみやすい、親切な"
+      }
+    ],
+    "grammarTip": "集合名詞 staff の用法です。",
+    "linkingTip": "staff is が「スタッフィズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0106",
+    "level": 300,
+    "category": "Office",
+    "english": "Let's confirm the schedule.",
+    "japanese": "日程を確認しましょう。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "Let's 提案文です。",
+    "linkingTip": "confirm the が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0107",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "He answered the call.",
+    "japanese": "彼は電話に出ました。",
+    "vocabNotes": [
+      {
+        "word": "answer",
+        "meaning": "答える、出る"
+      }
+    ],
+    "grammarTip": "過去形です。",
+    "linkingTip": "answered the が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0108",
+    "level": 300,
+    "category": "Business",
+    "english": "The car is outside.",
+    "japanese": "車は外に停まっています。",
+    "vocabNotes": [
+      {
+        "word": "outside",
+        "meaning": "外に"
+      }
+    ],
+    "grammarTip": "場所を示す副詞です。",
+    "linkingTip": "car is が「カーリズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0109",
+    "level": 300,
+    "category": "Travel",
+    "english": "Please print this email.",
+    "japanese": "このメールを印刷してください。",
+    "vocabNotes": [
+      {
+        "word": "print",
+        "meaning": "印刷する"
+      }
+    ],
+    "grammarTip": "依頼文です。",
+    "linkingTip": "print this が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0110",
+    "level": 300,
+    "category": "Tech",
+    "english": "Our goal is simple.",
+    "japanese": "私たちの目標は単純です。",
+    "vocabNotes": [
+      {
+        "word": "goal",
+        "meaning": "目標"
+      },
+      {
+        "word": "simple",
+        "meaning": "単純な"
+      }
+    ],
+    "grammarTip": "SVCの第2文型です。",
+    "linkingTip": "goal is が「ゴーリズ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0111",
+    "level": 300,
+    "category": "Daily",
+    "english": "I will join later.",
+    "japanese": "後で参加します。",
+    "vocabNotes": [
+      {
+        "word": "join",
+        "meaning": "参加する"
+      }
+    ],
+    "grammarTip": "未来形です。",
+    "linkingTip": "join later が滑らかに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0112",
+    "level": 300,
+    "category": "Finance",
+    "english": "The screen looks clear.",
+    "japanese": "画面が見やすいです。",
+    "vocabNotes": [
+      {
+        "word": "screen",
+        "meaning": "画面"
+      }
+    ],
+    "grammarTip": "look + 形容詞です。",
+    "linkingTip": "looks clear がスムーズに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0113",
+    "level": 300,
+    "category": "Office",
+    "english": "Can you hear me?",
+    "japanese": "私の声が聞こえますか？",
+    "vocabNotes": [
+      {
+        "word": "hear",
+        "meaning": "聞こえる"
+      }
+    ],
+    "grammarTip": "通話や会議の定番フレーズです。",
+    "linkingTip": "hear me が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0114",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "We signed the contract.",
+    "japanese": "私たちは契約を結びました。",
+    "vocabNotes": [
+      {
+        "word": "contract",
+        "meaning": "契約"
+      }
+    ],
+    "grammarTip": "過去形のSVO文です。",
+    "linkingTip": "signed the が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0115",
+    "level": 300,
+    "category": "Business",
+    "english": "The elevator is broken.",
+    "japanese": "エレベーターが故障しています。",
+    "vocabNotes": [
+      {
+        "word": "broken",
+        "meaning": "壊れた"
+      }
+    ],
+    "grammarTip": "受動態の補語用法です。",
+    "linkingTip": "elevator is が「エレヴェイタリズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0116",
+    "level": 300,
+    "category": "Travel",
+    "english": "Please take your time.",
+    "japanese": "ごゆっくりどうぞ。",
+    "vocabNotes": [
+      {
+        "word": "time",
+        "meaning": "時間"
+      }
+    ],
+    "grammarTip": "相手を気遣う定番慣用句です。",
+    "linkingTip": "take your が「テイキョア」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0117",
+    "level": 300,
+    "category": "Tech",
+    "english": "The event was successful.",
+    "japanese": "イベントは大成功でした。",
+    "vocabNotes": [
+      {
+        "word": "successful",
+        "meaning": "成功した"
+      }
+    ],
+    "grammarTip": "SVCの過去形です。",
+    "linkingTip": "was successful が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0118",
+    "level": 300,
+    "category": "Daily",
+    "english": "Please review page two.",
+    "japanese": "ページtwoをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "review",
+        "meaning": "確認する、見直す"
+      }
+    ],
+    "grammarTip": "丁寧な依頼文です。",
+    "linkingTip": "review page が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0119",
+    "level": 300,
+    "category": "Finance",
+    "english": "The meeting is at ten.",
+    "japanese": "会議はten時からです。",
+    "vocabNotes": [
+      {
+        "word": "meeting",
+        "meaning": "会議"
+      }
+    ],
+    "grammarTip": "時刻を表す at の用法です。",
+    "linkingTip": "is at が「イズアット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0120",
+    "level": 300,
+    "category": "Office",
+    "english": "We received the package today.",
+    "japanese": "本日荷物を受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "receive",
+        "meaning": "受け取る"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "received が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0121",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Please check room two.",
+    "japanese": "two号室をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "check",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "check room が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0122",
+    "level": 300,
+    "category": "Business",
+    "english": "The report is ready now.",
+    "japanese": "レポートの準備ができました。",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "be ready の構文です。",
+    "linkingTip": "is ready が「イズレディ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0123",
+    "level": 300,
+    "category": "Travel",
+    "english": "Can I speak with Mr. Smith?",
+    "japanese": "スミス氏とお話しできますか？",
+    "vocabNotes": [
+      {
+        "word": "speak",
+        "meaning": "話す"
+      }
+    ],
+    "grammarTip": "電話の定番表現です。",
+    "linkingTip": "speak with が「スピークウィズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0124",
+    "level": 300,
+    "category": "Tech",
+    "english": "The report arrived safely.",
+    "japanese": "レポートが無事に届きました。",
+    "vocabNotes": [
+      {
+        "word": "safely",
+        "meaning": "無事に"
+      }
+    ],
+    "grammarTip": "過去形と副詞の組み合わせです。",
+    "linkingTip": "arrived safely が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0125",
+    "level": 300,
+    "category": "Daily",
+    "english": "We need your report.",
+    "japanese": "あなたのおレポートが必要です。",
+    "vocabNotes": [
+      {
+        "word": "need",
+        "meaning": "必要とする"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "need your が「ニージョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0126",
+    "level": 300,
+    "category": "Finance",
+    "english": "Let's visit the factory.",
+    "japanese": "工場を訪問しましょう。",
+    "vocabNotes": [
+      {
+        "word": "visit",
+        "meaning": "訪問する"
+      }
+    ],
+    "grammarTip": "Let's 構文です。",
+    "linkingTip": "visit the がスムーズに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0127",
+    "level": 300,
+    "category": "Office",
+    "english": "Please send me the report.",
+    "japanese": "レポートを送ってください。",
+    "vocabNotes": [
+      {
+        "word": "send",
+        "meaning": "送る"
+      }
+    ],
+    "grammarTip": "SVOO構文の命令文です。",
+    "linkingTip": "send me が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0128",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Please review page three.",
+    "japanese": "ページthreeをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "review",
+        "meaning": "確認する、見直す"
+      }
+    ],
+    "grammarTip": "丁寧な依頼文です。",
+    "linkingTip": "review page が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0129",
+    "level": 300,
+    "category": "Business",
+    "english": "The meeting is at one.",
+    "japanese": "会議はone時からです。",
+    "vocabNotes": [
+      {
+        "word": "meeting",
+        "meaning": "会議"
+      }
+    ],
+    "grammarTip": "時刻を表す at の用法です。",
+    "linkingTip": "is at が「イズアット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0130",
+    "level": 300,
+    "category": "Travel",
+    "english": "We received the invoice today.",
+    "japanese": "本日請求書を受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "receive",
+        "meaning": "受け取る"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "received が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0131",
+    "level": 300,
+    "category": "Tech",
+    "english": "Please check room three.",
+    "japanese": "three号室をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "check",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "check room が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0132",
+    "level": 300,
+    "category": "Daily",
+    "english": "The order is ready now.",
+    "japanese": "注文の準備ができました。",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "be ready の構文です。",
+    "linkingTip": "is ready が「イズレディ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0133",
+    "level": 300,
+    "category": "Finance",
+    "english": "Can I speak with Ms. Jones?",
+    "japanese": "ジョーンズ氏とお話しできますか？",
+    "vocabNotes": [
+      {
+        "word": "speak",
+        "meaning": "話す"
+      }
+    ],
+    "grammarTip": "電話の定番表現です。",
+    "linkingTip": "speak with が「スピークウィズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0134",
+    "level": 300,
+    "category": "Office",
+    "english": "The order arrived safely.",
+    "japanese": "注文が無事に届きました。",
+    "vocabNotes": [
+      {
+        "word": "safely",
+        "meaning": "無事に"
+      }
+    ],
+    "grammarTip": "過去形と副詞の組み合わせです。",
+    "linkingTip": "arrived safely が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0135",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "We need your order.",
+    "japanese": "あなたのお注文が必要です。",
+    "vocabNotes": [
+      {
+        "word": "need",
+        "meaning": "必要とする"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "need your が「ニージョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0136",
+    "level": 300,
+    "category": "Business",
+    "english": "Let's visit the warehouse.",
+    "japanese": "倉庫を訪問しましょう。",
+    "vocabNotes": [
+      {
+        "word": "visit",
+        "meaning": "訪問する"
+      }
+    ],
+    "grammarTip": "Let's 構文です。",
+    "linkingTip": "visit the がスムーズに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0137",
+    "level": 300,
+    "category": "Travel",
+    "english": "Please send me the order.",
+    "japanese": "注文を送ってください。",
+    "vocabNotes": [
+      {
+        "word": "send",
+        "meaning": "送る"
+      }
+    ],
+    "grammarTip": "SVOO構文の命令文です。",
+    "linkingTip": "send me が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0138",
+    "level": 300,
+    "category": "Tech",
+    "english": "Please review page four.",
+    "japanese": "ページfourをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "review",
+        "meaning": "確認する、見直す"
+      }
+    ],
+    "grammarTip": "丁寧な依頼文です。",
+    "linkingTip": "review page が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0139",
+    "level": 300,
+    "category": "Daily",
+    "english": "The meeting is at two.",
+    "japanese": "会議はtwo時からです。",
+    "vocabNotes": [
+      {
+        "word": "meeting",
+        "meaning": "会議"
+      }
+    ],
+    "grammarTip": "時刻を表す at の用法です。",
+    "linkingTip": "is at が「イズアット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0140",
+    "level": 300,
+    "category": "Finance",
+    "english": "We received the contract today.",
+    "japanese": "本日契約書を受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "receive",
+        "meaning": "受け取る"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "received が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0141",
+    "level": 300,
+    "category": "Office",
+    "english": "Please check room four.",
+    "japanese": "four号室をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "check",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "check room が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0142",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "The ticket is ready now.",
+    "japanese": "チケットの準備ができました。",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "be ready の構文です。",
+    "linkingTip": "is ready が「イズレディ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0143",
+    "level": 300,
+    "category": "Business",
+    "english": "Can I speak with the manager?",
+    "japanese": "マネージャーとお話しできますか？",
+    "vocabNotes": [
+      {
+        "word": "speak",
+        "meaning": "話す"
+      }
+    ],
+    "grammarTip": "電話の定番表現です。",
+    "linkingTip": "speak with が「スピークウィズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0144",
+    "level": 300,
+    "category": "Travel",
+    "english": "The ticket arrived safely.",
+    "japanese": "チケットが無事に届きました。",
+    "vocabNotes": [
+      {
+        "word": "safely",
+        "meaning": "無事に"
+      }
+    ],
+    "grammarTip": "過去形と副詞の組み合わせです。",
+    "linkingTip": "arrived safely が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0145",
+    "level": 300,
+    "category": "Tech",
+    "english": "We need your ticket.",
+    "japanese": "あなたのおチケットが必要です。",
+    "vocabNotes": [
+      {
+        "word": "need",
+        "meaning": "必要とする"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "need your が「ニージョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0146",
+    "level": 300,
+    "category": "Daily",
+    "english": "Let's visit the branch.",
+    "japanese": "支店を訪問しましょう。",
+    "vocabNotes": [
+      {
+        "word": "visit",
+        "meaning": "訪問する"
+      }
+    ],
+    "grammarTip": "Let's 構文です。",
+    "linkingTip": "visit the がスムーズに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0147",
+    "level": 300,
+    "category": "Finance",
+    "english": "Please send me the ticket.",
+    "japanese": "チケットを送ってください。",
+    "vocabNotes": [
+      {
+        "word": "send",
+        "meaning": "送る"
+      }
+    ],
+    "grammarTip": "SVOO構文の命令文です。",
+    "linkingTip": "send me が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0148",
+    "level": 300,
+    "category": "Office",
+    "english": "Please review page five.",
+    "japanese": "ページfiveをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "review",
+        "meaning": "確認する、見直す"
+      }
+    ],
+    "grammarTip": "丁寧な依頼文です。",
+    "linkingTip": "review page が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0149",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "The meeting is at three.",
+    "japanese": "会議はthree時からです。",
+    "vocabNotes": [
+      {
+        "word": "meeting",
+        "meaning": "会議"
+      }
+    ],
+    "grammarTip": "時刻を表す at の用法です。",
+    "linkingTip": "is at が「イズアット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0150",
+    "level": 300,
+    "category": "Business",
+    "english": "We received the payment today.",
+    "japanese": "本日支払いを受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "receive",
+        "meaning": "受け取る"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "received が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0151",
+    "level": 300,
+    "category": "Travel",
+    "english": "Please check room five.",
+    "japanese": "five号室をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "check",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "check room が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0152",
+    "level": 300,
+    "category": "Tech",
+    "english": "The design is ready now.",
+    "japanese": "デザインの準備ができました。",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "be ready の構文です。",
+    "linkingTip": "is ready が「イズレディ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0153",
+    "level": 300,
+    "category": "Daily",
+    "english": "Can I speak with the director?",
+    "japanese": "ディレクターとお話しできますか？",
+    "vocabNotes": [
+      {
+        "word": "speak",
+        "meaning": "話す"
+      }
+    ],
+    "grammarTip": "電話の定番表現です。",
+    "linkingTip": "speak with が「スピークウィズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0154",
+    "level": 300,
+    "category": "Finance",
+    "english": "The design arrived safely.",
+    "japanese": "デザインが無事に届きました。",
+    "vocabNotes": [
+      {
+        "word": "safely",
+        "meaning": "無事に"
+      }
+    ],
+    "grammarTip": "過去形と副詞の組み合わせです。",
+    "linkingTip": "arrived safely が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0155",
+    "level": 300,
+    "category": "Office",
+    "english": "We need your design.",
+    "japanese": "あなたのおデザインが必要です。",
+    "vocabNotes": [
+      {
+        "word": "need",
+        "meaning": "必要とする"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "need your が「ニージョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0156",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Let's visit the showroom.",
+    "japanese": "ショールームを訪問しましょう。",
+    "vocabNotes": [
+      {
+        "word": "visit",
+        "meaning": "訪問する"
+      }
+    ],
+    "grammarTip": "Let's 構文です。",
+    "linkingTip": "visit the がスムーズに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0157",
+    "level": 300,
+    "category": "Business",
+    "english": "Please send me the design.",
+    "japanese": "デザインを送ってください。",
+    "vocabNotes": [
+      {
+        "word": "send",
+        "meaning": "送る"
+      }
+    ],
+    "grammarTip": "SVOO構文の命令文です。",
+    "linkingTip": "send me が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0158",
+    "level": 300,
+    "category": "Travel",
+    "english": "Please review page six.",
+    "japanese": "ページsixをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "review",
+        "meaning": "確認する、見直す"
+      }
+    ],
+    "grammarTip": "丁寧な依頼文です。",
+    "linkingTip": "review page が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0159",
+    "level": 300,
+    "category": "Tech",
+    "english": "The meeting is at four.",
+    "japanese": "会議はfour時からです。",
+    "vocabNotes": [
+      {
+        "word": "meeting",
+        "meaning": "会議"
+      }
+    ],
+    "grammarTip": "時刻を表す at の用法です。",
+    "linkingTip": "is at が「イズアット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0160",
+    "level": 300,
+    "category": "Daily",
+    "english": "We received the feedback today.",
+    "japanese": "本日フィードバックを受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "receive",
+        "meaning": "受け取る"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "received が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0161",
+    "level": 300,
+    "category": "Finance",
+    "english": "Please check room six.",
+    "japanese": "six号室をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "check",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "check room が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0162",
+    "level": 300,
+    "category": "Office",
+    "english": "The schedule is ready now.",
+    "japanese": "スケジュールの準備ができました。",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "be ready の構文です。",
+    "linkingTip": "is ready が「イズレディ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0163",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Can I speak with the lawyer?",
+    "japanese": "弁護士とお話しできますか？",
+    "vocabNotes": [
+      {
+        "word": "speak",
+        "meaning": "話す"
+      }
+    ],
+    "grammarTip": "電話の定番表現です。",
+    "linkingTip": "speak with が「スピークウィズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0164",
+    "level": 300,
+    "category": "Business",
+    "english": "The schedule arrived safely.",
+    "japanese": "スケジュールが無事に届きました。",
+    "vocabNotes": [
+      {
+        "word": "safely",
+        "meaning": "無事に"
+      }
+    ],
+    "grammarTip": "過去形と副詞の組み合わせです。",
+    "linkingTip": "arrived safely が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0165",
+    "level": 300,
+    "category": "Travel",
+    "english": "We need your schedule.",
+    "japanese": "あなたのおスケジュールが必要です。",
+    "vocabNotes": [
+      {
+        "word": "need",
+        "meaning": "必要とする"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "need your が「ニージョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0166",
+    "level": 300,
+    "category": "Tech",
+    "english": "Let's visit the headquarters.",
+    "japanese": "本社を訪問しましょう。",
+    "vocabNotes": [
+      {
+        "word": "visit",
+        "meaning": "訪問する"
+      }
+    ],
+    "grammarTip": "Let's 構文です。",
+    "linkingTip": "visit the がスムーズに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0167",
+    "level": 300,
+    "category": "Daily",
+    "english": "Please send me the schedule.",
+    "japanese": "スケジュールを送ってください。",
+    "vocabNotes": [
+      {
+        "word": "send",
+        "meaning": "送る"
+      }
+    ],
+    "grammarTip": "SVOO構文の命令文です。",
+    "linkingTip": "send me が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0168",
+    "level": 300,
+    "category": "Finance",
+    "english": "Please review page seven.",
+    "japanese": "ページsevenをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "review",
+        "meaning": "確認する、見直す"
+      }
+    ],
+    "grammarTip": "丁寧な依頼文です。",
+    "linkingTip": "review page が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0169",
+    "level": 300,
+    "category": "Office",
+    "english": "The meeting is at five.",
+    "japanese": "会議はfive時からです。",
+    "vocabNotes": [
+      {
+        "word": "meeting",
+        "meaning": "会議"
+      }
+    ],
+    "grammarTip": "時刻を表す at の用法です。",
+    "linkingTip": "is at が「イズアット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0170",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "We received the survey today.",
+    "japanese": "本日アンケートを受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "receive",
+        "meaning": "受け取る"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "received が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0171",
+    "level": 300,
+    "category": "Business",
+    "english": "Please check room seven.",
+    "japanese": "seven号室をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "check",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "check room が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0172",
+    "level": 300,
+    "category": "Travel",
+    "english": "The printer is ready now.",
+    "japanese": "プリンターの準備ができました。",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "be ready の構文です。",
+    "linkingTip": "is ready が「イズレディ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0173",
+    "level": 300,
+    "category": "Tech",
+    "english": "Can I speak with the client?",
+    "japanese": "クライアントとお話しできますか？",
+    "vocabNotes": [
+      {
+        "word": "speak",
+        "meaning": "話す"
+      }
+    ],
+    "grammarTip": "電話の定番表現です。",
+    "linkingTip": "speak with が「スピークウィズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0174",
+    "level": 300,
+    "category": "Daily",
+    "english": "The printer arrived safely.",
+    "japanese": "プリンターが無事に届きました。",
+    "vocabNotes": [
+      {
+        "word": "safely",
+        "meaning": "無事に"
+      }
+    ],
+    "grammarTip": "過去形と副詞の組み合わせです。",
+    "linkingTip": "arrived safely が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0175",
+    "level": 300,
+    "category": "Finance",
+    "english": "We need your printer.",
+    "japanese": "あなたのおプリンターが必要です。",
+    "vocabNotes": [
+      {
+        "word": "need",
+        "meaning": "必要とする"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "need your が「ニージョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0176",
+    "level": 300,
+    "category": "Office",
+    "english": "Let's visit the airport.",
+    "japanese": "空港を訪問しましょう。",
+    "vocabNotes": [
+      {
+        "word": "visit",
+        "meaning": "訪問する"
+      }
+    ],
+    "grammarTip": "Let's 構文です。",
+    "linkingTip": "visit the がスムーズに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0177",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Please send me the printer.",
+    "japanese": "プリンターを送ってください。",
+    "vocabNotes": [
+      {
+        "word": "send",
+        "meaning": "送る"
+      }
+    ],
+    "grammarTip": "SVOO構文の命令文です。",
+    "linkingTip": "send me が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0178",
+    "level": 300,
+    "category": "Business",
+    "english": "Please review page eight.",
+    "japanese": "ページeightをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "review",
+        "meaning": "確認する、見直す"
+      }
+    ],
+    "grammarTip": "丁寧な依頼文です。",
+    "linkingTip": "review page が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0179",
+    "level": 300,
+    "category": "Travel",
+    "english": "The meeting is at nine.",
+    "japanese": "会議はnine時からです。",
+    "vocabNotes": [
+      {
+        "word": "meeting",
+        "meaning": "会議"
+      }
+    ],
+    "grammarTip": "時刻を表す at の用法です。",
+    "linkingTip": "is at が「イズアット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0180",
+    "level": 300,
+    "category": "Tech",
+    "english": "We received the file today.",
+    "japanese": "本日ファイルを受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "receive",
+        "meaning": "受け取る"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "received が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0181",
+    "level": 300,
+    "category": "Daily",
+    "english": "Please check room eight.",
+    "japanese": "eight号室をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "check",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "check room が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0182",
+    "level": 300,
+    "category": "Finance",
+    "english": "The key is ready now.",
+    "japanese": "鍵の準備ができました。",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "be ready の構文です。",
+    "linkingTip": "is ready が「イズレディ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0183",
+    "level": 300,
+    "category": "Office",
+    "english": "Can I speak with the doctor?",
+    "japanese": "医師とお話しできますか？",
+    "vocabNotes": [
+      {
+        "word": "speak",
+        "meaning": "話す"
+      }
+    ],
+    "grammarTip": "電話の定番表現です。",
+    "linkingTip": "speak with が「スピークウィズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0184",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "The key arrived safely.",
+    "japanese": "鍵が無事に届きました。",
+    "vocabNotes": [
+      {
+        "word": "safely",
+        "meaning": "無事に"
+      }
+    ],
+    "grammarTip": "過去形と副詞の組み合わせです。",
+    "linkingTip": "arrived safely が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0185",
+    "level": 300,
+    "category": "Business",
+    "english": "We need your key.",
+    "japanese": "あなたのお鍵が必要です。",
+    "vocabNotes": [
+      {
+        "word": "need",
+        "meaning": "必要とする"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "need your が「ニージョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0186",
+    "level": 300,
+    "category": "Travel",
+    "english": "Let's visit the station.",
+    "japanese": "駅を訪問しましょう。",
+    "vocabNotes": [
+      {
+        "word": "visit",
+        "meaning": "訪問する"
+      }
+    ],
+    "grammarTip": "Let's 構文です。",
+    "linkingTip": "visit the がスムーズに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0187",
+    "level": 300,
+    "category": "Tech",
+    "english": "Please send me the key.",
+    "japanese": "鍵を送ってください。",
+    "vocabNotes": [
+      {
+        "word": "send",
+        "meaning": "送る"
+      }
+    ],
+    "grammarTip": "SVOO構文の命令文です。",
+    "linkingTip": "send me が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0188",
+    "level": 300,
+    "category": "Daily",
+    "english": "Please review page nine.",
+    "japanese": "ページnineをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "review",
+        "meaning": "確認する、見直す"
+      }
+    ],
+    "grammarTip": "丁寧な依頼文です。",
+    "linkingTip": "review page が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0189",
+    "level": 300,
+    "category": "Finance",
+    "english": "The meeting is at eleven.",
+    "japanese": "会議はeleven時からです。",
+    "vocabNotes": [
+      {
+        "word": "meeting",
+        "meaning": "会議"
+      }
+    ],
+    "grammarTip": "時刻を表す at の用法です。",
+    "linkingTip": "is at が「イズアット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0190",
+    "level": 300,
+    "category": "Office",
+    "english": "We received the sample today.",
+    "japanese": "本日サンプルを受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "receive",
+        "meaning": "受け取る"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "received が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0191",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Please check room nine.",
+    "japanese": "nine号室をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "check",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "check room が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0192",
+    "level": 300,
+    "category": "Business",
+    "english": "The badge is ready now.",
+    "japanese": "名札の準備ができました。",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "be ready の構文です。",
+    "linkingTip": "is ready が「イズレディ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0193",
+    "level": 300,
+    "category": "Travel",
+    "english": "Can I speak with the agent?",
+    "japanese": "代理人とお話しできますか？",
+    "vocabNotes": [
+      {
+        "word": "speak",
+        "meaning": "話す"
+      }
+    ],
+    "grammarTip": "電話の定番表現です。",
+    "linkingTip": "speak with が「スピークウィズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0194",
+    "level": 300,
+    "category": "Tech",
+    "english": "The badge arrived safely.",
+    "japanese": "名札が無事に届きました。",
+    "vocabNotes": [
+      {
+        "word": "safely",
+        "meaning": "無事に"
+      }
+    ],
+    "grammarTip": "過去形と副詞の組み合わせです。",
+    "linkingTip": "arrived safely が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0195",
+    "level": 300,
+    "category": "Daily",
+    "english": "We need your badge.",
+    "japanese": "あなたのお名札が必要です。",
+    "vocabNotes": [
+      {
+        "word": "need",
+        "meaning": "必要とする"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "need your が「ニージョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0196",
+    "level": 300,
+    "category": "Finance",
+    "english": "Let's visit the hotel.",
+    "japanese": "ホテルを訪問しましょう。",
+    "vocabNotes": [
+      {
+        "word": "visit",
+        "meaning": "訪問する"
+      }
+    ],
+    "grammarTip": "Let's 構文です。",
+    "linkingTip": "visit the がスムーズに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0197",
+    "level": 300,
+    "category": "Office",
+    "english": "Please send me the badge.",
+    "japanese": "名札を送ってください。",
+    "vocabNotes": [
+      {
+        "word": "send",
+        "meaning": "送る"
+      }
+    ],
+    "grammarTip": "SVOO構文の命令文です。",
+    "linkingTip": "send me が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0198",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "Please review page ten.",
+    "japanese": "ページtenをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "review",
+        "meaning": "確認する、見直す"
+      }
+    ],
+    "grammarTip": "丁寧な依頼文です。",
+    "linkingTip": "review page が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0199",
+    "level": 300,
+    "category": "Business",
+    "english": "The meeting is at noon.",
+    "japanese": "会議はnoon時からです。",
+    "vocabNotes": [
+      {
+        "word": "meeting",
+        "meaning": "会議"
+      }
+    ],
+    "grammarTip": "時刻を表す at の用法です。",
+    "linkingTip": "is at が「イズアット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0200",
+    "level": 300,
+    "category": "Travel",
+    "english": "We received the catalog today.",
+    "japanese": "本日カタログを受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "receive",
+        "meaning": "受け取る"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "received が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0201",
+    "level": 300,
+    "category": "Tech",
+    "english": "Please check room ten.",
+    "japanese": "ten号室をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "check",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "check room が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0202",
+    "level": 300,
+    "category": "Daily",
+    "english": "The memo is ready now.",
+    "japanese": "社内メモの準備ができました。",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "be ready の構文です。",
+    "linkingTip": "is ready が「イズレディ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0203",
+    "level": 300,
+    "category": "Finance",
+    "english": "Can I speak with the cashier?",
+    "japanese": "レジ係とお話しできますか？",
+    "vocabNotes": [
+      {
+        "word": "speak",
+        "meaning": "話す"
+      }
+    ],
+    "grammarTip": "電話の定番表現です。",
+    "linkingTip": "speak with が「スピークウィズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0204",
+    "level": 300,
+    "category": "Office",
+    "english": "The memo arrived safely.",
+    "japanese": "社内メモが無事に届きました。",
+    "vocabNotes": [
+      {
+        "word": "safely",
+        "meaning": "無事に"
+      }
+    ],
+    "grammarTip": "過去形と副詞の組み合わせです。",
+    "linkingTip": "arrived safely が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0205",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "We need your memo.",
+    "japanese": "あなたのお社内メモが必要です。",
+    "vocabNotes": [
+      {
+        "word": "need",
+        "meaning": "必要とする"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "need your が「ニージョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0206",
+    "level": 300,
+    "category": "Business",
+    "english": "Let's visit the store.",
+    "japanese": "店舗を訪問しましょう。",
+    "vocabNotes": [
+      {
+        "word": "visit",
+        "meaning": "訪問する"
+      }
+    ],
+    "grammarTip": "Let's 構文です。",
+    "linkingTip": "visit the がスムーズに発音されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0207",
+    "level": 300,
+    "category": "Travel",
+    "english": "Please send me the memo.",
+    "japanese": "社内メモを送ってください。",
+    "vocabNotes": [
+      {
+        "word": "send",
+        "meaning": "送る"
+      }
+    ],
+    "grammarTip": "SVOO構文の命令文です。",
+    "linkingTip": "send me が自然に繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0208",
+    "level": 300,
+    "category": "Tech",
+    "english": "Please review page one.",
+    "japanese": "ページoneをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "review",
+        "meaning": "確認する、見直す"
+      }
+    ],
+    "grammarTip": "丁寧な依頼文です。",
+    "linkingTip": "review page が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0209",
+    "level": 300,
+    "category": "Daily",
+    "english": "The meeting is at eight.",
+    "japanese": "会議はeight時からです。",
+    "vocabNotes": [
+      {
+        "word": "meeting",
+        "meaning": "会議"
+      }
+    ],
+    "grammarTip": "時刻を表す at の用法です。",
+    "linkingTip": "is at が「イズアット」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0210",
+    "level": 300,
+    "category": "Finance",
+    "english": "We received the draft today.",
+    "japanese": "本日下書きを受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "receive",
+        "meaning": "受け取る"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "received が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0211",
+    "level": 300,
+    "category": "Office",
+    "english": "Please check room one.",
+    "japanese": "one号室をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "check",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "check room が自然に発話されます。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0212",
+    "level": 300,
+    "category": "Customer Service",
+    "english": "The pass is ready now.",
+    "japanese": "入館証の準備ができました。",
+    "vocabNotes": [
+      {
+        "word": "ready",
+        "meaning": "準備ができた"
+      }
+    ],
+    "grammarTip": "be ready の構文です。",
+    "linkingTip": "is ready が「イズレディ」と連結します。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0213",
+    "level": 300,
+    "category": "Business",
+    "english": "Can I speak with the guard?",
+    "japanese": "警備員とお話しできますか？",
+    "vocabNotes": [
+      {
+        "word": "speak",
+        "meaning": "話す"
+      }
+    ],
+    "grammarTip": "電話の定番表現です。",
+    "linkingTip": "speak with が「スピークウィズ」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0214",
+    "level": 300,
+    "category": "Travel",
+    "english": "The pass arrived safely.",
+    "japanese": "入館証が無事に届きました。",
+    "vocabNotes": [
+      {
+        "word": "safely",
+        "meaning": "無事に"
+      }
+    ],
+    "grammarTip": "過去形と副詞の組み合わせです。",
+    "linkingTip": "arrived safely が滑らかに繋がります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s300-0215",
+    "level": 300,
+    "category": "Tech",
+    "english": "We need your pass.",
+    "japanese": "あなたのお入館証が必要です。",
+    "vocabNotes": [
+      {
+        "word": "need",
+        "meaning": "必要とする"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "need your が「ニージョア」となります。",
+    "speedDefault": 0.82
+  },
+  {
+    "id": "s400-0001",
+    "level": 400,
+    "category": "Office",
+    "english": "The morning meeting starts at ten.",
+    "japanese": "朝の会議は10時に始まります。",
+    "vocabNotes": [
+      {
+        "word": "meeting",
+        "meaning": "会議"
+      }
+    ],
+    "grammarTip": "時制と時刻を表す at の文です。",
+    "linkingTip": "starts at が「スターツアット」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0002",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "Please check your email before leaving.",
+    "japanese": "退社する前にメールをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "leave",
+        "meaning": "去る、退社する"
+      }
+    ],
+    "grammarTip": "前置詞 before + 動名詞の文です。",
+    "linkingTip": "check your が「チェッキョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0003",
+    "level": 400,
+    "category": "Business",
+    "english": "Our team completed the project today.",
+    "japanese": "私たちのチームは本日プロジェクトを完了しました。",
+    "vocabNotes": [
+      {
+        "word": "complete",
+        "meaning": "完了する"
+      }
+    ],
+    "grammarTip": "SVO過去形文です。",
+    "linkingTip": "completed the が自然に繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0004",
+    "level": 400,
+    "category": "Travel",
+    "english": "She is giving a short presentation.",
+    "japanese": "彼女は短いプレゼンテーションを行っています。",
+    "vocabNotes": [
+      {
+        "word": "presentation",
+        "meaning": "プレゼンテーション"
+      }
+    ],
+    "grammarTip": "現在進行形です。",
+    "linkingTip": "giving a が「ギヴィンガ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0005",
+    "level": 400,
+    "category": "Tech",
+    "english": "All employees must wear safety glasses.",
+    "japanese": "全従業員は保護メガネを着用しなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "employee",
+        "meaning": "従業員"
+      },
+      {
+        "word": "wear",
+        "meaning": "着用する"
+      }
+    ],
+    "grammarTip": "助動詞 must の用法です。",
+    "linkingTip": "must wear が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0006",
+    "level": 400,
+    "category": "Daily",
+    "english": "The new store opens next Monday.",
+    "japanese": "新しい店舗は来週の月曜日に開店します。",
+    "vocabNotes": [
+      {
+        "word": "store",
+        "meaning": "店舗"
+      }
+    ],
+    "grammarTip": "確定した未来を表す現在形です。",
+    "linkingTip": "opens next がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0007",
+    "level": 400,
+    "category": "Finance",
+    "english": "Could you help me with this?",
+    "japanese": "これを手伝っていただけますか？",
+    "vocabNotes": [
+      {
+        "word": "help",
+        "meaning": "手伝う"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you です。",
+    "linkingTip": "Could you が「クッジュ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0008",
+    "level": 400,
+    "category": "Office",
+    "english": "I would like to order lunch.",
+    "japanese": "昼食を注文したいのですが。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "丁寧な願望表現 would like to です。",
+    "linkingTip": "would like が「ウッドライク」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0009",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "The flight was delayed by snow.",
+    "japanese": "雪のためフライトが遅れました。",
+    "vocabNotes": [
+      {
+        "word": "delay",
+        "meaning": "遅らせる"
+      }
+    ],
+    "grammarTip": "受動態 + 原因の by です。",
+    "linkingTip": "was delayed が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0010",
+    "level": 400,
+    "category": "Business",
+    "english": "Please submit your report by Friday.",
+    "japanese": "金曜日までにレポートを提出してください。",
+    "vocabNotes": [
+      {
+        "word": "submit",
+        "meaning": "提出する"
+      }
+    ],
+    "grammarTip": "期限を表す前置詞 by の用法です。",
+    "linkingTip": "submit your が「サブミッチャ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0011",
+    "level": 400,
+    "category": "Travel",
+    "english": "We had a very productive discussion.",
+    "japanese": "私たちは非常に有意義な議論を行いました。",
+    "vocabNotes": [
+      {
+        "word": "productive",
+        "meaning": "生産的な"
+      },
+      {
+        "word": "discussion",
+        "meaning": "議論"
+      }
+    ],
+    "grammarTip": "形容詞修飾のSVO文です。",
+    "linkingTip": "had a が「ハダ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0012",
+    "level": 400,
+    "category": "Tech",
+    "english": "He works in the marketing department.",
+    "japanese": "彼はマーケティング部門で働いています。",
+    "vocabNotes": [
+      {
+        "word": "department",
+        "meaning": "部署、部門"
+      }
+    ],
+    "grammarTip": "所属を表す in の用法です。",
+    "linkingTip": "works in が「ワークスイン」と繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0013",
+    "level": 400,
+    "category": "Daily",
+    "english": "The printer on the desk broke.",
+    "japanese": "机の上のプリンターが故障しました。",
+    "vocabNotes": [
+      {
+        "word": "break",
+        "meaning": "壊れる"
+      }
+    ],
+    "grammarTip": "主語を前置詞句が修飾する形です。",
+    "linkingTip": "printer on が「プリンターロン」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0014",
+    "level": 400,
+    "category": "Finance",
+    "english": "Please leave your coat in hallway.",
+    "japanese": "廊下にコートを置いていってください。",
+    "vocabNotes": [
+      {
+        "word": "hallway",
+        "meaning": "廊下"
+      }
+    ],
+    "grammarTip": "丁寧な指示の命令文です。",
+    "linkingTip": "leave your が「リーヴジョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0015",
+    "level": 400,
+    "category": "Office",
+    "english": "I forgot my password this morning.",
+    "japanese": "今朝パスワードを忘れてしまいました。",
+    "vocabNotes": [
+      {
+        "word": "forget",
+        "meaning": "忘れる"
+      }
+    ],
+    "grammarTip": "forget の過去形 forgot です。",
+    "linkingTip": "forgot my が自然に発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0016",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "The manager will arrive very soon.",
+    "japanese": "マネージャーは間もなく到着します。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      },
+      {
+        "word": "soon",
+        "meaning": "すぐに"
+      }
+    ],
+    "grammarTip": "will + 原形動詞の未来文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0017",
+    "level": 400,
+    "category": "Business",
+    "english": "Let's meet in the lobby downstairs.",
+    "japanese": "下の階のロビーで会いましょう。",
+    "vocabNotes": [
+      {
+        "word": "downstairs",
+        "meaning": "階下に"
+      }
+    ],
+    "grammarTip": "場所の副詞 downstairs です。",
+    "linkingTip": "meet in が「ミーティン」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0018",
+    "level": 400,
+    "category": "Travel",
+    "english": "She answered every question very clearly.",
+    "japanese": "彼女はすべての質問に非常に明瞭に答えました。",
+    "vocabNotes": [
+      {
+        "word": "clearly",
+        "meaning": "明瞭に"
+      }
+    ],
+    "grammarTip": "動詞修飾の副詞 clearly です。",
+    "linkingTip": "answered every が自然に繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0019",
+    "level": 400,
+    "category": "Tech",
+    "english": "The train will leave in minutes.",
+    "japanese": "電車は数分後に出発します。",
+    "vocabNotes": [
+      {
+        "word": "leave",
+        "meaning": "出発する"
+      }
+    ],
+    "grammarTip": "時間経過を表す in です。",
+    "linkingTip": "will leave が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0020",
+    "level": 400,
+    "category": "Daily",
+    "english": "We need to hire more engineers.",
+    "japanese": "私たちはエンジニアをもっと採用する必要があります。",
+    "vocabNotes": [
+      {
+        "word": "hire",
+        "meaning": "採用する"
+      },
+      {
+        "word": "engineer",
+        "meaning": "エンジニア"
+      }
+    ],
+    "grammarTip": "need to + 動詞の原形です。",
+    "linkingTip": "need to が「ニードゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0021",
+    "level": 400,
+    "category": "Finance",
+    "english": "Please review the attached invoice carefully.",
+    "japanese": "添付された請求書を注意深くご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "attach",
+        "meaning": "添付する"
+      },
+      {
+        "word": "invoice",
+        "meaning": "請求書"
+      }
+    ],
+    "grammarTip": "過去分詞の形容詞用法 attached です。",
+    "linkingTip": "attached invoice が「アタッチトインヴォイス」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0022",
+    "level": 400,
+    "category": "Office",
+    "english": "The customer asked for a discount.",
+    "japanese": "お客様は割引を求められました。",
+    "vocabNotes": [
+      {
+        "word": "discount",
+        "meaning": "割引"
+      }
+    ],
+    "grammarTip": "ask for（〜を求める）の過去形です。",
+    "linkingTip": "asked for が「アスクフォア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0023",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "We reached our quarterly sales goal.",
+    "japanese": "私たちは四半期の売上目標を達成しました。",
+    "vocabNotes": [
+      {
+        "word": "quarterly",
+        "meaning": "四半期の"
+      },
+      {
+        "word": "goal",
+        "meaning": "目標"
+      }
+    ],
+    "grammarTip": "ビジネス重要語 quarterly の用法です。",
+    "linkingTip": "reached our が「リーチタワー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0024",
+    "level": 400,
+    "category": "Business",
+    "english": "Can you send me the contract?",
+    "japanese": "契約書を私に送っていただけますか？",
+    "vocabNotes": [
+      {
+        "word": "contract",
+        "meaning": "契約書"
+      }
+    ],
+    "grammarTip": "SVOO構文の疑問文です。",
+    "linkingTip": "send me がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0025",
+    "level": 400,
+    "category": "Travel",
+    "english": "The express bus stops right here.",
+    "japanese": "急行バスはちょうどここに止まります。",
+    "vocabNotes": [
+      {
+        "word": "express",
+        "meaning": "急行の"
+      }
+    ],
+    "grammarTip": "場所を強調する right の用法です。",
+    "linkingTip": "stops right の p が軽く発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0026",
+    "level": 400,
+    "category": "Tech",
+    "english": "I have an appointment at two.",
+    "japanese": "2時に予約（約束）があります。",
+    "vocabNotes": [
+      {
+        "word": "appointment",
+        "meaning": "約束、予約"
+      }
+    ],
+    "grammarTip": "have an + 母音始まり名詞です。",
+    "linkingTip": "have an が「ハヴァン」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0027",
+    "level": 400,
+    "category": "Daily",
+    "english": "The conference will start on time.",
+    "japanese": "会議は定刻通りに始まります。",
+    "vocabNotes": [
+      {
+        "word": "conference",
+        "meaning": "会議"
+      },
+      {
+        "word": "on time",
+        "meaning": "定刻に"
+      }
+    ],
+    "grammarTip": "頻出成句 on time です。",
+    "linkingTip": "will start が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0028",
+    "level": 400,
+    "category": "Finance",
+    "english": "Please turn down the music slightly.",
+    "japanese": "音楽の音量を少し下げてください。",
+    "vocabNotes": [
+      {
+        "word": "turn down",
+        "meaning": "音量を下げる"
+      }
+    ],
+    "grammarTip": "群動詞 turn down の用法です。",
+    "linkingTip": "turn down が「ターンダウン」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0029",
+    "level": 400,
+    "category": "Office",
+    "english": "The package was delivered this afternoon.",
+    "japanese": "荷物は今日の午後に配達されました。",
+    "vocabNotes": [
+      {
+        "word": "deliver",
+        "meaning": "配達する"
+      }
+    ],
+    "grammarTip": "過去受動態です。",
+    "linkingTip": "was delivered が自然に発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0030",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "We are launching a new product.",
+    "japanese": "私たちは新製品を発売（ローンチ）します。",
+    "vocabNotes": [
+      {
+        "word": "launch",
+        "meaning": "発売する、立ち上げる"
+      }
+    ],
+    "grammarTip": "現在進行形による予定・進行です。",
+    "linkingTip": "launching a が「ローンチンガ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0031",
+    "level": 400,
+    "category": "Business",
+    "english": "Please confirm your reservation before noon.",
+    "japanese": "noon時までに予約をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0032",
+    "level": 400,
+    "category": "Travel",
+    "english": "The new reservation will arrive tomorrow.",
+    "japanese": "新しい予約は明日に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0033",
+    "level": 400,
+    "category": "Tech",
+    "english": "Our team decided to cancel the reservation.",
+    "japanese": "私たちのチームは予約をキャンセルすることに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0034",
+    "level": 400,
+    "category": "Daily",
+    "english": "Could you please sign the reservation now?",
+    "japanese": "今すぐ予約にご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0035",
+    "level": 400,
+    "category": "Finance",
+    "english": "The reservation was repaired by our technician.",
+    "japanese": "予約は技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0036",
+    "level": 400,
+    "category": "Office",
+    "english": "We should order more reservation for tomorrow.",
+    "japanese": "明日のためにもっと予約を注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0037",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "She will lead the reservation next week.",
+    "japanese": "彼女は来週予約を主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0038",
+    "level": 400,
+    "category": "Business",
+    "english": "Please keep your reservation inside the room.",
+    "japanese": "予約を部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0039",
+    "level": 400,
+    "category": "Travel",
+    "english": "The price of reservation increased last month.",
+    "japanese": "予約の価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0040",
+    "level": 400,
+    "category": "Tech",
+    "english": "We must finish the reservation by noon.",
+    "japanese": "私たちは正午までに予約を終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0041",
+    "level": 400,
+    "category": "Daily",
+    "english": "Please confirm your schedule before five.",
+    "japanese": "five時までに予定をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0042",
+    "level": 400,
+    "category": "Finance",
+    "english": "The new schedule will arrive on Monday.",
+    "japanese": "新しい予定は月曜日に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0043",
+    "level": 400,
+    "category": "Office",
+    "english": "Our team decided to change the schedule.",
+    "japanese": "私たちのチームは予定を変更することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0044",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "Could you please sign the schedule now?",
+    "japanese": "今すぐ予定にご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0045",
+    "level": 400,
+    "category": "Business",
+    "english": "The schedule was repaired by our technician.",
+    "japanese": "予定は技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0046",
+    "level": 400,
+    "category": "Travel",
+    "english": "We should order more schedule for tomorrow.",
+    "japanese": "明日のためにもっと予定を注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0047",
+    "level": 400,
+    "category": "Tech",
+    "english": "She will lead the schedule next week.",
+    "japanese": "彼女は来週予定を主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0048",
+    "level": 400,
+    "category": "Daily",
+    "english": "Please keep your schedule inside the room.",
+    "japanese": "予定を部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0049",
+    "level": 400,
+    "category": "Finance",
+    "english": "The price of schedule increased last month.",
+    "japanese": "予定の価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0050",
+    "level": 400,
+    "category": "Office",
+    "english": "We must finish the schedule by noon.",
+    "japanese": "私たちは正午までに予定を終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0051",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "Please confirm your contract before three.",
+    "japanese": "three時までに契約書をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0052",
+    "level": 400,
+    "category": "Business",
+    "english": "The new contract will arrive next Tuesday.",
+    "japanese": "新しい契約書は来週火曜日に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0053",
+    "level": 400,
+    "category": "Travel",
+    "english": "Our team decided to accept the contract.",
+    "japanese": "私たちのチームは契約書を承認することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0054",
+    "level": 400,
+    "category": "Tech",
+    "english": "Could you please sign the contract now?",
+    "japanese": "今すぐ契約書にご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0055",
+    "level": 400,
+    "category": "Daily",
+    "english": "The contract was repaired by our technician.",
+    "japanese": "契約書は技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0056",
+    "level": 400,
+    "category": "Finance",
+    "english": "We should order more contract for tomorrow.",
+    "japanese": "明日のためにもっと契約書を注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0057",
+    "level": 400,
+    "category": "Office",
+    "english": "She will lead the contract next week.",
+    "japanese": "彼女は来週契約書を主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0058",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "Please keep your contract inside the room.",
+    "japanese": "契約書を部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0059",
+    "level": 400,
+    "category": "Business",
+    "english": "The price of contract increased last month.",
+    "japanese": "契約書の価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0060",
+    "level": 400,
+    "category": "Travel",
+    "english": "We must finish the contract by noon.",
+    "japanese": "私たちは正午までに契約書を終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0061",
+    "level": 400,
+    "category": "Tech",
+    "english": "Please confirm your computer before four.",
+    "japanese": "four時までにパソコンをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0062",
+    "level": 400,
+    "category": "Daily",
+    "english": "The new computer will arrive this Friday.",
+    "japanese": "新しいパソコンは今週金曜日に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0063",
+    "level": 400,
+    "category": "Finance",
+    "english": "Our team decided to replace the computer.",
+    "japanese": "私たちのチームはパソコンを交換することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0064",
+    "level": 400,
+    "category": "Office",
+    "english": "Could you please sign the computer now?",
+    "japanese": "今すぐパソコンにご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0065",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "The computer was repaired by our technician.",
+    "japanese": "パソコンは技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0066",
+    "level": 400,
+    "category": "Business",
+    "english": "We should order more computer for tomorrow.",
+    "japanese": "明日のためにもっとパソコンを注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0067",
+    "level": 400,
+    "category": "Travel",
+    "english": "She will lead the computer next week.",
+    "japanese": "彼女は来週パソコンを主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0068",
+    "level": 400,
+    "category": "Tech",
+    "english": "Please keep your computer inside the room.",
+    "japanese": "パソコンを部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0069",
+    "level": 400,
+    "category": "Daily",
+    "english": "The price of computer increased last month.",
+    "japanese": "パソコンの価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0070",
+    "level": 400,
+    "category": "Finance",
+    "english": "We must finish the computer by noon.",
+    "japanese": "私たちは正午までにパソコンを終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0071",
+    "level": 400,
+    "category": "Office",
+    "english": "Please confirm your report before ten.",
+    "japanese": "ten時までに報告書をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0072",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "The new report will arrive tonight.",
+    "japanese": "新しい報告書は今夜に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0073",
+    "level": 400,
+    "category": "Business",
+    "english": "Our team decided to update the report.",
+    "japanese": "私たちのチームは報告書を更新することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0074",
+    "level": 400,
+    "category": "Travel",
+    "english": "Could you please sign the report now?",
+    "japanese": "今すぐ報告書にご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0075",
+    "level": 400,
+    "category": "Tech",
+    "english": "The report was repaired by our technician.",
+    "japanese": "報告書は技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0076",
+    "level": 400,
+    "category": "Daily",
+    "english": "We should order more report for tomorrow.",
+    "japanese": "明日のためにもっと報告書を注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0077",
+    "level": 400,
+    "category": "Finance",
+    "english": "She will lead the report next week.",
+    "japanese": "彼女は来週報告書を主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0078",
+    "level": 400,
+    "category": "Office",
+    "english": "Please keep your report inside the room.",
+    "japanese": "報告書を部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0079",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "The price of report increased last month.",
+    "japanese": "報告書の価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0080",
+    "level": 400,
+    "category": "Business",
+    "english": "We must finish the report by noon.",
+    "japanese": "私たちは正午までに報告書を終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0081",
+    "level": 400,
+    "category": "Travel",
+    "english": "Please confirm your machine before two.",
+    "japanese": "two時までに機械をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0082",
+    "level": 400,
+    "category": "Tech",
+    "english": "The new machine will arrive this morning.",
+    "japanese": "新しい機械は今朝に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0083",
+    "level": 400,
+    "category": "Daily",
+    "english": "Our team decided to inspect the machine.",
+    "japanese": "私たちのチームは機械を点検することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0084",
+    "level": 400,
+    "category": "Finance",
+    "english": "Could you please sign the machine now?",
+    "japanese": "今すぐ機械にご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0085",
+    "level": 400,
+    "category": "Office",
+    "english": "The machine was repaired by our technician.",
+    "japanese": "機械は技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0086",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "We should order more machine for tomorrow.",
+    "japanese": "明日のためにもっと機械を注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0087",
+    "level": 400,
+    "category": "Business",
+    "english": "She will lead the machine next week.",
+    "japanese": "彼女は来週機械を主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0088",
+    "level": 400,
+    "category": "Travel",
+    "english": "Please keep your machine inside the room.",
+    "japanese": "機械を部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0089",
+    "level": 400,
+    "category": "Tech",
+    "english": "The price of machine increased last month.",
+    "japanese": "機械の価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0090",
+    "level": 400,
+    "category": "Daily",
+    "english": "We must finish the machine by noon.",
+    "japanese": "私たちは正午までに機械を終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0091",
+    "level": 400,
+    "category": "Finance",
+    "english": "Please confirm your proposal before six.",
+    "japanese": "six時までに提案書をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0092",
+    "level": 400,
+    "category": "Office",
+    "english": "The new proposal will arrive next week.",
+    "japanese": "新しい提案書は来週に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0093",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "Our team decided to submit the proposal.",
+    "japanese": "私たちのチームは提案書を提出することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0094",
+    "level": 400,
+    "category": "Business",
+    "english": "Could you please sign the proposal now?",
+    "japanese": "今すぐ提案書にご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0095",
+    "level": 400,
+    "category": "Travel",
+    "english": "The proposal was repaired by our technician.",
+    "japanese": "提案書は技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0096",
+    "level": 400,
+    "category": "Tech",
+    "english": "We should order more proposal for tomorrow.",
+    "japanese": "明日のためにもっと提案書を注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0097",
+    "level": 400,
+    "category": "Daily",
+    "english": "She will lead the proposal next week.",
+    "japanese": "彼女は来週提案書を主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0098",
+    "level": 400,
+    "category": "Finance",
+    "english": "Please keep your proposal inside the room.",
+    "japanese": "提案書を部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0099",
+    "level": 400,
+    "category": "Office",
+    "english": "The price of proposal increased last month.",
+    "japanese": "提案書の価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0100",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "We must finish the proposal by noon.",
+    "japanese": "私たちは正午までに提案書を終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0101",
+    "level": 400,
+    "category": "Business",
+    "english": "Please confirm your printer before one.",
+    "japanese": "one時までにプリンターをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0102",
+    "level": 400,
+    "category": "Travel",
+    "english": "The new printer will arrive soon.",
+    "japanese": "新しいプリンターは間もなくに届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0103",
+    "level": 400,
+    "category": "Tech",
+    "english": "Our team decided to fix the printer.",
+    "japanese": "私たちのチームはプリンターを修理することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0104",
+    "level": 400,
+    "category": "Daily",
+    "english": "Could you please sign the printer now?",
+    "japanese": "今すぐプリンターにご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0105",
+    "level": 400,
+    "category": "Finance",
+    "english": "The printer was repaired by our technician.",
+    "japanese": "プリンターは技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0106",
+    "level": 400,
+    "category": "Office",
+    "english": "We should order more printer for tomorrow.",
+    "japanese": "明日のためにもっとプリンターを注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0107",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "She will lead the printer next week.",
+    "japanese": "彼女は来週プリンターを主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0108",
+    "level": 400,
+    "category": "Business",
+    "english": "Please keep your printer inside the room.",
+    "japanese": "プリンターを部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0109",
+    "level": 400,
+    "category": "Travel",
+    "english": "The price of printer increased last month.",
+    "japanese": "プリンターの価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0110",
+    "level": 400,
+    "category": "Tech",
+    "english": "We must finish the printer by noon.",
+    "japanese": "私たちは正午までにプリンターを終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0111",
+    "level": 400,
+    "category": "Daily",
+    "english": "Please confirm your invoice before eleven.",
+    "japanese": "eleven時までに請求書をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0112",
+    "level": 400,
+    "category": "Finance",
+    "english": "The new invoice will arrive next month.",
+    "japanese": "新しい請求書は来月に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0113",
+    "level": 400,
+    "category": "Office",
+    "english": "Our team decided to send the invoice.",
+    "japanese": "私たちのチームは請求書を送信することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0114",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "Could you please sign the invoice now?",
+    "japanese": "今すぐ請求書にご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0115",
+    "level": 400,
+    "category": "Business",
+    "english": "The invoice was repaired by our technician.",
+    "japanese": "請求書は技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0116",
+    "level": 400,
+    "category": "Travel",
+    "english": "We should order more invoice for tomorrow.",
+    "japanese": "明日のためにもっと請求書を注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0117",
+    "level": 400,
+    "category": "Tech",
+    "english": "She will lead the invoice next week.",
+    "japanese": "彼女は来週請求書を主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0118",
+    "level": 400,
+    "category": "Daily",
+    "english": "Please keep your invoice inside the room.",
+    "japanese": "請求書を部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0119",
+    "level": 400,
+    "category": "Finance",
+    "english": "The price of invoice increased last month.",
+    "japanese": "請求書の価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0120",
+    "level": 400,
+    "category": "Office",
+    "english": "We must finish the invoice by noon.",
+    "japanese": "私たちは正午までに請求書を終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0121",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "Please confirm your ticket before nine.",
+    "japanese": "nine時までにチケットをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0122",
+    "level": 400,
+    "category": "Business",
+    "english": "The new ticket will arrive this afternoon.",
+    "japanese": "新しいチケットは今日の午後に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0123",
+    "level": 400,
+    "category": "Travel",
+    "english": "Our team decided to print the ticket.",
+    "japanese": "私たちのチームはチケットを印刷することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0124",
+    "level": 400,
+    "category": "Tech",
+    "english": "Could you please sign the ticket now?",
+    "japanese": "今すぐチケットにご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0125",
+    "level": 400,
+    "category": "Daily",
+    "english": "The ticket was repaired by our technician.",
+    "japanese": "チケットは技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0126",
+    "level": 400,
+    "category": "Finance",
+    "english": "We should order more ticket for tomorrow.",
+    "japanese": "明日のためにもっとチケットを注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0127",
+    "level": 400,
+    "category": "Office",
+    "english": "She will lead the ticket next week.",
+    "japanese": "彼女は来週チケットを主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0128",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "Please keep your ticket inside the room.",
+    "japanese": "チケットを部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0129",
+    "level": 400,
+    "category": "Business",
+    "english": "The price of ticket increased last month.",
+    "japanese": "チケットの価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0130",
+    "level": 400,
+    "category": "Travel",
+    "english": "We must finish the ticket by noon.",
+    "japanese": "私たちは正午までにチケットを終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0131",
+    "level": 400,
+    "category": "Tech",
+    "english": "Please confirm your document before seven.",
+    "japanese": "seven時までに書類をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0132",
+    "level": 400,
+    "category": "Daily",
+    "english": "The new document will arrive on Thursday.",
+    "japanese": "新しい書類は木曜日に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0133",
+    "level": 400,
+    "category": "Finance",
+    "english": "Our team decided to review the document.",
+    "japanese": "私たちのチームは書類を確認することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0134",
+    "level": 400,
+    "category": "Office",
+    "english": "Could you please sign the document now?",
+    "japanese": "今すぐ書類にご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0135",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "The document was repaired by our technician.",
+    "japanese": "書類は技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0136",
+    "level": 400,
+    "category": "Business",
+    "english": "We should order more document for tomorrow.",
+    "japanese": "明日のためにもっと書類を注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0137",
+    "level": 400,
+    "category": "Travel",
+    "english": "She will lead the document next week.",
+    "japanese": "彼女は来週書類を主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0138",
+    "level": 400,
+    "category": "Tech",
+    "english": "Please keep your document inside the room.",
+    "japanese": "書類を部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0139",
+    "level": 400,
+    "category": "Daily",
+    "english": "The price of document increased last month.",
+    "japanese": "書類の価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0140",
+    "level": 400,
+    "category": "Finance",
+    "english": "We must finish the document by noon.",
+    "japanese": "私たちは正午までに書類を終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0141",
+    "level": 400,
+    "category": "Office",
+    "english": "Please confirm your badge before eight.",
+    "japanese": "eight時までに名札をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0142",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "The new badge will arrive on Wednesday.",
+    "japanese": "新しい名札は水曜日に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0143",
+    "level": 400,
+    "category": "Business",
+    "english": "Our team decided to wear the badge.",
+    "japanese": "私たちのチームは名札を着用することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0144",
+    "level": 400,
+    "category": "Travel",
+    "english": "Could you please sign the badge now?",
+    "japanese": "今すぐ名札にご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0145",
+    "level": 400,
+    "category": "Tech",
+    "english": "The badge was repaired by our technician.",
+    "japanese": "名札は技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0146",
+    "level": 400,
+    "category": "Daily",
+    "english": "We should order more badge for tomorrow.",
+    "japanese": "明日のためにもっと名札を注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0147",
+    "level": 400,
+    "category": "Finance",
+    "english": "She will lead the badge next week.",
+    "japanese": "彼女は来週名札を主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0148",
+    "level": 400,
+    "category": "Office",
+    "english": "Please keep your badge inside the room.",
+    "japanese": "名札を部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0149",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "The price of badge increased last month.",
+    "japanese": "名札の価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0150",
+    "level": 400,
+    "category": "Business",
+    "english": "We must finish the badge by noon.",
+    "japanese": "私たちは正午までに名札を終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0151",
+    "level": 400,
+    "category": "Travel",
+    "english": "Please confirm your device before five.",
+    "japanese": "five時までに端末をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0152",
+    "level": 400,
+    "category": "Tech",
+    "english": "The new device will arrive next Friday.",
+    "japanese": "新しい端末は来週金曜日に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0153",
+    "level": 400,
+    "category": "Daily",
+    "english": "Our team decided to return the device.",
+    "japanese": "私たちのチームは端末を返却することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0154",
+    "level": 400,
+    "category": "Finance",
+    "english": "Could you please sign the device now?",
+    "japanese": "今すぐ端末にご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0155",
+    "level": 400,
+    "category": "Office",
+    "english": "The device was repaired by our technician.",
+    "japanese": "端末は技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0156",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "We should order more device for tomorrow.",
+    "japanese": "明日のためにもっと端末を注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0157",
+    "level": 400,
+    "category": "Business",
+    "english": "She will lead the device next week.",
+    "japanese": "彼女は来週端末を主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0158",
+    "level": 400,
+    "category": "Travel",
+    "english": "Please keep your device inside the room.",
+    "japanese": "端末を部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0159",
+    "level": 400,
+    "category": "Tech",
+    "english": "The price of device increased last month.",
+    "japanese": "端末の価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0160",
+    "level": 400,
+    "category": "Daily",
+    "english": "We must finish the device by noon.",
+    "japanese": "私たちは正午までに端末を終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0161",
+    "level": 400,
+    "category": "Finance",
+    "english": "Please confirm your survey before noon.",
+    "japanese": "noon時までにアンケートをご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0162",
+    "level": 400,
+    "category": "Office",
+    "english": "The new survey will arrive by tomorrow.",
+    "japanese": "新しいアンケートは明日までに届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0163",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "Our team decided to complete the survey.",
+    "japanese": "私たちのチームはアンケートを記入することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0164",
+    "level": 400,
+    "category": "Business",
+    "english": "Could you please sign the survey now?",
+    "japanese": "今すぐアンケートにご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0165",
+    "level": 400,
+    "category": "Travel",
+    "english": "The survey was repaired by our technician.",
+    "japanese": "アンケートは技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0166",
+    "level": 400,
+    "category": "Tech",
+    "english": "We should order more survey for tomorrow.",
+    "japanese": "明日のためにもっとアンケートを注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0167",
+    "level": 400,
+    "category": "Daily",
+    "english": "She will lead the survey next week.",
+    "japanese": "彼女は来週アンケートを主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0168",
+    "level": 400,
+    "category": "Finance",
+    "english": "Please keep your survey inside the room.",
+    "japanese": "アンケートを部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0169",
+    "level": 400,
+    "category": "Office",
+    "english": "The price of survey increased last month.",
+    "japanese": "アンケートの価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0170",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "We must finish the survey by noon.",
+    "japanese": "私たちは正午までにアンケートを終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0171",
+    "level": 400,
+    "category": "Business",
+    "english": "Please confirm your budget before four.",
+    "japanese": "four時までに予算案をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "confirm",
+        "meaning": "確認する"
+      }
+    ],
+    "grammarTip": "前置詞 before による期限指定です。",
+    "linkingTip": "confirm your が「コンファーミョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0172",
+    "level": 400,
+    "category": "Travel",
+    "english": "The new budget will arrive this quarter.",
+    "japanese": "新しい予算案は今四半期に届きます。",
+    "vocabNotes": [
+      {
+        "word": "arrive",
+        "meaning": "到着する"
+      }
+    ],
+    "grammarTip": "未来時制の文です。",
+    "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0173",
+    "level": 400,
+    "category": "Tech",
+    "english": "Our team decided to approve the budget.",
+    "japanese": "私たちのチームは予算案を承認することに決めました。",
+    "vocabNotes": [
+      {
+        "word": "decide",
+        "meaning": "決める"
+      }
+    ],
+    "grammarTip": "decide to + 原形動詞です。",
+    "linkingTip": "decided to が「ディサイディッドゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0174",
+    "level": 400,
+    "category": "Daily",
+    "english": "Could you please sign the budget now?",
+    "japanese": "今すぐ予算案にご署名いただけますか？",
+    "vocabNotes": [
+      {
+        "word": "sign",
+        "meaning": "署名する"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現 Could you please です。",
+    "linkingTip": "sign the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0175",
+    "level": 400,
+    "category": "Finance",
+    "english": "The budget was repaired by our technician.",
+    "japanese": "予算案は技術者によって修理されました。",
+    "vocabNotes": [
+      {
+        "word": "repair",
+        "meaning": "修理する"
+      },
+      {
+        "word": "technician",
+        "meaning": "技術者"
+      }
+    ],
+    "grammarTip": "受動態 + 行為者 by の構文です。",
+    "linkingTip": "was repaired がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0176",
+    "level": 400,
+    "category": "Office",
+    "english": "We should order more budget for tomorrow.",
+    "japanese": "明日のためにもっと予算案を注文すべきです。",
+    "vocabNotes": [
+      {
+        "word": "order",
+        "meaning": "注文する"
+      }
+    ],
+    "grammarTip": "助動詞 should（〜すべき）の文です。",
+    "linkingTip": "should order が「シュッダーダー」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0177",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "She will lead the budget next week.",
+    "japanese": "彼女は来週予算案を主導します。",
+    "vocabNotes": [
+      {
+        "word": "lead",
+        "meaning": "主導する、率いる"
+      }
+    ],
+    "grammarTip": "未来を表す will です。",
+    "linkingTip": "will lead が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0178",
+    "level": 400,
+    "category": "Business",
+    "english": "Please keep your budget inside the room.",
+    "japanese": "予算案を部屋の中に置いておいてください。",
+    "vocabNotes": [
+      {
+        "word": "inside",
+        "meaning": "内部に"
+      }
+    ],
+    "grammarTip": "keep + O + 場所 の第5文型です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0179",
+    "level": 400,
+    "category": "Travel",
+    "english": "The price of budget increased last month.",
+    "japanese": "予算案の価格は先月上昇しました。",
+    "vocabNotes": [
+      {
+        "word": "increase",
+        "meaning": "増加する"
+      }
+    ],
+    "grammarTip": "過去形の動詞 increased です。",
+    "linkingTip": "increased last がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0180",
+    "level": 400,
+    "category": "Tech",
+    "english": "We must finish the budget by noon.",
+    "japanese": "私たちは正午までに予算案を終えなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "finish",
+        "meaning": "終える"
+      }
+    ],
+    "grammarTip": "義務を表す助動詞 must です。",
+    "linkingTip": "must finish が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0181",
+    "level": 400,
+    "category": "Finance",
+    "english": "We should book the hotel tonight.",
+    "japanese": "今夜ホテルを予約すべきです。",
+    "vocabNotes": [
+      {
+        "word": "book",
+        "meaning": "予約する"
+      }
+    ],
+    "grammarTip": "助動詞 should の文です。",
+    "linkingTip": "book the が「ブックザ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0182",
+    "level": 400,
+    "category": "Office",
+    "english": "Please keep your voice down here.",
+    "japanese": "ここでは声を小さくしてください。",
+    "vocabNotes": [
+      {
+        "word": "voice",
+        "meaning": "声"
+      }
+    ],
+    "grammarTip": "keep down の句動詞です。",
+    "linkingTip": "keep your が「キーピョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0183",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "The delivery will arrive at five.",
+    "japanese": "配達は5時に届く予定です。",
+    "vocabNotes": [
+      {
+        "word": "delivery",
+        "meaning": "配達物"
+      }
+    ],
+    "grammarTip": "未来形です。",
+    "linkingTip": "arrive at が「アライヴァット」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0184",
+    "level": 400,
+    "category": "Business",
+    "english": "Our manager approved the travel expenses.",
+    "japanese": "マネージャーは出張費を承認しました。",
+    "vocabNotes": [
+      {
+        "word": "approve",
+        "meaning": "承認する"
+      },
+      {
+        "word": "expense",
+        "meaning": "経費"
+      }
+    ],
+    "grammarTip": "過去形のSVO文です。",
+    "linkingTip": "approved the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0185",
+    "level": 400,
+    "category": "Travel",
+    "english": "Please fill out this survey form.",
+    "japanese": "このアンケート用紙にご記入ください。",
+    "vocabNotes": [
+      {
+        "word": "fill out",
+        "meaning": "記入する"
+      }
+    ],
+    "grammarTip": "群動詞 fill out の命令文です。",
+    "linkingTip": "fill out が「フィラウト」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0186",
+    "level": 400,
+    "category": "Tech",
+    "english": "She scheduled an appointment for tomorrow.",
+    "japanese": "彼女は明日の予約（約束）を入れました。",
+    "vocabNotes": [
+      {
+        "word": "schedule",
+        "meaning": "予定を入れる"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "scheduled an が「スケジュールドアン」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0187",
+    "level": 400,
+    "category": "Daily",
+    "english": "The printer paper is completely out.",
+    "japanese": "プリンター用紙が完全に切れました。",
+    "vocabNotes": [
+      {
+        "word": "completely",
+        "meaning": "完全に"
+      }
+    ],
+    "grammarTip": "SVC文型です。",
+    "linkingTip": "paper is が「ペイパリズ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0188",
+    "level": 400,
+    "category": "Finance",
+    "english": "Could you please open the window?",
+    "japanese": "窓を開けていただけますか？",
+    "vocabNotes": [
+      {
+        "word": "window",
+        "meaning": "窓"
+      }
+    ],
+    "grammarTip": "丁寧な依頼表現です。",
+    "linkingTip": "Could you が「クッジュ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0189",
+    "level": 400,
+    "category": "Office",
+    "english": "We must submit the final draft.",
+    "japanese": "私たちは最終原稿を提出しなければなりません。",
+    "vocabNotes": [
+      {
+        "word": "draft",
+        "meaning": "原稿、下書き"
+      }
+    ],
+    "grammarTip": "must + 動詞原形です。",
+    "linkingTip": "must submit が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0190",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "The package was sent yesterday morning.",
+    "japanese": "荷物は昨日の朝に発送されました。",
+    "vocabNotes": [
+      {
+        "word": "package",
+        "meaning": "小包、荷物"
+      }
+    ],
+    "grammarTip": "受動態過去形です。",
+    "linkingTip": "was sent が自然に繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0191",
+    "level": 400,
+    "category": "Business",
+    "english": "Please turn left after the bank.",
+    "japanese": "銀行を過ぎたら左に曲がってください。",
+    "vocabNotes": [
+      {
+        "word": "bank",
+        "meaning": "銀行"
+      }
+    ],
+    "grammarTip": "前置詞 after の道案内文です。",
+    "linkingTip": "turn left が滑らかに発話されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0192",
+    "level": 400,
+    "category": "Travel",
+    "english": "Our team achieved great sales results.",
+    "japanese": "私たちのチームは素晴らしい売上成果を達成しました。",
+    "vocabNotes": [
+      {
+        "word": "achieve",
+        "meaning": "達成する"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "achieved great がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0193",
+    "level": 400,
+    "category": "Tech",
+    "english": "The meeting room is on second.",
+    "japanese": "会議室は2階にあります。",
+    "vocabNotes": [
+      {
+        "word": "second",
+        "meaning": "2階"
+      }
+    ],
+    "grammarTip": "場所を表す前置詞 on です。",
+    "linkingTip": "is on が「イズオン」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0194",
+    "level": 400,
+    "category": "Daily",
+    "english": "I received your voice message today.",
+    "japanese": "本日あなたのボイスメッセージを受け取りました。",
+    "vocabNotes": [
+      {
+        "word": "message",
+        "meaning": "伝言、メッセージ"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "received your が「レシーヴジョア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0195",
+    "level": 400,
+    "category": "Finance",
+    "english": "The express train leaves platform three.",
+    "japanese": "急行列車は3番ホームから出発します。",
+    "vocabNotes": [
+      {
+        "word": "platform",
+        "meaning": "プラットホーム"
+      }
+    ],
+    "grammarTip": "三人称単数現在形です。",
+    "linkingTip": "leaves platform が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0196",
+    "level": 400,
+    "category": "Office",
+    "english": "Please wear your visitor badge clearly.",
+    "japanese": "来訪者バッジを見えやすく着用してください。",
+    "vocabNotes": [
+      {
+        "word": "badge",
+        "meaning": "名札、バッジ"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "wear your が「ウェアジョア」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0197",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "The client signed the agreement yesterday.",
+    "japanese": "顧客は昨日合意書に署名しました。",
+    "vocabNotes": [
+      {
+        "word": "agreement",
+        "meaning": "合意書、契約"
+      }
+    ],
+    "grammarTip": "過去形の動詞 signed です。",
+    "linkingTip": "signed the が自然に繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0198",
+    "level": 400,
+    "category": "Business",
+    "english": "We plan to visit the branch.",
+    "japanese": "私たちは支店を訪問する予定です。",
+    "vocabNotes": [
+      {
+        "word": "branch",
+        "meaning": "支店"
+      }
+    ],
+    "grammarTip": "plan to + 原形動詞です。",
+    "linkingTip": "plan to が「プラントゥ」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0199",
+    "level": 400,
+    "category": "Travel",
+    "english": "The technician inspected the air conditioner.",
+    "japanese": "技術者はエアコンを点検しました。",
+    "vocabNotes": [
+      {
+        "word": "inspect",
+        "meaning": "点検する"
+      }
+    ],
+    "grammarTip": "過去形の文です。",
+    "linkingTip": "inspected the が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0200",
+    "level": 400,
+    "category": "Tech",
+    "english": "Please send the tracking number now.",
+    "japanese": "今すぐ追跡番号を送ってください。",
+    "vocabNotes": [
+      {
+        "word": "tracking",
+        "meaning": "追跡"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "send the がスムーズに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0201",
+    "level": 400,
+    "category": "Daily",
+    "english": "Our company offers free customer support.",
+    "japanese": "当社は無料のカスタマーサポートを提供しています。",
+    "vocabNotes": [
+      {
+        "word": "offer",
+        "meaning": "提供する"
+      }
+    ],
+    "grammarTip": "SVO文型です。",
+    "linkingTip": "offers free が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0202",
+    "level": 400,
+    "category": "Finance",
+    "english": "The flight landed on runway two.",
+    "japanese": "飛行機は2番滑走路に着陸しました。",
+    "vocabNotes": [
+      {
+        "word": "land",
+        "meaning": "着陸する"
+      }
+    ],
+    "grammarTip": "過去形の自動詞です。",
+    "linkingTip": "landed on が「ランディッドン」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0203",
+    "level": 400,
+    "category": "Office",
+    "english": "Please follow the safety guidelines carefully.",
+    "japanese": "安全ガイドラインに注意深く従ってください。",
+    "vocabNotes": [
+      {
+        "word": "guideline",
+        "meaning": "指針、ガイドライン"
+      }
+    ],
+    "grammarTip": "副詞修飾の命令文です。",
+    "linkingTip": "follow the が自然に繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0204",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "We updated the company website yesterday.",
+    "japanese": "私たちは昨日会社ウェブサイトを更新しました。",
+    "vocabNotes": [
+      {
+        "word": "website",
+        "meaning": "ウェブサイト"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "updated the が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0205",
+    "level": 400,
+    "category": "Business",
+    "english": "The supervisor checked all the invoices.",
+    "japanese": "主任はすべての請求書を点検しました。",
+    "vocabNotes": [
+      {
+        "word": "supervisor",
+        "meaning": "主任、監督者"
+      }
+    ],
+    "grammarTip": "過去形です。",
+    "linkingTip": "checked all が「チェックトール」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0206",
+    "level": 400,
+    "category": "Travel",
+    "english": "Can you please print two copies?",
+    "japanese": "2部印刷していただけますか？",
+    "vocabNotes": [
+      {
+        "word": "print",
+        "meaning": "印刷する"
+      }
+    ],
+    "grammarTip": "依頼疑問文です。",
+    "linkingTip": "print two が自然に繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0207",
+    "level": 400,
+    "category": "Tech",
+    "english": "The restaurant serves organic fresh vegetables.",
+    "japanese": "そのレストランは有機の新鮮な野菜を提供します。",
+    "vocabNotes": [
+      {
+        "word": "serve",
+        "meaning": "提供する"
+      }
+    ],
+    "grammarTip": "三人称単数現在形です。",
+    "linkingTip": "serves organic が「サーヴズオーガニック」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0208",
+    "level": 400,
+    "category": "Daily",
+    "english": "Please contact customer service for help.",
+    "japanese": "サポートが必要な場合は顧客窓口にご連絡ください。",
+    "vocabNotes": [
+      {
+        "word": "contact",
+        "meaning": "連絡する"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "contact customer が滑らかに繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0209",
+    "level": 400,
+    "category": "Finance",
+    "english": "Our team reviewed the annual budget.",
+    "japanese": "私たちのチームは年間予算を見直しました。",
+    "vocabNotes": [
+      {
+        "word": "annual",
+        "meaning": "年間の"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "reviewed the が自然に繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0210",
+    "level": 400,
+    "category": "Office",
+    "english": "The shuttle bus arrives every hour.",
+    "japanese": "シャトルバスは1時間ごとに到着します。",
+    "vocabNotes": [
+      {
+        "word": "shuttle",
+        "meaning": "定期往復の"
+      }
+    ],
+    "grammarTip": "習慣を表す現在形です。",
+    "linkingTip": "arrives every が「アライヴズエヴリ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0211",
+    "level": 400,
+    "category": "Customer Service",
+    "english": "Please wash your hands before eating.",
+    "japanese": "食事の前に手を洗ってください。",
+    "vocabNotes": [
+      {
+        "word": "wash",
+        "meaning": "洗う"
+      }
+    ],
+    "grammarTip": "前置詞 before + 動名詞です。",
+    "linkingTip": "wash your が「ウォッショア」となります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0212",
+    "level": 400,
+    "category": "Business",
+    "english": "We organized a welcome party tonight.",
+    "japanese": "私たちは今夜歓迎会を企画しました。",
+    "vocabNotes": [
+      {
+        "word": "organize",
+        "meaning": "企画する、開催する"
+      }
+    ],
+    "grammarTip": "SVO過去形です。",
+    "linkingTip": "organized a が「オーガナイズダ」と連結します。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0213",
+    "level": 400,
+    "category": "Travel",
+    "english": "The store manager resolved the complaint.",
+    "japanese": "店長は苦情を解決しました。",
+    "vocabNotes": [
+      {
+        "word": "resolve",
+        "meaning": "解決する"
+      },
+      {
+        "word": "complaint",
+        "meaning": "苦情"
+      }
+    ],
+    "grammarTip": "過去形です。",
+    "linkingTip": "resolved the が自然に繋がります。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0214",
+    "level": 400,
+    "category": "Tech",
+    "english": "Please review the safety rules today.",
+    "japanese": "本日、安全規則をご確認ください。",
+    "vocabNotes": [
+      {
+        "word": "rule",
+        "meaning": "規則、ルール"
+      }
+    ],
+    "grammarTip": "命令文です。",
+    "linkingTip": "review the が滑らかに発音されます。",
+    "speedDefault": 0.85
+  },
+  {
+    "id": "s400-0215",
+    "level": 400,
+    "category": "Daily",
+    "english": "Our office will close next Friday.",
+    "japanese": "私たちのオフィスは来週の金曜日に閉まります。",
+    "vocabNotes": [
+      {
+        "word": "close",
+        "meaning": "閉まる"
+      }
+    ],
+    "grammarTip": "未来形です。",
+    "linkingTip": "will close がスムーズに繋がります。",
+    "speedDefault": 0.85
+  },
   {
     "id": "s500-0001",
     "level": 500,
@@ -18581,21 +25574,39 @@ export const SENTENCE_DATABASE: Sentence[] = [
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
     "speedDefault": 1.18
   }
-];
+] as unknown as Sentence[]);
 
 export const LEVEL_INFO: Record<number, { title: string; subtitle: string; description: string; target: string; color: string; bg: string; border: string }> = {
+  300: {
+    title: '300点クラス',
+    subtitle: '入門・超短文',
+    description: '3〜5語の基礎日常・オフィス表現。シャドーイング入門に最適な超短文。',
+    target: 'TOEIC 200〜400',
+    color: 'text-teal-600 dark:text-teal-400',
+    bg: 'bg-teal-50 dark:bg-teal-500/10 hover:bg-teal-100 dark:hover:bg-teal-500/20',
+    border: 'border-teal-200 dark:border-teal-500/30'
+  },
+  400: {
+    title: '400点クラス',
+    subtitle: '初級・基礎短文',
+    description: '5〜7語の基本業務表現。短くクリアで聞き取りやすいネイティブ基礎英語。',
+    target: 'TOEIC 350〜500',
+    color: 'text-green-600 dark:text-green-400',
+    bg: 'bg-green-50 dark:bg-green-500/10 hover:bg-green-100 dark:hover:bg-green-500/20',
+    border: 'border-green-200 dark:border-green-500/30'
+  },
   500: {
     title: '500点クラス',
-    subtitle: '基礎・短文・クリア発音',
+    subtitle: '基礎・クリア発音',
     description: '写真描写・質問応答・日常オフィスの短い一文。明瞭で聞き取りやすいスピード。',
-    target: 'TOEIC 400〜550',
+    target: 'TOEIC 450〜550',
     color: 'text-emerald-600 dark:text-emerald-400',
     bg: 'bg-emerald-50 dark:bg-emerald-500/10 hover:bg-emerald-100 dark:hover:bg-emerald-500/20',
     border: 'border-emerald-200 dark:border-emerald-500/30'
   },
   600: {
     title: '600点クラス',
-    subtitle: '日常業務・標準スピード',
+    subtitle: '日常業務・標準速度',
     description: '社内連絡・メール・旅行・接客など実務で頻出の表現。標準的なネイティブ速度。',
     target: 'TOEIC 550〜650',
     color: 'text-sky-600 dark:text-sky-400',
@@ -18604,7 +25615,7 @@ export const LEVEL_INFO: Record<number, { title: string; subtitle: string; descr
   },
   700: {
     title: '700点クラス',
-    subtitle: '実務討議・重要イディオム',
+    subtitle: '実務討議・イディオム',
     description: 'プレゼン、会議、交渉、定型表現や連結音（リンキング）を含む実践的な英文。',
     target: 'TOEIC 650〜750',
     color: 'text-indigo-600 dark:text-indigo-400',
@@ -18613,7 +25624,7 @@ export const LEVEL_INFO: Record<number, { title: string; subtitle: string; descr
   },
   800: {
     title: '800点クラス',
-    subtitle: '高度ビジネス・複文構造',
+    subtitle: '高度実務・複文構造',
     description: '長めの複文、経営・市場・分析など一段上のビジネス語彙と自然な速さ。',
     target: 'TOEIC 750〜850',
     color: 'text-amber-600 dark:text-amber-400',
@@ -18622,7 +25633,7 @@ export const LEVEL_INFO: Record<number, { title: string; subtitle: string; descr
   },
   900: {
     title: '900点クラス',
-    subtitle: 'ネイティブ最速・難関語彙',
+    subtitle: '最速・ネイティブ',
     description: '倒置や高度な語彙、音の脱落（リダクション）を含むハイレベルな実戦英語。',
     target: 'TOEIC 850〜990',
     color: 'text-rose-600 dark:text-rose-400',
