@@ -1,7 +1,6 @@
 import { Sentence } from '../types';
 
 export const SENTENCE_DATABASE: Sentence[] = ([
-
   {
     "id": "s300-0001",
     "level": 300,
@@ -16,7 +15,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現（Please + 動詞の原形）です。",
     "linkingTip": "take a が「テイカ」のように連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0002",
@@ -32,7 +31,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "提案の Let's + 原形動詞です。",
     "linkingTip": "begin the がスムーズに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0003",
@@ -48,7 +47,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "第2文型（SVC）の基本構文です。",
     "linkingTip": "office is が「オフィシズ」のように連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0004",
@@ -64,7 +63,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "一般動詞の過去形です。",
     "linkingTip": "received your が「レシーヴジョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0005",
@@ -80,7 +79,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "場所を尋ねる疑問詞 Where です。",
     "linkingTip": "Where is が「ウェアリズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0006",
@@ -96,7 +95,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "動詞 sign の目的語をとる形です。",
     "linkingTip": "sign your が「サイニャ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0007",
@@ -112,7 +111,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "need + 名詞の基本文です。",
     "linkingTip": "need more が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0008",
@@ -128,7 +127,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be ready の状態表現です。",
     "linkingTip": "printer is が繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0009",
@@ -144,7 +143,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "意志未来の will です。",
     "linkingTip": "check it が「チェキット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0010",
@@ -160,7 +159,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "定型的な依頼フレーズです。",
     "linkingTip": "wait a が「ウェイタ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0011",
@@ -176,7 +175,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態（be + 過去分詞）です。",
     "linkingTip": "report is が「レポーティズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0012",
@@ -192,7 +191,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Let's を使った提案文です。",
     "linkingTip": "review the が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0013",
@@ -208,7 +207,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態による状態描写です。",
     "linkingTip": "door is が「ドーリズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0014",
@@ -224,7 +223,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "have a + 名詞の基本形です。",
     "linkingTip": "have a が「ハヴァ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0015",
@@ -240,7 +239,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "三人称単数の s が付く現在形です。",
     "linkingTip": "works in が「ワークスイン」と繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0016",
@@ -256,7 +255,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "群動詞 turn off の命令文です。",
     "linkingTip": "turn off が「ターノフ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0017",
@@ -272,7 +271,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "形容詞 complete による補語です。",
     "linkingTip": "project is が連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0018",
@@ -288,7 +287,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "電話応対の定番フレーズです。",
     "linkingTip": "call back が滑らかに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0019",
@@ -304,7 +303,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "人物を尋ねる Who の疑問文です。",
     "linkingTip": "Who is が「フーイズ」と繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0020",
@@ -320,7 +319,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "take a break / need a break の用法です。",
     "linkingTip": "need a が「ニーダ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0021",
@@ -336,7 +335,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態の複数形です。",
     "linkingTip": "files are が「ファイルザー」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0022",
@@ -352,7 +351,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "ビジネス頻出の名詞 invoice です。",
     "linkingTip": "send the が滑らかに発声されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0023",
@@ -368,7 +367,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be動詞の疑問文です。",
     "linkingTip": "boss here の s と h が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0024",
@@ -384,7 +383,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "agree with + 人 の頻出成句です。",
     "linkingTip": "agree with がスムーズに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0025",
@@ -400,7 +399,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "take notes でメモを取るという意味です。",
     "linkingTip": "take notes の k が弱まります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0026",
@@ -416,7 +415,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVCの第2文型です。",
     "linkingTip": "desk is が「デスキズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0027",
@@ -432,7 +431,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "申し出を表す Can I です。",
     "linkingTip": "help you が「ヘルピュー」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0028",
@@ -448,7 +447,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "do well（うまくやる）の過去形です。",
     "linkingTip": "did well が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0029",
@@ -464,7 +463,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現です。",
     "linkingTip": "close the の音が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0030",
@@ -480,7 +479,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "go well の過去形 went well です。",
     "linkingTip": "went well の t が脱落ぎみになります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0031",
@@ -496,7 +495,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "歓迎の定番表現です。",
     "linkingTip": "Welcome to が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0032",
@@ -512,7 +511,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な接客フレーズです。",
     "linkingTip": "may I が「メイアイ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0033",
@@ -528,7 +527,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "レストラン等の案内表現です。",
     "linkingTip": "table is が「テイブリズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0034",
@@ -544,7 +543,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "案内時の定番フレーズです。",
     "linkingTip": "follow me が一息で発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0035",
@@ -560,7 +559,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Here is + 名詞の提示表現です。",
     "linkingTip": "Here is が「ヒアリーズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0036",
@@ -576,7 +575,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "形容詞的過去分詞 closed です。",
     "linkingTip": "shop is が「ショッピズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0037",
@@ -592,7 +591,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な勧め表現 Would you like です。",
     "linkingTip": "Would you が「ウッジュ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0038",
@@ -608,7 +607,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "許可を求める Can I の文です。",
     "linkingTip": "see that が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0039",
@@ -624,7 +623,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "基本の感謝表現です。",
     "linkingTip": "Thank you が「サンキュー」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0040",
@@ -640,7 +639,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "三人称単数現在形の costs です。",
     "linkingTip": "costs ten の s と t がスムーズに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0041",
@@ -656,7 +655,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "支払いの案内表現です。",
     "linkingTip": "accept credit が明瞭に発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0042",
@@ -672,7 +671,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "レストランでの接客定番文です。",
     "linkingTip": "enjoy your が「エンジョイヨア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0043",
@@ -688,7 +687,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "会計時の金額提示です。",
     "linkingTip": "total is が「トータリズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0044",
@@ -704,7 +703,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "注文受付の丁寧表現です。",
     "linkingTip": "take orders が「テイコーダーズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0045",
@@ -720,7 +719,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVCの構造です。",
     "linkingTip": "item is が「アイテミズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0046",
@@ -736,7 +735,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "基本の描写文です。",
     "linkingTip": "soup is が「スーピズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0047",
@@ -752,7 +751,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "予約の有無を尋ねる疑問文です。",
     "linkingTip": "have reservations が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0048",
@@ -768,7 +767,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "会計時の依頼文です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0049",
@@ -784,7 +783,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "別れ際の定番挨拶です。",
     "linkingTip": "Have a が「ハヴァ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0050",
@@ -800,7 +799,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVC構文に副詞が入った形です。",
     "linkingTip": "Water is が「ウォータリズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0051",
@@ -816,7 +815,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "交通機関の遅延表現です。",
     "linkingTip": "train is が「トレイニズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0052",
@@ -832,7 +831,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "現在進行形（be + -ing）です。",
     "linkingTip": "is boarding が滑らかに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0053",
@@ -848,7 +847,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "場所を尋ねる Where 構文です。",
     "linkingTip": "Where is が「ウェアリズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0054",
@@ -864,7 +863,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "第4文型（SVOO）の命令文です。",
     "linkingTip": "Show me が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0055",
@@ -880,7 +879,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "現在完了形（has + 過去分詞）です。",
     "linkingTip": "has arrived が「ハザライヴド」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0056",
@@ -896,7 +895,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + C の構文です。",
     "linkingTip": "Keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0057",
@@ -912,7 +911,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "現在進行形による描写です。",
     "linkingTip": "taxi is が「タクシーイズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0058",
@@ -928,7 +927,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "提示の Here is 構文です。",
     "linkingTip": "Here is が連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0059",
@@ -944,7 +943,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "arrive in + 都市名 の過去形です。",
     "linkingTip": "arrived in が「アライヴディン」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0060",
@@ -960,7 +959,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去受動態の文です。",
     "linkingTip": "was delivered が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0061",
@@ -976,7 +975,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be動詞疑問文です。",
     "linkingTip": "luggage heavy が自然に発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0062",
@@ -992,7 +991,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "道案内の基本フレーズです。",
     "linkingTip": "Turn left が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0063",
@@ -1008,7 +1007,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "場所を示す副詞 nearby です。",
     "linkingTip": "hotel is が「ホテリズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0064",
@@ -1024,7 +1023,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "動詞 check の命令文です。",
     "linkingTip": "departure time が明瞭に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0065",
@@ -1040,7 +1039,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "副詞 online の用法です。",
     "linkingTip": "tickets online が「チケットゾンライン」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0066",
@@ -1056,7 +1055,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "進行形による状態説明です。",
     "linkingTip": "is working が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0067",
@@ -1072,7 +1071,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "IT関連の指示表現です。",
     "linkingTip": "click this が自然に発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0068",
@@ -1088,7 +1087,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "freeze の過去形 froze です。",
     "linkingTip": "screen froze が明瞭に発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0069",
@@ -1104,7 +1103,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "Download the が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0070",
@@ -1120,7 +1119,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "IT操作の定型表現です。",
     "linkingTip": "Enter your が「エンタヨア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0071",
@@ -1136,7 +1135,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "日常的な状態表現です。",
     "linkingTip": "battery is が「バテリイズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0072",
@@ -1152,7 +1151,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "PC操作の定番表現です。",
     "linkingTip": "Restart your が「リスターチョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0073",
@@ -1168,7 +1167,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態です。",
     "linkingTip": "is muted が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0074",
@@ -1184,7 +1183,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "send の過去形 sent です。",
     "linkingTip": "sent a が「センタ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0075",
@@ -1200,7 +1199,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "メール確認の指示です。",
     "linkingTip": "Check your が「チェッキョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0076",
@@ -1216,7 +1215,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態です。",
     "linkingTip": "is updated が「イズアップデイティド」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0077",
@@ -1232,7 +1231,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "all open が「オーロープン」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0078",
@@ -1252,7 +1251,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去受動態です。",
     "linkingTip": "was approved が「ワザプルーヴド」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0079",
@@ -1268,7 +1267,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の自動詞用法です。",
     "linkingTip": "increased this が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0080",
@@ -1288,7 +1287,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "rise の過去形 rose です。",
     "linkingTip": "rose by が「ローズバイ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0081",
@@ -1304,7 +1303,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "meet the target（目標を達成する）の過去形です。",
     "linkingTip": "met our が「メッタワー」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0082",
@@ -1320,7 +1319,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態です。",
     "linkingTip": "contract is が「コントラクティズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0083",
@@ -1336,7 +1335,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "go up（上昇する）の未来形です。",
     "linkingTip": "go up が「ゴーアップ」と繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0084",
@@ -1352,7 +1351,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "look + 形容詞の知覚構文です。",
     "linkingTip": "look good が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0085",
@@ -1368,7 +1367,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "sign a deal の過去形です。",
     "linkingTip": "signed the が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0086",
@@ -1384,7 +1383,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVCの第2文型です。",
     "linkingTip": "cost is が「コスティズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0087",
@@ -1400,7 +1399,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "ビジネス頻出の名詞 payment です。",
     "linkingTip": "Send the が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0088",
@@ -1416,7 +1415,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "疑問文です。",
     "linkingTip": "Are you が繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0089",
@@ -1432,7 +1431,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "現在進行形です。",
     "linkingTip": "phone is が「フォーニズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0090",
@@ -1448,7 +1447,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "love this が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0091",
@@ -1464,7 +1463,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "call my が自然に発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0092",
@@ -1480,7 +1479,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVCの過去形です。",
     "linkingTip": "was delicious が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0093",
@@ -1496,7 +1495,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "現在時制による確定予定です。",
     "linkingTip": "start at が「スタータット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0094",
@@ -1512,7 +1511,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "許可を求める疑問文です。",
     "linkingTip": "talk now が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0095",
@@ -1528,7 +1527,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVCの構文です。",
     "linkingTip": "coffee is が「コーフィイズ」と繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0096",
@@ -1544,7 +1543,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "need + 名詞です。",
     "linkingTip": "need your が「ニージョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0097",
@@ -1560,7 +1559,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "依頼文です。",
     "linkingTip": "open the が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0098",
@@ -1576,7 +1575,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVCの基本文です。",
     "linkingTip": "results are が「リザルツァー」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0099",
@@ -1592,7 +1591,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "have + 名詞です。",
     "linkingTip": "have enough が「ハヴィナフ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0100",
@@ -1608,7 +1607,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "Check the が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0101",
@@ -1624,7 +1623,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "状態を表す前置詞 on です。",
     "linkingTip": "light is が「ライティズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0102",
@@ -1640,7 +1639,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "lose の過去形 lost です。",
     "linkingTip": "lost my が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0103",
@@ -1660,7 +1659,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "現在進行形です。",
     "linkingTip": "is growing が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0104",
@@ -1676,7 +1675,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "許可を求める疑問文です。",
     "linkingTip": "try this が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0105",
@@ -1692,7 +1691,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "集合名詞 staff の用法です。",
     "linkingTip": "staff is が「スタッフィズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0106",
@@ -1708,7 +1707,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Let's 提案文です。",
     "linkingTip": "confirm the が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0107",
@@ -1724,7 +1723,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形です。",
     "linkingTip": "answered the が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0108",
@@ -1740,7 +1739,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "場所を示す副詞です。",
     "linkingTip": "car is が「カーリズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0109",
@@ -1756,7 +1755,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "依頼文です。",
     "linkingTip": "print this が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0110",
@@ -1776,7 +1775,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVCの第2文型です。",
     "linkingTip": "goal is が「ゴーリズ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0111",
@@ -1792,7 +1791,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来形です。",
     "linkingTip": "join later が滑らかに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0112",
@@ -1808,7 +1807,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "look + 形容詞です。",
     "linkingTip": "looks clear がスムーズに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0113",
@@ -1824,7 +1823,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "通話や会議の定番フレーズです。",
     "linkingTip": "hear me が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0114",
@@ -1840,7 +1839,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形のSVO文です。",
     "linkingTip": "signed the が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0115",
@@ -1856,7 +1855,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態の補語用法です。",
     "linkingTip": "elevator is が「エレヴェイタリズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0116",
@@ -1872,7 +1871,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "相手を気遣う定番慣用句です。",
     "linkingTip": "take your が「テイキョア」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0117",
@@ -1888,7 +1887,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVCの過去形です。",
     "linkingTip": "was successful が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0118",
@@ -1904,7 +1903,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼文です。",
     "linkingTip": "review page が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0119",
@@ -1920,7 +1919,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時刻を表す at の用法です。",
     "linkingTip": "is at が「イズアット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0120",
@@ -1936,7 +1935,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "received が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0121",
@@ -1952,7 +1951,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "check room が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0122",
@@ -1968,7 +1967,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be ready の構文です。",
     "linkingTip": "is ready が「イズレディ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0123",
@@ -1984,7 +1983,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "電話の定番表現です。",
     "linkingTip": "speak with が「スピークウィズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0124",
@@ -2000,7 +1999,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形と副詞の組み合わせです。",
     "linkingTip": "arrived safely が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0125",
@@ -2016,7 +2015,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "need your が「ニージョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0126",
@@ -2032,7 +2031,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Let's 構文です。",
     "linkingTip": "visit the がスムーズに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0127",
@@ -2048,7 +2047,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVOO構文の命令文です。",
     "linkingTip": "send me が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0128",
@@ -2064,7 +2063,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼文です。",
     "linkingTip": "review page が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0129",
@@ -2080,7 +2079,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時刻を表す at の用法です。",
     "linkingTip": "is at が「イズアット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0130",
@@ -2096,7 +2095,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "received が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0131",
@@ -2112,7 +2111,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "check room が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0132",
@@ -2128,7 +2127,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be ready の構文です。",
     "linkingTip": "is ready が「イズレディ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0133",
@@ -2144,7 +2143,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "電話の定番表現です。",
     "linkingTip": "speak with が「スピークウィズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0134",
@@ -2160,7 +2159,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形と副詞の組み合わせです。",
     "linkingTip": "arrived safely が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0135",
@@ -2176,7 +2175,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "need your が「ニージョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0136",
@@ -2192,7 +2191,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Let's 構文です。",
     "linkingTip": "visit the がスムーズに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0137",
@@ -2208,7 +2207,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVOO構文の命令文です。",
     "linkingTip": "send me が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0138",
@@ -2224,7 +2223,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼文です。",
     "linkingTip": "review page が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0139",
@@ -2240,7 +2239,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時刻を表す at の用法です。",
     "linkingTip": "is at が「イズアット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0140",
@@ -2256,7 +2255,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "received が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0141",
@@ -2272,7 +2271,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "check room が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0142",
@@ -2288,7 +2287,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be ready の構文です。",
     "linkingTip": "is ready が「イズレディ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0143",
@@ -2304,7 +2303,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "電話の定番表現です。",
     "linkingTip": "speak with が「スピークウィズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0144",
@@ -2320,7 +2319,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形と副詞の組み合わせです。",
     "linkingTip": "arrived safely が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0145",
@@ -2336,7 +2335,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "need your が「ニージョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0146",
@@ -2352,7 +2351,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Let's 構文です。",
     "linkingTip": "visit the がスムーズに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0147",
@@ -2368,7 +2367,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVOO構文の命令文です。",
     "linkingTip": "send me が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0148",
@@ -2384,7 +2383,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼文です。",
     "linkingTip": "review page が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0149",
@@ -2400,7 +2399,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時刻を表す at の用法です。",
     "linkingTip": "is at が「イズアット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0150",
@@ -2416,7 +2415,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "received が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0151",
@@ -2432,7 +2431,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "check room が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0152",
@@ -2448,7 +2447,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be ready の構文です。",
     "linkingTip": "is ready が「イズレディ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0153",
@@ -2464,7 +2463,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "電話の定番表現です。",
     "linkingTip": "speak with が「スピークウィズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0154",
@@ -2480,7 +2479,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形と副詞の組み合わせです。",
     "linkingTip": "arrived safely が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0155",
@@ -2496,7 +2495,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "need your が「ニージョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0156",
@@ -2512,7 +2511,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Let's 構文です。",
     "linkingTip": "visit the がスムーズに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0157",
@@ -2528,7 +2527,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVOO構文の命令文です。",
     "linkingTip": "send me が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0158",
@@ -2544,7 +2543,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼文です。",
     "linkingTip": "review page が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0159",
@@ -2560,7 +2559,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時刻を表す at の用法です。",
     "linkingTip": "is at が「イズアット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0160",
@@ -2576,7 +2575,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "received が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0161",
@@ -2592,7 +2591,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "check room が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0162",
@@ -2608,7 +2607,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be ready の構文です。",
     "linkingTip": "is ready が「イズレディ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0163",
@@ -2624,7 +2623,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "電話の定番表現です。",
     "linkingTip": "speak with が「スピークウィズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0164",
@@ -2640,7 +2639,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形と副詞の組み合わせです。",
     "linkingTip": "arrived safely が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0165",
@@ -2656,7 +2655,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "need your が「ニージョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0166",
@@ -2672,7 +2671,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Let's 構文です。",
     "linkingTip": "visit the がスムーズに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0167",
@@ -2688,7 +2687,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVOO構文の命令文です。",
     "linkingTip": "send me が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0168",
@@ -2704,7 +2703,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼文です。",
     "linkingTip": "review page が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0169",
@@ -2720,7 +2719,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時刻を表す at の用法です。",
     "linkingTip": "is at が「イズアット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0170",
@@ -2736,7 +2735,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "received が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0171",
@@ -2752,7 +2751,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "check room が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0172",
@@ -2768,7 +2767,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be ready の構文です。",
     "linkingTip": "is ready が「イズレディ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0173",
@@ -2784,7 +2783,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "電話の定番表現です。",
     "linkingTip": "speak with が「スピークウィズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0174",
@@ -2800,7 +2799,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形と副詞の組み合わせです。",
     "linkingTip": "arrived safely が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0175",
@@ -2816,7 +2815,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "need your が「ニージョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0176",
@@ -2832,7 +2831,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Let's 構文です。",
     "linkingTip": "visit the がスムーズに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0177",
@@ -2848,7 +2847,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVOO構文の命令文です。",
     "linkingTip": "send me が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0178",
@@ -2864,7 +2863,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼文です。",
     "linkingTip": "review page が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0179",
@@ -2880,7 +2879,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時刻を表す at の用法です。",
     "linkingTip": "is at が「イズアット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0180",
@@ -2896,7 +2895,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "received が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0181",
@@ -2912,7 +2911,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "check room が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0182",
@@ -2928,7 +2927,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be ready の構文です。",
     "linkingTip": "is ready が「イズレディ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0183",
@@ -2944,7 +2943,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "電話の定番表現です。",
     "linkingTip": "speak with が「スピークウィズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0184",
@@ -2960,7 +2959,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形と副詞の組み合わせです。",
     "linkingTip": "arrived safely が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0185",
@@ -2976,7 +2975,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "need your が「ニージョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0186",
@@ -2992,7 +2991,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Let's 構文です。",
     "linkingTip": "visit the がスムーズに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0187",
@@ -3008,7 +3007,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVOO構文の命令文です。",
     "linkingTip": "send me が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0188",
@@ -3024,7 +3023,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼文です。",
     "linkingTip": "review page が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0189",
@@ -3040,7 +3039,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時刻を表す at の用法です。",
     "linkingTip": "is at が「イズアット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0190",
@@ -3056,7 +3055,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "received が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0191",
@@ -3072,7 +3071,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "check room が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0192",
@@ -3088,7 +3087,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be ready の構文です。",
     "linkingTip": "is ready が「イズレディ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0193",
@@ -3104,7 +3103,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "電話の定番表現です。",
     "linkingTip": "speak with が「スピークウィズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0194",
@@ -3120,7 +3119,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形と副詞の組み合わせです。",
     "linkingTip": "arrived safely が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0195",
@@ -3136,7 +3135,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "need your が「ニージョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0196",
@@ -3152,7 +3151,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Let's 構文です。",
     "linkingTip": "visit the がスムーズに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0197",
@@ -3168,7 +3167,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVOO構文の命令文です。",
     "linkingTip": "send me が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0198",
@@ -3184,7 +3183,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼文です。",
     "linkingTip": "review page が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0199",
@@ -3200,7 +3199,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時刻を表す at の用法です。",
     "linkingTip": "is at が「イズアット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0200",
@@ -3216,7 +3215,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "received が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0201",
@@ -3232,7 +3231,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "check room が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0202",
@@ -3248,7 +3247,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be ready の構文です。",
     "linkingTip": "is ready が「イズレディ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0203",
@@ -3264,7 +3263,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "電話の定番表現です。",
     "linkingTip": "speak with が「スピークウィズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0204",
@@ -3280,7 +3279,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形と副詞の組み合わせです。",
     "linkingTip": "arrived safely が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0205",
@@ -3296,7 +3295,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "need your が「ニージョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0206",
@@ -3312,7 +3311,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "Let's 構文です。",
     "linkingTip": "visit the がスムーズに発音されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0207",
@@ -3328,7 +3327,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVOO構文の命令文です。",
     "linkingTip": "send me が自然に繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0208",
@@ -3344,7 +3343,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼文です。",
     "linkingTip": "review page が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0209",
@@ -3360,7 +3359,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時刻を表す at の用法です。",
     "linkingTip": "is at が「イズアット」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0210",
@@ -3376,7 +3375,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "received が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0211",
@@ -3392,7 +3391,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "check room が自然に発話されます。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0212",
@@ -3408,7 +3407,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "be ready の構文です。",
     "linkingTip": "is ready が「イズレディ」と連結します。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0213",
@@ -3424,7 +3423,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "電話の定番表現です。",
     "linkingTip": "speak with が「スピークウィズ」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0214",
@@ -3440,7 +3439,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形と副詞の組み合わせです。",
     "linkingTip": "arrived safely が滑らかに繋がります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s300-0215",
@@ -3456,7 +3455,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "need your が「ニージョア」となります。",
-    "speedDefault": 0.82
+    "speedDefault": 0.75
   },
   {
     "id": "s400-0001",
@@ -3472,7 +3471,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時制と時刻を表す at の文です。",
     "linkingTip": "starts at が「スターツアット」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0002",
@@ -3488,7 +3487,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before + 動名詞の文です。",
     "linkingTip": "check your が「チェッキョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0003",
@@ -3504,7 +3503,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形文です。",
     "linkingTip": "completed the が自然に繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0004",
@@ -3520,7 +3519,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "現在進行形です。",
     "linkingTip": "giving a が「ギヴィンガ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0005",
@@ -3540,7 +3539,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 must の用法です。",
     "linkingTip": "must wear が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0006",
@@ -3556,7 +3555,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "確定した未来を表す現在形です。",
     "linkingTip": "opens next がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0007",
@@ -3572,7 +3571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you です。",
     "linkingTip": "Could you が「クッジュ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0008",
@@ -3588,7 +3587,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な願望表現 would like to です。",
     "linkingTip": "would like が「ウッドライク」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0009",
@@ -3604,7 +3603,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 原因の by です。",
     "linkingTip": "was delayed が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0010",
@@ -3620,7 +3619,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "期限を表す前置詞 by の用法です。",
     "linkingTip": "submit your が「サブミッチャ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0011",
@@ -3640,7 +3639,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "形容詞修飾のSVO文です。",
     "linkingTip": "had a が「ハダ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0012",
@@ -3656,7 +3655,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "所属を表す in の用法です。",
     "linkingTip": "works in が「ワークスイン」と繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0013",
@@ -3672,7 +3671,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "主語を前置詞句が修飾する形です。",
     "linkingTip": "printer on が「プリンターロン」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0014",
@@ -3688,7 +3687,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な指示の命令文です。",
     "linkingTip": "leave your が「リーヴジョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0015",
@@ -3704,7 +3703,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "forget の過去形 forgot です。",
     "linkingTip": "forgot my が自然に発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0016",
@@ -3724,7 +3723,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "will + 原形動詞の未来文です。",
     "linkingTip": "will arrive が「ウィラライヴ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0017",
@@ -3740,7 +3739,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "場所の副詞 downstairs です。",
     "linkingTip": "meet in が「ミーティン」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0018",
@@ -3756,7 +3755,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "動詞修飾の副詞 clearly です。",
     "linkingTip": "answered every が自然に繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0019",
@@ -3772,7 +3771,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "時間経過を表す in です。",
     "linkingTip": "will leave が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0020",
@@ -3792,7 +3791,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "need to + 動詞の原形です。",
     "linkingTip": "need to が「ニードゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0021",
@@ -3812,7 +3811,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去分詞の形容詞用法 attached です。",
     "linkingTip": "attached invoice が「アタッチトインヴォイス」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0022",
@@ -3828,7 +3827,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "ask for（〜を求める）の過去形です。",
     "linkingTip": "asked for が「アスクフォア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0023",
@@ -3848,7 +3847,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "ビジネス重要語 quarterly の用法です。",
     "linkingTip": "reached our が「リーチタワー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0024",
@@ -3864,7 +3863,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVOO構文の疑問文です。",
     "linkingTip": "send me がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0025",
@@ -3880,7 +3879,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "場所を強調する right の用法です。",
     "linkingTip": "stops right の p が軽く発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0026",
@@ -3896,7 +3895,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "have an + 母音始まり名詞です。",
     "linkingTip": "have an が「ハヴァン」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0027",
@@ -3916,7 +3915,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "頻出成句 on time です。",
     "linkingTip": "will start が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0028",
@@ -3932,7 +3931,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "群動詞 turn down の用法です。",
     "linkingTip": "turn down が「ターンダウン」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0029",
@@ -3948,7 +3947,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去受動態です。",
     "linkingTip": "was delivered が自然に発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0030",
@@ -3964,7 +3963,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "現在進行形による予定・進行です。",
     "linkingTip": "launching a が「ローンチンガ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0031",
@@ -3980,7 +3979,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0032",
@@ -3996,7 +3995,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0033",
@@ -4012,7 +4011,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0034",
@@ -4028,7 +4027,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0035",
@@ -4048,7 +4047,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0036",
@@ -4064,7 +4063,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0037",
@@ -4080,7 +4079,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0038",
@@ -4096,7 +4095,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0039",
@@ -4112,7 +4111,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0040",
@@ -4128,7 +4127,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0041",
@@ -4144,7 +4143,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0042",
@@ -4160,7 +4159,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0043",
@@ -4176,7 +4175,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0044",
@@ -4192,7 +4191,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0045",
@@ -4212,7 +4211,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0046",
@@ -4228,7 +4227,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0047",
@@ -4244,7 +4243,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0048",
@@ -4260,7 +4259,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0049",
@@ -4276,7 +4275,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0050",
@@ -4292,7 +4291,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0051",
@@ -4308,7 +4307,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0052",
@@ -4324,7 +4323,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0053",
@@ -4340,7 +4339,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0054",
@@ -4356,7 +4355,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0055",
@@ -4376,7 +4375,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0056",
@@ -4392,7 +4391,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0057",
@@ -4408,7 +4407,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0058",
@@ -4424,7 +4423,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0059",
@@ -4440,7 +4439,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0060",
@@ -4456,7 +4455,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0061",
@@ -4472,7 +4471,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0062",
@@ -4488,7 +4487,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0063",
@@ -4504,7 +4503,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0064",
@@ -4520,7 +4519,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0065",
@@ -4540,7 +4539,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0066",
@@ -4556,7 +4555,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0067",
@@ -4572,7 +4571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0068",
@@ -4588,7 +4587,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0069",
@@ -4604,7 +4603,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0070",
@@ -4620,7 +4619,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0071",
@@ -4636,7 +4635,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0072",
@@ -4652,7 +4651,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0073",
@@ -4668,7 +4667,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0074",
@@ -4684,7 +4683,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0075",
@@ -4704,7 +4703,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0076",
@@ -4720,7 +4719,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0077",
@@ -4736,7 +4735,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0078",
@@ -4752,7 +4751,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0079",
@@ -4768,7 +4767,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0080",
@@ -4784,7 +4783,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0081",
@@ -4800,7 +4799,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0082",
@@ -4816,7 +4815,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0083",
@@ -4832,7 +4831,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0084",
@@ -4848,7 +4847,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0085",
@@ -4868,7 +4867,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0086",
@@ -4884,7 +4883,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0087",
@@ -4900,7 +4899,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0088",
@@ -4916,7 +4915,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0089",
@@ -4932,7 +4931,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0090",
@@ -4948,7 +4947,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0091",
@@ -4964,7 +4963,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0092",
@@ -4980,7 +4979,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0093",
@@ -4996,7 +4995,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0094",
@@ -5012,7 +5011,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0095",
@@ -5032,7 +5031,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0096",
@@ -5048,7 +5047,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0097",
@@ -5064,7 +5063,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0098",
@@ -5080,7 +5079,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0099",
@@ -5096,7 +5095,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0100",
@@ -5112,7 +5111,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0101",
@@ -5128,7 +5127,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0102",
@@ -5144,7 +5143,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0103",
@@ -5160,7 +5159,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0104",
@@ -5176,7 +5175,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0105",
@@ -5196,7 +5195,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0106",
@@ -5212,7 +5211,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0107",
@@ -5228,7 +5227,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0108",
@@ -5244,7 +5243,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0109",
@@ -5260,7 +5259,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0110",
@@ -5276,7 +5275,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0111",
@@ -5292,7 +5291,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0112",
@@ -5308,7 +5307,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0113",
@@ -5324,7 +5323,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0114",
@@ -5340,7 +5339,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0115",
@@ -5360,7 +5359,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0116",
@@ -5376,7 +5375,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0117",
@@ -5392,7 +5391,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0118",
@@ -5408,7 +5407,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0119",
@@ -5424,7 +5423,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0120",
@@ -5440,7 +5439,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0121",
@@ -5456,7 +5455,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0122",
@@ -5472,7 +5471,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0123",
@@ -5488,7 +5487,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0124",
@@ -5504,7 +5503,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0125",
@@ -5524,7 +5523,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0126",
@@ -5540,7 +5539,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0127",
@@ -5556,7 +5555,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0128",
@@ -5572,7 +5571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0129",
@@ -5588,7 +5587,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0130",
@@ -5604,7 +5603,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0131",
@@ -5620,7 +5619,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0132",
@@ -5636,7 +5635,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0133",
@@ -5652,7 +5651,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0134",
@@ -5668,7 +5667,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0135",
@@ -5688,7 +5687,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0136",
@@ -5704,7 +5703,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0137",
@@ -5720,7 +5719,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0138",
@@ -5736,7 +5735,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0139",
@@ -5752,7 +5751,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0140",
@@ -5768,7 +5767,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0141",
@@ -5784,7 +5783,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0142",
@@ -5800,7 +5799,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0143",
@@ -5816,7 +5815,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0144",
@@ -5832,7 +5831,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0145",
@@ -5852,7 +5851,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0146",
@@ -5868,7 +5867,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0147",
@@ -5884,7 +5883,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0148",
@@ -5900,7 +5899,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0149",
@@ -5916,7 +5915,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0150",
@@ -5932,7 +5931,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0151",
@@ -5948,7 +5947,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0152",
@@ -5964,7 +5963,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0153",
@@ -5980,7 +5979,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0154",
@@ -5996,7 +5995,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0155",
@@ -6016,7 +6015,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0156",
@@ -6032,7 +6031,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0157",
@@ -6048,7 +6047,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0158",
@@ -6064,7 +6063,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0159",
@@ -6080,7 +6079,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0160",
@@ -6096,7 +6095,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0161",
@@ -6112,7 +6111,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0162",
@@ -6128,7 +6127,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0163",
@@ -6144,7 +6143,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0164",
@@ -6160,7 +6159,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0165",
@@ -6180,7 +6179,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0166",
@@ -6196,7 +6195,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0167",
@@ -6212,7 +6211,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0168",
@@ -6228,7 +6227,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0169",
@@ -6244,7 +6243,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0170",
@@ -6260,7 +6259,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0171",
@@ -6276,7 +6275,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before による期限指定です。",
     "linkingTip": "confirm your が「コンファーミョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0172",
@@ -6292,7 +6291,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来時制の文です。",
     "linkingTip": "will arrive が「ウィラライヴ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0173",
@@ -6308,7 +6307,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "decide to + 原形動詞です。",
     "linkingTip": "decided to が「ディサイディッドゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0174",
@@ -6324,7 +6323,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現 Could you please です。",
     "linkingTip": "sign the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0175",
@@ -6344,7 +6343,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態 + 行為者 by の構文です。",
     "linkingTip": "was repaired がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0176",
@@ -6360,7 +6359,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should（〜すべき）の文です。",
     "linkingTip": "should order が「シュッダーダー」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0177",
@@ -6376,7 +6375,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来を表す will です。",
     "linkingTip": "will lead が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0178",
@@ -6392,7 +6391,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep + O + 場所 の第5文型です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0179",
@@ -6408,7 +6407,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 increased です。",
     "linkingTip": "increased last がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0180",
@@ -6424,7 +6423,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "義務を表す助動詞 must です。",
     "linkingTip": "must finish が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0181",
@@ -6440,7 +6439,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "助動詞 should の文です。",
     "linkingTip": "book the が「ブックザ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0182",
@@ -6456,7 +6455,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "keep down の句動詞です。",
     "linkingTip": "keep your が「キーピョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0183",
@@ -6472,7 +6471,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来形です。",
     "linkingTip": "arrive at が「アライヴァット」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0184",
@@ -6492,7 +6491,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形のSVO文です。",
     "linkingTip": "approved the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0185",
@@ -6508,7 +6507,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "群動詞 fill out の命令文です。",
     "linkingTip": "fill out が「フィラウト」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0186",
@@ -6524,7 +6523,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "scheduled an が「スケジュールドアン」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0187",
@@ -6540,7 +6539,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVC文型です。",
     "linkingTip": "paper is が「ペイパリズ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0188",
@@ -6556,7 +6555,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "丁寧な依頼表現です。",
     "linkingTip": "Could you が「クッジュ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0189",
@@ -6572,7 +6571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "must + 動詞原形です。",
     "linkingTip": "must submit が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0190",
@@ -6588,7 +6587,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "受動態過去形です。",
     "linkingTip": "was sent が自然に繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0191",
@@ -6604,7 +6603,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 after の道案内文です。",
     "linkingTip": "turn left が滑らかに発話されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0192",
@@ -6620,7 +6619,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "achieved great がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0193",
@@ -6636,7 +6635,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "場所を表す前置詞 on です。",
     "linkingTip": "is on が「イズオン」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0194",
@@ -6652,7 +6651,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "received your が「レシーヴジョア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0195",
@@ -6668,7 +6667,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "三人称単数現在形です。",
     "linkingTip": "leaves platform が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0196",
@@ -6684,7 +6683,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "wear your が「ウェアジョア」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0197",
@@ -6700,7 +6699,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の動詞 signed です。",
     "linkingTip": "signed the が自然に繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0198",
@@ -6716,7 +6715,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "plan to + 原形動詞です。",
     "linkingTip": "plan to が「プラントゥ」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0199",
@@ -6732,7 +6731,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の文です。",
     "linkingTip": "inspected the が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0200",
@@ -6748,7 +6747,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "send the がスムーズに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0201",
@@ -6764,7 +6763,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO文型です。",
     "linkingTip": "offers free が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0202",
@@ -6780,7 +6779,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形の自動詞です。",
     "linkingTip": "landed on が「ランディッドン」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0203",
@@ -6796,7 +6795,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "副詞修飾の命令文です。",
     "linkingTip": "follow the が自然に繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0204",
@@ -6812,7 +6811,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "updated the が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0205",
@@ -6828,7 +6827,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形です。",
     "linkingTip": "checked all が「チェックトール」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0206",
@@ -6844,7 +6843,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "依頼疑問文です。",
     "linkingTip": "print two が自然に繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0207",
@@ -6860,7 +6859,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "三人称単数現在形です。",
     "linkingTip": "serves organic が「サーヴズオーガニック」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0208",
@@ -6876,7 +6875,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "contact customer が滑らかに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0209",
@@ -6892,7 +6891,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "reviewed the が自然に繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0210",
@@ -6908,7 +6907,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "習慣を表す現在形です。",
     "linkingTip": "arrives every が「アライヴズエヴリ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0211",
@@ -6924,7 +6923,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "前置詞 before + 動名詞です。",
     "linkingTip": "wash your が「ウォッショア」となります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0212",
@@ -6940,7 +6939,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "SVO過去形です。",
     "linkingTip": "organized a が「オーガナイズダ」と連結します。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0213",
@@ -6960,7 +6959,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "過去形です。",
     "linkingTip": "resolved the が自然に繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0214",
@@ -6976,7 +6975,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "命令文です。",
     "linkingTip": "review the が滑らかに発音されます。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s400-0215",
@@ -6992,7 +6991,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "未来形です。",
     "linkingTip": "will close がスムーズに繋がります。",
-    "speedDefault": 0.85
+    "speedDefault": 0.88
   },
   {
     "id": "s500-0001",
@@ -10972,7 +10971,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0002",
@@ -10992,7 +10991,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0003",
@@ -11012,7 +11011,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0004",
@@ -11032,7 +11031,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0005",
@@ -11052,7 +11051,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0006",
@@ -11072,7 +11071,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0007",
@@ -11092,7 +11091,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0008",
@@ -11112,7 +11111,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0009",
@@ -11132,7 +11131,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0010",
@@ -11152,7 +11151,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0011",
@@ -11172,7 +11171,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0012",
@@ -11192,7 +11191,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0013",
@@ -11212,7 +11211,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0014",
@@ -11232,7 +11231,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0015",
@@ -11252,7 +11251,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0016",
@@ -11272,7 +11271,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0017",
@@ -11292,7 +11291,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0018",
@@ -11312,7 +11311,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0019",
@@ -11332,7 +11331,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0020",
@@ -11352,7 +11351,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0021",
@@ -11372,7 +11371,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0022",
@@ -11392,7 +11391,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0023",
@@ -11412,7 +11411,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0024",
@@ -11432,7 +11431,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0025",
@@ -11452,7 +11451,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0026",
@@ -11472,7 +11471,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0027",
@@ -11492,7 +11491,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0028",
@@ -11512,7 +11511,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0029",
@@ -11532,7 +11531,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0030",
@@ -11552,7 +11551,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0031",
@@ -11572,7 +11571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0032",
@@ -11592,7 +11591,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0033",
@@ -11612,7 +11611,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0034",
@@ -11632,7 +11631,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0035",
@@ -11652,7 +11651,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0036",
@@ -11672,7 +11671,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0037",
@@ -11692,7 +11691,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0038",
@@ -11712,7 +11711,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0039",
@@ -11732,7 +11731,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0040",
@@ -11752,7 +11751,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0041",
@@ -11768,7 +11767,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0042",
@@ -11784,7 +11783,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0043",
@@ -11800,7 +11799,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0044",
@@ -11816,7 +11815,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0045",
@@ -11832,7 +11831,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0046",
@@ -11848,7 +11847,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0047",
@@ -11864,7 +11863,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0048",
@@ -11880,7 +11879,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0049",
@@ -11896,7 +11895,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0050",
@@ -11912,7 +11911,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0051",
@@ -11928,7 +11927,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0052",
@@ -11944,7 +11943,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0053",
@@ -11960,7 +11959,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0054",
@@ -11976,7 +11975,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0055",
@@ -11992,7 +11991,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0056",
@@ -12008,7 +12007,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0057",
@@ -12024,7 +12023,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0058",
@@ -12040,7 +12039,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0059",
@@ -12056,7 +12055,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0060",
@@ -12072,7 +12071,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0061",
@@ -12088,7 +12087,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0062",
@@ -12104,7 +12103,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0063",
@@ -12120,7 +12119,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0064",
@@ -12136,7 +12135,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0065",
@@ -12152,7 +12151,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0066",
@@ -12168,7 +12167,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0067",
@@ -12184,7 +12183,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0068",
@@ -12200,7 +12199,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0069",
@@ -12216,7 +12215,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0070",
@@ -12232,7 +12231,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0071",
@@ -12248,7 +12247,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0072",
@@ -12264,7 +12263,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0073",
@@ -12280,7 +12279,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0074",
@@ -12296,7 +12295,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0075",
@@ -12312,7 +12311,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0076",
@@ -12328,7 +12327,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0077",
@@ -12344,7 +12343,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0078",
@@ -12360,7 +12359,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0079",
@@ -12376,7 +12375,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0080",
@@ -12392,7 +12391,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0081",
@@ -12408,7 +12407,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0082",
@@ -12424,7 +12423,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0083",
@@ -12440,7 +12439,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0084",
@@ -12456,7 +12455,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0085",
@@ -12472,7 +12471,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0086",
@@ -12488,7 +12487,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0087",
@@ -12504,7 +12503,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0088",
@@ -12520,7 +12519,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0089",
@@ -12536,7 +12535,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0090",
@@ -12552,7 +12551,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "600点レベルの実務構文です。",
     "linkingTip": "流暢な標準スピードで発音されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0091",
@@ -12572,7 +12571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0092",
@@ -12592,7 +12591,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0093",
@@ -12612,7 +12611,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0094",
@@ -12632,7 +12631,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0095",
@@ -12652,7 +12651,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0096",
@@ -12672,7 +12671,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0097",
@@ -12692,7 +12691,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0098",
@@ -12712,7 +12711,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0099",
@@ -12732,7 +12731,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0100",
@@ -12752,7 +12751,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0101",
@@ -12772,7 +12771,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0102",
@@ -12792,7 +12791,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0103",
@@ -12812,7 +12811,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0104",
@@ -12832,7 +12831,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0105",
@@ -12852,7 +12851,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0106",
@@ -12872,7 +12871,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0107",
@@ -12892,7 +12891,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0108",
@@ -12912,7 +12911,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0109",
@@ -12932,7 +12931,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0110",
@@ -12952,7 +12951,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0111",
@@ -12972,7 +12971,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0112",
@@ -12992,7 +12991,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0113",
@@ -13012,7 +13011,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0114",
@@ -13032,7 +13031,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0115",
@@ -13052,7 +13051,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0116",
@@ -13072,7 +13071,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0117",
@@ -13092,7 +13091,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0118",
@@ -13112,7 +13111,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0119",
@@ -13132,7 +13131,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0120",
@@ -13152,7 +13151,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0121",
@@ -13172,7 +13171,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0122",
@@ -13192,7 +13191,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0123",
@@ -13212,7 +13211,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0124",
@@ -13232,7 +13231,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0125",
@@ -13252,7 +13251,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0126",
@@ -13272,7 +13271,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0127",
@@ -13292,7 +13291,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0128",
@@ -13312,7 +13311,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0129",
@@ -13332,7 +13331,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0130",
@@ -13352,7 +13351,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0131",
@@ -13372,7 +13371,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0132",
@@ -13392,7 +13391,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0133",
@@ -13412,7 +13411,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0134",
@@ -13432,7 +13431,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0135",
@@ -13452,7 +13451,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0136",
@@ -13472,7 +13471,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0137",
@@ -13492,7 +13491,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0138",
@@ -13512,7 +13511,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0139",
@@ -13532,7 +13531,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0140",
@@ -13552,7 +13551,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0141",
@@ -13572,7 +13571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0142",
@@ -13592,7 +13591,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0143",
@@ -13612,7 +13611,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0144",
@@ -13632,7 +13631,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0145",
@@ -13652,7 +13651,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0146",
@@ -13672,7 +13671,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0147",
@@ -13692,7 +13691,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0148",
@@ -13712,7 +13711,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0149",
@@ -13732,7 +13731,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0150",
@@ -13752,7 +13751,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0151",
@@ -13772,7 +13771,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0152",
@@ -13792,7 +13791,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0153",
@@ -13812,7 +13811,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0154",
@@ -13832,7 +13831,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0155",
@@ -13852,7 +13851,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0156",
@@ -13868,7 +13867,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0157",
@@ -13884,7 +13883,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0158",
@@ -13900,7 +13899,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0159",
@@ -13916,7 +13915,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0160",
@@ -13932,7 +13931,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0161",
@@ -13948,7 +13947,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0162",
@@ -13964,7 +13963,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0163",
@@ -13980,7 +13979,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0164",
@@ -13996,7 +13995,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0165",
@@ -14012,7 +14011,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0166",
@@ -14028,7 +14027,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0167",
@@ -14044,7 +14043,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0168",
@@ -14060,7 +14059,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0169",
@@ -14076,7 +14075,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0170",
@@ -14092,7 +14091,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0171",
@@ -14108,7 +14107,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0172",
@@ -14124,7 +14123,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0173",
@@ -14140,7 +14139,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0174",
@@ -14156,7 +14155,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0175",
@@ -14172,7 +14171,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0176",
@@ -14188,7 +14187,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0177",
@@ -14204,7 +14203,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0178",
@@ -14220,7 +14219,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0179",
@@ -14236,7 +14235,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0180",
@@ -14252,7 +14251,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0181",
@@ -14268,7 +14267,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0182",
@@ -14284,7 +14283,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0183",
@@ -14300,7 +14299,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0184",
@@ -14316,7 +14315,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0185",
@@ -14332,7 +14331,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0186",
@@ -14348,7 +14347,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0187",
@@ -14364,7 +14363,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0188",
@@ -14380,7 +14379,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0189",
@@ -14396,7 +14395,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0190",
@@ -14412,7 +14411,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0191",
@@ -14428,7 +14427,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0192",
@@ -14444,7 +14443,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0193",
@@ -14460,7 +14459,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0194",
@@ -14476,7 +14475,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0195",
@@ -14492,7 +14491,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0196",
@@ -14508,7 +14507,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0197",
@@ -14524,7 +14523,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0198",
@@ -14540,7 +14539,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0199",
@@ -14556,7 +14555,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0200",
@@ -14572,7 +14571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0201",
@@ -14588,7 +14587,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0202",
@@ -14604,7 +14603,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0203",
@@ -14620,7 +14619,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0204",
@@ -14636,7 +14635,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0205",
@@ -14652,7 +14651,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0206",
@@ -14668,7 +14667,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0207",
@@ -14684,7 +14683,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0208",
@@ -14700,7 +14699,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0209",
@@ -14716,7 +14715,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0210",
@@ -14732,7 +14731,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0211",
@@ -14748,7 +14747,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0212",
@@ -14764,7 +14763,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0213",
@@ -14780,7 +14779,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0214",
@@ -14796,7 +14795,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s600-0215",
@@ -14812,7 +14811,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "実務で頻出する標準構文です。",
     "linkingTip": "標準的なネイティブ速度で発話されます。",
-    "speedDefault": 0.98
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0001",
@@ -14832,7 +14831,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0002",
@@ -14852,7 +14851,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0003",
@@ -14872,7 +14871,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0004",
@@ -14892,7 +14891,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0005",
@@ -14912,7 +14911,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0006",
@@ -14932,7 +14931,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0007",
@@ -14952,7 +14951,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0008",
@@ -14972,7 +14971,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0009",
@@ -14992,7 +14991,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0010",
@@ -15012,7 +15011,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0011",
@@ -15032,7 +15031,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0012",
@@ -15052,7 +15051,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0013",
@@ -15072,7 +15071,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0014",
@@ -15092,7 +15091,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0015",
@@ -15112,7 +15111,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0016",
@@ -15132,7 +15131,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0017",
@@ -15152,7 +15151,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0018",
@@ -15172,7 +15171,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0019",
@@ -15192,7 +15191,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0020",
@@ -15212,7 +15211,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0021",
@@ -15232,7 +15231,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0022",
@@ -15252,7 +15251,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0023",
@@ -15272,7 +15271,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0024",
@@ -15292,7 +15291,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0025",
@@ -15312,7 +15311,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0026",
@@ -15332,7 +15331,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0027",
@@ -15352,7 +15351,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0028",
@@ -15372,7 +15371,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0029",
@@ -15392,7 +15391,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0030",
@@ -15412,7 +15411,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの重要表現です。",
     "linkingTip": "自然な発話スピードで聴き取りましょう。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0031",
@@ -15428,7 +15427,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0032",
@@ -15444,7 +15443,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0033",
@@ -15460,7 +15459,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0034",
@@ -15476,7 +15475,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0035",
@@ -15492,7 +15491,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0036",
@@ -15508,7 +15507,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0037",
@@ -15524,7 +15523,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0038",
@@ -15540,7 +15539,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0039",
@@ -15556,7 +15555,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0040",
@@ -15572,7 +15571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0041",
@@ -15588,7 +15587,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0042",
@@ -15604,7 +15603,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0043",
@@ -15620,7 +15619,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0044",
@@ -15636,7 +15635,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0045",
@@ -15652,7 +15651,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0046",
@@ -15668,7 +15667,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0047",
@@ -15684,7 +15683,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0048",
@@ -15700,7 +15699,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0049",
@@ -15716,7 +15715,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0050",
@@ -15732,7 +15731,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0051",
@@ -15748,7 +15747,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0052",
@@ -15764,7 +15763,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0053",
@@ -15780,7 +15779,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0054",
@@ -15796,7 +15795,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0055",
@@ -15812,7 +15811,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0056",
@@ -15828,7 +15827,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0057",
@@ -15844,7 +15843,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0058",
@@ -15860,7 +15859,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0059",
@@ -15876,7 +15875,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0060",
@@ -15892,7 +15891,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0061",
@@ -15908,7 +15907,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0062",
@@ -15924,7 +15923,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0063",
@@ -15940,7 +15939,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0064",
@@ -15956,7 +15955,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0065",
@@ -15972,7 +15971,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0066",
@@ -15988,7 +15987,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0067",
@@ -16004,7 +16003,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0068",
@@ -16020,7 +16019,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0069",
@@ -16036,7 +16035,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0070",
@@ -16052,7 +16051,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0071",
@@ -16072,7 +16071,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0072",
@@ -16092,7 +16091,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0073",
@@ -16112,7 +16111,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0074",
@@ -16132,7 +16131,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0075",
@@ -16152,7 +16151,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0076",
@@ -16172,7 +16171,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0077",
@@ -16188,7 +16187,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0078",
@@ -16204,7 +16203,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0079",
@@ -16220,7 +16219,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0080",
@@ -16236,7 +16235,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0081",
@@ -16252,7 +16251,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0082",
@@ -16268,7 +16267,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0083",
@@ -16284,7 +16283,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0084",
@@ -16300,7 +16299,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0085",
@@ -16316,7 +16315,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0086",
@@ -16332,7 +16331,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0087",
@@ -16348,7 +16347,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0088",
@@ -16364,7 +16363,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0089",
@@ -16380,7 +16379,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0090",
@@ -16396,7 +16395,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0091",
@@ -16412,7 +16411,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0092",
@@ -16428,7 +16427,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0093",
@@ -16444,7 +16443,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0094",
@@ -16460,7 +16459,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0095",
@@ -16476,7 +16475,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0096",
@@ -16492,7 +16491,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0097",
@@ -16508,7 +16507,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0098",
@@ -16524,7 +16523,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0099",
@@ -16540,7 +16539,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0100",
@@ -16556,7 +16555,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0101",
@@ -16572,7 +16571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0102",
@@ -16588,7 +16587,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0103",
@@ -16604,7 +16603,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0104",
@@ -16620,7 +16619,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0105",
@@ -16636,7 +16635,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0106",
@@ -16652,7 +16651,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0107",
@@ -16668,7 +16667,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0108",
@@ -16684,7 +16683,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0109",
@@ -16700,7 +16699,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0110",
@@ -16716,7 +16715,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0111",
@@ -16732,7 +16731,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0112",
@@ -16748,7 +16747,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0113",
@@ -16764,7 +16763,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0114",
@@ -16780,7 +16779,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0115",
@@ -16796,7 +16795,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0116",
@@ -16812,7 +16811,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0117",
@@ -16828,7 +16827,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0118",
@@ -16844,7 +16843,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0119",
@@ -16860,7 +16859,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0120",
@@ -16876,7 +16875,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0121",
@@ -16892,7 +16891,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0122",
@@ -16908,7 +16907,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0123",
@@ -16924,7 +16923,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0124",
@@ -16940,7 +16939,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0125",
@@ -16956,7 +16955,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0126",
@@ -16972,7 +16971,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0127",
@@ -16988,7 +16987,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0128",
@@ -17004,7 +17003,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0129",
@@ -17020,7 +17019,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0130",
@@ -17036,7 +17035,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0131",
@@ -17052,7 +17051,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0132",
@@ -17068,7 +17067,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0133",
@@ -17084,7 +17083,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0134",
@@ -17100,7 +17099,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0135",
@@ -17116,7 +17115,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0136",
@@ -17132,7 +17131,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0137",
@@ -17148,7 +17147,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0138",
@@ -17164,7 +17163,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0139",
@@ -17180,7 +17179,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0140",
@@ -17196,7 +17195,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0141",
@@ -17212,7 +17211,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0142",
@@ -17228,7 +17227,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0143",
@@ -17244,7 +17243,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0144",
@@ -17260,7 +17259,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0145",
@@ -17276,7 +17275,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0146",
@@ -17292,7 +17291,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0147",
@@ -17308,7 +17307,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0148",
@@ -17324,7 +17323,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0149",
@@ -17340,7 +17339,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0150",
@@ -17356,7 +17355,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0151",
@@ -17372,7 +17371,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0152",
@@ -17388,7 +17387,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0153",
@@ -17404,7 +17403,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0154",
@@ -17420,7 +17419,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0155",
@@ -17436,7 +17435,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0156",
@@ -17452,7 +17451,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0157",
@@ -17468,7 +17467,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0158",
@@ -17484,7 +17483,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0159",
@@ -17500,7 +17499,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0160",
@@ -17516,7 +17515,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0161",
@@ -17532,7 +17531,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0162",
@@ -17548,7 +17547,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0163",
@@ -17564,7 +17563,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0164",
@@ -17580,7 +17579,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0165",
@@ -17596,7 +17595,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0166",
@@ -17612,7 +17611,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0167",
@@ -17628,7 +17627,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0168",
@@ -17644,7 +17643,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0169",
@@ -17660,7 +17659,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0170",
@@ -17676,7 +17675,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0171",
@@ -17692,7 +17691,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0172",
@@ -17708,7 +17707,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0173",
@@ -17724,7 +17723,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0174",
@@ -17740,7 +17739,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0175",
@@ -17756,7 +17755,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0176",
@@ -17772,7 +17771,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0177",
@@ -17788,7 +17787,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0178",
@@ -17804,7 +17803,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0179",
@@ -17820,7 +17819,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0180",
@@ -17836,7 +17835,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0181",
@@ -17852,7 +17851,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0182",
@@ -17868,7 +17867,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0183",
@@ -17884,7 +17883,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0184",
@@ -17900,7 +17899,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0185",
@@ -17916,7 +17915,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0186",
@@ -17932,7 +17931,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0187",
@@ -17948,7 +17947,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0188",
@@ -17964,7 +17963,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0189",
@@ -17980,7 +17979,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0190",
@@ -17996,7 +17995,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0191",
@@ -18012,7 +18011,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0192",
@@ -18028,7 +18027,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0193",
@@ -18044,7 +18043,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0194",
@@ -18060,7 +18059,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0195",
@@ -18076,7 +18075,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0196",
@@ -18092,7 +18091,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0197",
@@ -18108,7 +18107,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0198",
@@ -18124,7 +18123,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0199",
@@ -18140,7 +18139,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0200",
@@ -18156,7 +18155,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0201",
@@ -18172,7 +18171,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0202",
@@ -18188,7 +18187,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0203",
@@ -18204,7 +18203,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0204",
@@ -18220,7 +18219,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0205",
@@ -18236,7 +18235,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0206",
@@ -18252,7 +18251,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0207",
@@ -18268,7 +18267,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0208",
@@ -18284,7 +18283,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0209",
@@ -18300,7 +18299,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0210",
@@ -18316,7 +18315,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0211",
@@ -18332,7 +18331,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0212",
@@ -18348,7 +18347,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0213",
@@ -18364,7 +18363,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0214",
@@ -18380,7 +18379,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0215",
@@ -18396,7 +18395,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s700-0216",
@@ -18412,7 +18411,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "700点レベルの実務構文です。",
     "linkingTip": "自然なリズムで発音されます。",
-    "speedDefault": 1.02
+    "speedDefault": 1.0
   },
   {
     "id": "s800-0001",
@@ -22012,7 +22011,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0002",
@@ -22032,7 +22031,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0003",
@@ -22052,7 +22051,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0004",
@@ -22072,7 +22071,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0005",
@@ -22092,7 +22091,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0006",
@@ -22112,7 +22111,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0007",
@@ -22132,7 +22131,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0008",
@@ -22152,7 +22151,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0009",
@@ -22172,7 +22171,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0010",
@@ -22192,7 +22191,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0011",
@@ -22212,7 +22211,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0012",
@@ -22232,7 +22231,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0013",
@@ -22252,7 +22251,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0014",
@@ -22272,7 +22271,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0015",
@@ -22292,7 +22291,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0016",
@@ -22312,7 +22311,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0017",
@@ -22332,7 +22331,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0018",
@@ -22352,7 +22351,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0019",
@@ -22372,7 +22371,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0020",
@@ -22392,7 +22391,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0021",
@@ -22412,7 +22411,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0022",
@@ -22432,7 +22431,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0023",
@@ -22452,7 +22451,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0024",
@@ -22472,7 +22471,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0025",
@@ -22492,7 +22491,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0026",
@@ -22512,7 +22511,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0027",
@@ -22532,7 +22531,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0028",
@@ -22552,7 +22551,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0029",
@@ -22572,7 +22571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0030",
@@ -22592,7 +22591,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0031",
@@ -22608,7 +22607,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0032",
@@ -22624,7 +22623,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0033",
@@ -22640,7 +22639,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0034",
@@ -22656,7 +22655,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0035",
@@ -22672,7 +22671,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0036",
@@ -22688,7 +22687,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0037",
@@ -22704,7 +22703,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0038",
@@ -22720,7 +22719,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0039",
@@ -22736,7 +22735,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0040",
@@ -22752,7 +22751,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0041",
@@ -22768,7 +22767,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0042",
@@ -22784,7 +22783,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0043",
@@ -22800,7 +22799,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0044",
@@ -22816,7 +22815,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0045",
@@ -22832,7 +22831,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0046",
@@ -22848,7 +22847,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0047",
@@ -22864,7 +22863,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0048",
@@ -22880,7 +22879,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0049",
@@ -22896,7 +22895,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0050",
@@ -22912,7 +22911,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0051",
@@ -22928,7 +22927,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0052",
@@ -22944,7 +22943,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0053",
@@ -22960,7 +22959,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0054",
@@ -22976,7 +22975,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0055",
@@ -22992,7 +22991,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0056",
@@ -23008,7 +23007,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0057",
@@ -23024,7 +23023,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0058",
@@ -23040,7 +23039,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0059",
@@ -23056,7 +23055,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0060",
@@ -23072,7 +23071,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "倒置や最難関の語彙・文構造です。",
     "linkingTip": "最高速のネイティブ英語での音の消失と連結を完全に聴き分けましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0061",
@@ -23092,7 +23091,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0062",
@@ -23112,7 +23111,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0063",
@@ -23132,7 +23131,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0064",
@@ -23152,7 +23151,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0065",
@@ -23172,7 +23171,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0066",
@@ -23188,7 +23187,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0067",
@@ -23204,7 +23203,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0068",
@@ -23220,7 +23219,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0069",
@@ -23236,7 +23235,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0070",
@@ -23252,7 +23251,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0071",
@@ -23268,7 +23267,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0072",
@@ -23284,7 +23283,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0073",
@@ -23300,7 +23299,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0074",
@@ -23316,7 +23315,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0075",
@@ -23332,7 +23331,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0076",
@@ -23348,7 +23347,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0077",
@@ -23364,7 +23363,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0078",
@@ -23380,7 +23379,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0079",
@@ -23396,7 +23395,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0080",
@@ -23412,7 +23411,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0081",
@@ -23428,7 +23427,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0082",
@@ -23444,7 +23443,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0083",
@@ -23460,7 +23459,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0084",
@@ -23476,7 +23475,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0085",
@@ -23492,7 +23491,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0086",
@@ -23508,7 +23507,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0087",
@@ -23524,7 +23523,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0088",
@@ -23540,7 +23539,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0089",
@@ -23556,7 +23555,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0090",
@@ -23572,7 +23571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0091",
@@ -23588,7 +23587,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0092",
@@ -23604,7 +23603,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0093",
@@ -23620,7 +23619,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0094",
@@ -23636,7 +23635,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0095",
@@ -23652,7 +23651,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0096",
@@ -23668,7 +23667,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0097",
@@ -23684,7 +23683,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0098",
@@ -23700,7 +23699,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0099",
@@ -23716,7 +23715,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0100",
@@ -23732,7 +23731,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0101",
@@ -23748,7 +23747,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0102",
@@ -23764,7 +23763,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0103",
@@ -23780,7 +23779,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0104",
@@ -23796,7 +23795,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0105",
@@ -23812,7 +23811,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0106",
@@ -23828,7 +23827,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0107",
@@ -23844,7 +23843,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0108",
@@ -23860,7 +23859,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0109",
@@ -23876,7 +23875,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0110",
@@ -23892,7 +23891,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0111",
@@ -23908,7 +23907,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0112",
@@ -23924,7 +23923,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0113",
@@ -23940,7 +23939,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0114",
@@ -23956,7 +23955,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0115",
@@ -23972,7 +23971,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0116",
@@ -23988,7 +23987,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0117",
@@ -24004,7 +24003,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0118",
@@ -24020,7 +24019,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0119",
@@ -24036,7 +24035,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0120",
@@ -24052,7 +24051,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0121",
@@ -24068,7 +24067,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0122",
@@ -24084,7 +24083,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0123",
@@ -24100,7 +24099,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0124",
@@ -24116,7 +24115,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0125",
@@ -24132,7 +24131,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0126",
@@ -24148,7 +24147,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0127",
@@ -24164,7 +24163,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0128",
@@ -24180,7 +24179,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0129",
@@ -24196,7 +24195,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0130",
@@ -24212,7 +24211,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0131",
@@ -24228,7 +24227,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0132",
@@ -24244,7 +24243,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0133",
@@ -24260,7 +24259,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0134",
@@ -24276,7 +24275,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0135",
@@ -24292,7 +24291,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0136",
@@ -24308,7 +24307,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0137",
@@ -24324,7 +24323,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0138",
@@ -24340,7 +24339,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0139",
@@ -24356,7 +24355,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0140",
@@ -24372,7 +24371,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0141",
@@ -24388,7 +24387,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0142",
@@ -24404,7 +24403,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0143",
@@ -24420,7 +24419,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0144",
@@ -24436,7 +24435,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0145",
@@ -24452,7 +24451,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0146",
@@ -24468,7 +24467,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0147",
@@ -24484,7 +24483,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0148",
@@ -24500,7 +24499,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0149",
@@ -24516,7 +24515,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0150",
@@ -24532,7 +24531,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0151",
@@ -24548,7 +24547,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0152",
@@ -24564,7 +24563,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0153",
@@ -24580,7 +24579,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0154",
@@ -24596,7 +24595,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0155",
@@ -24612,7 +24611,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0156",
@@ -24628,7 +24627,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0157",
@@ -24644,7 +24643,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0158",
@@ -24660,7 +24659,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0159",
@@ -24676,7 +24675,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0160",
@@ -24692,7 +24691,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0161",
@@ -24708,7 +24707,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0162",
@@ -24724,7 +24723,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0163",
@@ -24740,7 +24739,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0164",
@@ -24756,7 +24755,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0165",
@@ -24772,7 +24771,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0166",
@@ -24788,7 +24787,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0167",
@@ -24804,7 +24803,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0168",
@@ -24820,7 +24819,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0169",
@@ -24836,7 +24835,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0170",
@@ -24852,7 +24851,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0171",
@@ -24868,7 +24867,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0172",
@@ -24884,7 +24883,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0173",
@@ -24900,7 +24899,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0174",
@@ -24916,7 +24915,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0175",
@@ -24932,7 +24931,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0176",
@@ -24948,7 +24947,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0177",
@@ -24964,7 +24963,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0178",
@@ -24980,7 +24979,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0179",
@@ -24996,7 +24995,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0180",
@@ -25012,7 +25011,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0181",
@@ -25028,7 +25027,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0182",
@@ -25044,7 +25043,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0183",
@@ -25060,7 +25059,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0184",
@@ -25076,7 +25075,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0185",
@@ -25092,7 +25091,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0186",
@@ -25108,7 +25107,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0187",
@@ -25124,7 +25123,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0188",
@@ -25140,7 +25139,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0189",
@@ -25156,7 +25155,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0190",
@@ -25172,7 +25171,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0191",
@@ -25188,7 +25187,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0192",
@@ -25204,7 +25203,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0193",
@@ -25220,7 +25219,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0194",
@@ -25236,7 +25235,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0195",
@@ -25252,7 +25251,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0196",
@@ -25268,7 +25267,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0197",
@@ -25284,7 +25283,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0198",
@@ -25300,7 +25299,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0199",
@@ -25316,7 +25315,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0200",
@@ -25332,7 +25331,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0201",
@@ -25348,7 +25347,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0202",
@@ -25364,7 +25363,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0203",
@@ -25380,7 +25379,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0204",
@@ -25396,7 +25395,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0205",
@@ -25412,7 +25411,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0206",
@@ -25428,7 +25427,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0207",
@@ -25444,7 +25443,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0208",
@@ -25460,7 +25459,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0209",
@@ -25476,7 +25475,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0210",
@@ -25492,7 +25491,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0211",
@@ -25508,7 +25507,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0212",
@@ -25524,7 +25523,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0213",
@@ -25540,7 +25539,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0214",
@@ -25556,7 +25555,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   },
   {
     "id": "s900-0215",
@@ -25572,7 +25571,7 @@ export const SENTENCE_DATABASE: Sentence[] = ([
     ],
     "grammarTip": "900点レベルの最高峰英文です。",
     "linkingTip": "最高速のネイティブ英語を完璧に聴き取りましょう。",
-    "speedDefault": 1.18
+    "speedDefault": 1.25
   }
 ] as unknown as Sentence[]);
 

@@ -128,8 +128,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
         <div className="flex items-center gap-1">
           <span className="text-[11px] text-slate-700 dark:text-slate-400 font-semibold mr-1">{t.audioPlayer.speedLabel}</span>
           {SPEED_OPTIONS.map((speed) => {
-            const isCurrent = Math.abs(voiceSettings.speed - speed) < 0.02;
-            const isDefault = Math.abs((sentence.speedDefault || 1.0) - speed) < 0.03;
+            const isCurrent = Math.abs(voiceSettings.speed - speed) < 0.04;
+            const isDefault = Math.abs((sentence.speedDefault || 1.0) - speed) < 0.04;
             return (
               <button
                 key={speed}
