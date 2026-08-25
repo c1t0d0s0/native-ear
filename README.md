@@ -64,29 +64,61 @@ TOEICリスニングスコアアップ（**300〜900点**）を目指すため�
 
 ---
 
-## 🚀 起動方法
+## 🚀 起動・開発・ビルド方法
 
+### Web版
 ```bash
 # 依存関係のインストール
 npm install
 
-# 開発サーバー起動
+# 開発サーバー起動 (http://localhost:3000)
 npm run dev
 
-# プロダクションビルド
+# Web版プロダクションビルド
 npm run build
 
-# プレビュー
+# ビルドプレビュー
 npm run preview
 ```
+
+### 🖥️ デスクトップアプリ版（Tauri / Windows・macOS・Linux）
+
+Tauri v2 を使用して Windows (.exe / .msi)、macOS (.app / .dmg / Universal Binary)、Linux (.deb / .AppImage) 向けのネイティブデスクトップアプリをビルド・実行できます。
+
+#### 必要環境
+- **Node.js**: 20+
+- **Rust / Cargo**: 1.77.2+ (`rustc --version`)
+- **OS固有の依存ライブラリ**:
+  - **Windows**: Microsoft C++ Build Tools, WebView2 (Windows 10/11には標準搭載)
+  - **macOS**: Xcode Command Line Tools (`xcode-select --install`)
+  - **Linux (Ubuntu/Debian)**: `sudo apt-get install libwebkit2gtk-4.1-dev libgtk-3-dev libayatana-appindicator3-dev librsvg2-dev patchelf`
+
+#### デスクトップ版の実行コマンド
+```bash
+# デスクトップ開発モード起動（ホットリロード付きでネイティブウィンドウが起動）
+npm run tauri:dev
+
+# デスクトップアプリのプロダクションビルド
+npm run tauri:build
+```
+
+ビルド完了後、`src-tauri/target/release/`（または bundle ディレクトリ）に各OS向けのバイナリおよびインストーラーが生成されます。
+
+#### 📦 GitHub Actions による自動マルチプラットフォームリリース
+`.github/workflows/release-native.yml` が設定されており、GitHub 上で `v*` タグ（例: `v1.0.0`）をプッシュするか、GitHub Actions の **workflow_dispatch** を手動実行することで、以下のネイティブアプリが自動ビルドされ GitHub Releases にアセットとして登録されます：
+- 🍏 **macOS**: Apple Silicon & Intel 共通の Universal Binary (`.dmg`, `.app`)
+- 🪟 **Windows**: x64 インストーラー (`.msi`, `.exe`)
+- 🐧 **Linux**: `.deb` パッケージ & `.AppImage`
 
 ---
 
 ## 🛠 技術スタック
 - **Frontend**: React 18, TypeScript, Vite
+- **Desktop Framework**: Tauri v2, Rust
 - **Styling**: Tailwind CSS, Lucide React Icons, Canvas Confetti
 - **Speech & Audio**:
   - Web Speech API (`SpeechSynthesis` - 音声合成 / `SpeechRecognition` - 音声認識)
   - Web Audio API (`AudioContext` - シンセサイザー効果音)
 - **Algorithms**: Dynamic Programming LCS (Longest Common Subsequence) Word Alignment Token Diff
-- **Persistence**: Browser LocalStorage
+- **Persistence**: Browser LocalStorage / Desktop Storage
+- **CI/CD**: GitHub Actions (GitHub Pages / Multi-platform Desktop Release)

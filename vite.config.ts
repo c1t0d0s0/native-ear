@@ -32,15 +32,35 @@ function gtmPlugin(gtmId?: string): Plugin {
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   const gtmId = process.env.VITE_GTM_ID || env.VITE_GTM_ID;
+  const host = process.env.TAURI_DEV_HOST;
 
   return {
     base: './',
     plugins: [react(), gtmPlugin(gtmId)],
+    clearScreen: false,
+    envPrefix: ['VITE_', 'TAURI_ENV_*'],
     server: {
       port: 3000,
-      host: true
+      strictPort: true,
+      host: host || true,
+      hmr: host
+        ? {
+            protocol: 'ws',
+            host,
+            port: 3001,
+          }
+        : undefined,
+      watch: {
+        ignored: ['**/src-tauri/**'],
+      },
     },
     build: {
+      target:
+        process.env.TAURI_ENV_PLATFORM === 'windows'
+          ? 'chrome105'
+          : ['es2021', 'chrome105', 'safari13'],
+      minify: !process.env.TAURI_ENV_DEBUG ? 'esbuild' : false,
+      sourcemap: !!process.env.TAURI_ENV_DEBUG,
       chunkSizeWarningLimit: 900,
       rollupOptions: {
         output: {
@@ -69,3 +89,4 @@ export default defineConfig(({ mode }) => {
     }
   };
 });
+

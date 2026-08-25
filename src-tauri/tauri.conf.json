@@ -1,0 +1,56 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "NativeEar",
+  "version": "1.0.0",
+  "identifier": "com.nativeear.app",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:3000",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "NativeEar - TOEIC 英語リスニング・ディクテーション特訓",
+        "label": "main",
+        "width": 1120,
+        "height": 800,
+        "minWidth": 760,
+        "minHeight": 560,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "category": "Education",
+    "shortDescription": "TOEIC English Listening & Dictation Practice App",
+    "longDescription": "NativeEar is a native desktop application designed for TOEIC English listening and dictation practice with speech synthesis and real-time diff evaluation.",
+    "copyright": "Copyright © 2026 NativeEar",
+    "macOS": {
+      "minimumSystemVersion": "10.15"
+    },
+    "windows": {
+      "digestAlgorithm": "sha256"
+    },
+    "linux": {
+      "deb": {
+        "depends": ["libwebkit2gtk-4.1-0 | libwebkit2gtk-4.0-37", "libgtk-3-0"]
+      }
+    }
+  }
+}
