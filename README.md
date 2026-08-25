@@ -105,10 +105,44 @@ npm run tauri:build
 ビルド完了後、`src-tauri/target/release/`（または bundle ディレクトリ）に各OS向けのバイナリおよびインストーラーが生成されます。
 
 #### 📦 GitHub Actions による自動マルチプラットフォームリリース
-`.github/workflows/release-native.yml` が設定されており、GitHub 上で `v*` タグ（例: `v1.0.0`）をプッシュするか、GitHub Actions の **workflow_dispatch** を手動実行することで、以下のネイティブアプリが自動ビルドされ GitHub Releases にアセットとして登録されます：
+`.github/workflows/release-native.yml` が設定されており、GitHub 上で `v*` タグ（例: `v2.0.0`）をプッシュするか、GitHub Actions の **workflow_dispatch** を手動実行することで、以下のネイティブアプリが自動ビルドされ GitHub Releases にアセットとして登録されます：
 - 🍏 **macOS**: Apple Silicon & Intel 共通の Universal Binary (`.dmg`, `.app`)
 - 🪟 **Windows**: x64 インストーラー (`.msi`, `.exe`)
 - 🐧 **Linux**: `.deb` パッケージ & `.AppImage`
+
+#### 📥 配布バイナリのインストール・初回起動方法（セキュリティ警告の解除）
+
+GitHub Releases からダウンロードしたバイナリは個人開発による自己ビルド（コード署名未購入）のため、各 OS のセキュリティ保護機能によって初回起動時に警告が表示される場合があります。以下の手順で許可して実行してください。
+
+##### 🍏 macOS の場合（Gatekeeper / Quarantine 属性の解除）
+1. ダウンロードした `.dmg` を開き、`NativeEar.app` を `/Applications`（アプリケーションフォルダ）へ配置します。
+2. 初回起動時に **「開発元を検証できないため開けません」** または **「悪質なソフトウェアかどうかを検証できないため開けません」** と表示された場合、**ターミナル**を開いて以下のコマンドを実行し、Apple の隔離属性（quarantine）を解除してください：
+   ```bash
+   xattr -cr /Applications/NativeEar.app
+   ```
+   *(個別の属性削除コマンド: `xattr -d com.apple.quarantine /Applications/NativeEar.app`)*
+3. **GUI から起動する場合**:
+   - Finder で `NativeEar.app` を **Control キーを押しながらクリック（または右クリック） ➜「開く」** を選択し、表示される確認ダイアログで **「開く」** をクリックします。
+   - または、macOS の **「システム設定」➜「プライバシーとセキュリティ」** を開き、セキュリティ項目に表示される「NativeEar は開発元を検証できないため…」の横にある **「このまま開く」** をクリックします。
+
+##### 🪟 Windows の場合（SmartScreen の解除）
+1. ダウンロードした `.msi`（または `.exe`）を実行します。
+2. **「Windows によって PC が保護されました」**（Microsoft Defender SmartScreen）という青い画面が表示された場合：
+   - 画面左側にある **「詳細情報」** をクリックします。
+   - 右下に現れる **「実行」** ボタンをクリックします。
+
+##### 🐧 Linux の場合
+- **AppImage**:
+  ```bash
+  chmod +x NativeEar_2.0.0_amd64.AppImage
+  ./NativeEar_2.0.0_amd64.AppImage
+  ```
+- **.deb パッケージ**:
+  ```bash
+  sudo apt install ./native-ear_2.0.0_amd64.deb
+  # または
+  sudo dpkg -i native-ear_2.0.0_amd64.deb
+  ```
 
 ---
 
