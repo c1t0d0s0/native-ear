@@ -1,7 +1,7 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "NativeEar",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "identifier": "com.nativeear.app",
   "build": {
     "frontendDist": "../dist",
@@ -14,10 +14,10 @@
       {
         "title": "NativeEar - TOEIC 英語リスニング・ディクテーション特訓",
         "label": "main",
-        "width": 1120,
-        "height": 800,
+        "width": 1180,
+        "height": 900,
         "minWidth": 760,
-        "minHeight": 560,
+        "minHeight": 600,
         "resizable": true,
         "fullscreen": false,
         "center": true

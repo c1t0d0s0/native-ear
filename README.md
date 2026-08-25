@@ -105,7 +105,7 @@ npm run tauri:build
 ビルド完了後、`src-tauri/target/release/`（または bundle ディレクトリ）に各OS向けのバイナリおよびインストーラーが生成されます。
 
 #### 📦 GitHub Actions による自動マルチプラットフォームリリース
-`.github/workflows/release-native.yml` が設定されており、GitHub 上で `v*` タグ（例: `v2.0.0`）をプッシュするか、GitHub Actions の **workflow_dispatch** を手動実行することで、以下のネイティブアプリが自動ビルドされ GitHub Releases にアセットとして登録されます：
+`.github/workflows/release-native.yml` が設定されており、GitHub 上で `v*` タグ（例: `v2.0.1`）をプッシュするか、GitHub Actions の **workflow_dispatch** を手動実行することで、以下のネイティブアプリが自動ビルドされ GitHub Releases にアセットとして登録されます：
 - 🍏 **macOS**: Apple Silicon & Intel 共通の Universal Binary (`.dmg`, `.app`)
 - 🪟 **Windows**: x64 インストーラー (`.msi`, `.exe`)
 - 🐧 **Linux**: `.deb` パッケージ & `.AppImage`
@@ -134,14 +134,14 @@ GitHub Releases からダウンロードしたバイナリは個人開発によ�
 ##### 🐧 Linux の場合
 - **AppImage**:
   ```bash
-  chmod +x NativeEar_2.0.0_amd64.AppImage
-  ./NativeEar_2.0.0_amd64.AppImage
+  chmod +x NativeEar_2.0.1_amd64.AppImage
+  ./NativeEar_2.0.1_amd64.AppImage
   ```
 - **.deb パッケージ**:
   ```bash
-  sudo apt install ./native-ear_2.0.0_amd64.deb
+  sudo apt install ./native-ear_2.0.1_amd64.deb
   # または
-  sudo dpkg -i native-ear_2.0.0_amd64.deb
+  sudo dpkg -i native-ear_2.0.1_amd64.deb
   ```
 
 ---

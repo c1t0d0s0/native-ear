@@ -271,7 +271,7 @@ export const App: React.FC = () => {
       />
 
       {/* Main Container */}
-      <main className="flex-1 max-w-4xl w-full mx-auto px-2.5 sm:px-6 py-2 sm:py-4 space-y-2 sm:space-y-3">
+      <main className="flex-1 max-w-4xl w-full mx-auto px-3 sm:px-6 py-1.5 sm:py-2.5 space-y-1.5 sm:space-y-2">
         {/* Level Selector */}
         <LevelSelector
           currentLevel={currentLevel}
@@ -406,7 +406,7 @@ export const App: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <footer className="py-4 border-t border-slate-200 dark:border-slate-800/60 text-center text-xs text-slate-600 dark:text-slate-500 space-y-1 transition-colors">
+      <footer className="py-2 border-t border-slate-200 dark:border-slate-800/60 text-center text-xs text-slate-600 dark:text-slate-500 space-y-0.5 transition-colors">
         <p className="font-semibold text-slate-700 dark:text-slate-400">{t.footer.copyright}</p>
         <p className="text-[11px] text-slate-500 dark:text-slate-600">{t.footer.subtitle}</p>
         <div>

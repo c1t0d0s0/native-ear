@@ -1,6 +1,6 @@
 [package]
 name = "native-ear"
-version = "2.0.0"
+version = "2.0.1"
 description = "NativeEar - TOEIC 英語リスニング・ディクテーション特訓"
 authors = ["NativeEar Team"]
 license = "MIT"
