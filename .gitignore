@@ -73,4 +73,5 @@ Thumbs.db
 # Scratch and temp files
 scratch/
 
+config.js
 MEMO.txt
