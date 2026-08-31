@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja" class="dark">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./logo.svg" />
@@ -48,10 +48,10 @@
       (function() {
         try {
           const theme = localStorage.getItem('native_ear_theme');
-          if (theme === 'light') {
-            document.documentElement.classList.remove('dark');
-          } else {
+          if (theme === 'dark') {
             document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
           }
         } catch (e) {}
       })();

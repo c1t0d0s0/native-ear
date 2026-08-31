@@ -19,7 +19,16 @@ import { Shuffle, SkipForward, Keyboard, Mic } from 'lucide-react';
 
 export const App: React.FC = () => {
   // Application State
-  const [currentLevel, setCurrentLevel] = useState<Level>(600);
+  const [currentLevel, setCurrentLevel] = useState<Level>(() => {
+    const saved = localStorage.getItem('native_ear_level');
+    if (saved) {
+      const num = parseInt(saved, 10);
+      if ([300, 400, 500, 600, 700, 800, 900].includes(num)) {
+        return num as Level;
+      }
+    }
+    return 300; // Default to 300 (入門・超短文)
+  });
   const [voiceSettings, setVoiceSettings] = useState<VoiceSettings>(() => StorageService.getSettings());
   const [stats, setStats] = useState<UserStats>(() => StorageService.getStats());
   const [isDark, setIsDark] = useState<boolean>(() => {
@@ -27,17 +36,22 @@ export const App: React.FC = () => {
     if (saved !== null) {
       return saved === 'dark';
     }
-    return true; // Default to Dark mode
+    return false; // Default to Light mode
   });
   const [lang, setLang] = useState<Language>(() => detectBrowserLanguage());
   const [practiceMode, setPracticeMode] = useState<PracticeMode>(() => {
     const saved = localStorage.getItem('native_ear_practice_mode') as PracticeMode;
-    return saved === 'shadowing' || saved === 'dictation' ? saved : 'dictation';
+    return saved === 'shadowing' || saved === 'dictation' ? saved : 'shadowing'; // Default to Shadowing mode
   });
   const [isShuffle, setIsShuffle] = useState<boolean>(true);
 
   // Active translation dictionary
   const t = useMemo(() => TRANSLATIONS[lang] || TRANSLATIONS.en, [lang]);
+
+  // Sync level with localStorage
+  useEffect(() => {
+    localStorage.setItem('native_ear_level', String(currentLevel));
+  }, [currentLevel]);
 
   // Sync practice mode with localStorage
   useEffect(() => {
