@@ -345,7 +345,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       close: '閉じる',
     },
     footer: {
-      copyright: 'NativeEar © cuio.net',
+      copyright: 'NativeEar © c1t0d0s0',
       subtitle: 'アメリカ英語ネイティブ音声 / 300〜900点レベル別対応',
       licenseLink: 'OSSライセンス・著作権表記',
     },
@@ -527,7 +527,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       close: 'Close',
     },
     footer: {
-      copyright: 'NativeEar © cuio.net',
+      copyright: 'NativeEar © c1t0d0s0',
       subtitle: 'US Native English Speech / TOEIC Levels 300 - 900',
       licenseLink: 'Open Source Licenses & Copyright',
     },
