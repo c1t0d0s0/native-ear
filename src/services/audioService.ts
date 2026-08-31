@@ -55,68 +55,87 @@ export class AudioService {
     return generalEn.length > 0 ? generalEn : all;
   }
 
-  public findVoice(gender: VoiceGender): { voice: SpeechSynthesisVoice | null; isMaleVoiceFound: boolean } {
-    const usVoices = this.getUSVoices();
-    const allVoices = this.getVoices();
-    if (usVoices.length === 0 && allVoices.length === 0) {
-      return { voice: null, isMaleVoiceFound: false };
-    }
-
+  private isMaleVoice(v: SpeechSynthesisVoice): boolean {
+    const text = `${v.name} ${v.voiceURI}`.toLowerCase();
     const maleKeywords = [
-      'male', 'david', 'alex', 'fred', 'daniel', 'mark', 'tom', 'george', 'guy',
+      '#male', 'male_', 'male-', '-male', '_male', ' male', '(male)',
+      'david', 'alex', 'fred', 'daniel', 'mark', 'tom', 'george', 'guy',
       'brian', 'richard', 'james', 'john', 'oliver', 'aaron', 'arthur', 'gordon',
-      'evan', 'nathan', 'standard-b', 'standard-d', 'standard-j', 'wavenet-b',
-      'wavenet-d', 'wavenet-j', 'neural2-d', 'neural2-j', 'journey-d', 'polyglot-1',
-      'studio-b', 'studio-d', 'uk english male', 'us male', 'guy online', 'christopher',
-      'eric', 'andrew', 'ryan', 'thomas'
+      'evan', 'nathan', 'christopher', 'eric', 'andrew', 'ryan', 'thomas',
+      'standard-b', 'standard-d', 'standard-j', 'wavenet-b', 'wavenet-d', 'wavenet-j',
+      'neural2-d', 'neural2-j', 'journey-d', 'polyglot-1', 'studio-b', 'studio-d',
+      'uk english male', 'us male', 'guy online',
+      '-iom', '-iob', '-iod', '-rjs', '-fis', '-aub', '-cjc', 'male_1', 'male_2', 'male_3'
     ];
-
     const femaleKeywords = [
-      'female', 'samantha', 'victoria', 'karen', 'zira', 'susan', 'ava', 'allison',
+      '#female', 'female_', 'female-', '-female', '_female', ' female', '(female)',
+      'samantha', 'victoria', 'karen', 'zira', 'susan', 'ava', 'allison',
       'kate', 'natural', 'jenny', 'aria', 'sonia', 'libby', 'clara', 'emma', 'ana',
       'steffi', 'standard-a', 'standard-c', 'standard-e', 'standard-f', 'standard-g',
       'standard-h', 'standard-i', 'wavenet-a', 'wavenet-c', 'wavenet-e', 'wavenet-f',
-      'neural2-a', 'neural2-c', 'neural2-e', 'neural2-f', 'uk english female'
+      'neural2-a', 'neural2-c', 'neural2-e', 'neural2-f', 'uk english female',
+      '-iol', '-iof'
     ];
 
+    const hasMale = maleKeywords.some(kw => text.includes(kw));
+    const hasFemale = femaleKeywords.some(kw => text.includes(kw));
+    return hasMale && !hasFemale;
+  }
+
+  private isFemaleVoice(v: SpeechSynthesisVoice): boolean {
+    const text = `${v.name} ${v.voiceURI}`.toLowerCase();
+    const femaleKeywords = [
+      '#female', 'female_', 'female-', '-female', '_female', ' female', '(female)',
+      'samantha', 'victoria', 'karen', 'zira', 'susan', 'ava', 'allison',
+      'kate', 'natural', 'jenny', 'aria', 'sonia', 'libby', 'clara', 'emma', 'ana',
+      'steffi', 'standard-a', 'standard-c', 'standard-e', 'standard-f', 'standard-g',
+      'standard-h', 'standard-i', 'wavenet-a', 'wavenet-c', 'wavenet-e', 'wavenet-f',
+      'neural2-a', 'neural2-c', 'neural2-e', 'neural2-f', 'uk english female',
+      '-iol', '-iof'
+    ];
+    const maleKeywords = [
+      '#male', 'male_', 'male-', '-male', '_male', ' male', '(male)',
+      'david', 'alex', 'fred', 'daniel', 'mark', 'tom', 'george', 'guy',
+      'brian', 'richard', 'james', 'john', 'oliver', 'aaron', 'arthur', 'gordon',
+      'evan', 'nathan', 'christopher', 'eric', 'andrew', 'ryan', 'thomas',
+      '-iom', '-iob', '-iod'
+    ];
+
+    const hasFemale = femaleKeywords.some(kw => text.includes(kw));
+    const hasMale = maleKeywords.some(kw => text.includes(kw));
+    return hasFemale && !hasMale;
+  }
+
+  public findVoice(gender: VoiceGender): { voice: SpeechSynthesisVoice | null; isMaleVoiceFound: boolean } {
+    const usVoices = this.getUSVoices();
+    const allVoices = this.getVoices();
+
     if (gender === 'male') {
-      // 1. Search in US voices for explicit male keywords
-      let found = usVoices.find(v => {
-        const name = v.name.toLowerCase();
-        return maleKeywords.some(kw => name.includes(kw)) && !femaleKeywords.some(kw => name.includes(kw));
-      });
-      if (found) return { voice: found, isMaleVoiceFound: true };
+      // 1. Search in US English voices for explicit male keywords in name or voiceURI
+      const usMale = usVoices.find(v => this.isMaleVoice(v));
+      if (usMale) return { voice: usMale, isMaleVoiceFound: true };
 
-      // 2. Search in all English voices for explicit male keywords
-      found = allVoices.find(v => {
-        const name = v.name.toLowerCase();
-        return (v.lang.toLowerCase().startsWith('en')) &&
-          maleKeywords.some(kw => name.includes(kw)) &&
-          !femaleKeywords.some(kw => name.includes(kw));
-      });
-      if (found) return { voice: found, isMaleVoiceFound: true };
+      // 2. Search in any English voices for explicit male keywords
+      const enMale = allVoices.find(v => v.lang.toLowerCase().startsWith('en') && this.isMaleVoice(v));
+      if (enMale) return { voice: enMale, isMaleVoiceFound: true };
 
-      // 3. Fallback: If multiple voices exist, try a voice not labeled female
-      const nonFemale = usVoices.find(v => !femaleKeywords.some(kw => v.name.toLowerCase().includes(kw)));
-      if (nonFemale) return { voice: nonFemale, isMaleVoiceFound: false };
+      // 3. Search across all voices for explicit male keywords
+      const anyMale = allVoices.find(v => this.isMaleVoice(v));
+      if (anyMale) return { voice: anyMale, isMaleVoiceFound: true };
 
-      return { voice: usVoices[0] || null, isMaleVoiceFound: false };
+      // Crucial: On Android, if NO explicit male voice is registered in the OS,
+      // do NOT force a female voice object into utterance.voice (which overrides pitch modulation).
+      // Returning null allows the Android TTS engine to lower pitch for default speech.
+      return { voice: null, isMaleVoiceFound: false };
     } else {
       // Female voice search
-      let found = usVoices.find(v => {
-        const name = v.name.toLowerCase();
-        return femaleKeywords.some(kw => name.includes(kw)) && !maleKeywords.some(kw => name.includes(kw));
-      });
-      if (found) return { voice: found, isMaleVoiceFound: false };
+      const usFemale = usVoices.find(v => this.isFemaleVoice(v));
+      if (usFemale) return { voice: usFemale, isMaleVoiceFound: false };
 
-      found = allVoices.find(v => {
-        const name = v.name.toLowerCase();
-        return (v.lang.toLowerCase().startsWith('en')) &&
-          femaleKeywords.some(kw => name.includes(kw));
-      });
-      if (found) return { voice: found, isMaleVoiceFound: false };
+      const enFemale = allVoices.find(v => v.lang.toLowerCase().startsWith('en') && this.isFemaleVoice(v));
+      if (enFemale) return { voice: enFemale, isMaleVoiceFound: false };
 
-      return { voice: usVoices[0] || null, isMaleVoiceFound: false };
+      return { voice: usVoices[0] || allVoices[0] || null, isMaleVoiceFound: false };
     }
   }
 
@@ -130,6 +149,9 @@ export class AudioService {
       onEnd?.();
       return;
     }
+
+    // Refresh voices list in case async loaded
+    this.getVoices();
 
     // Cancel any ongoing speech
     this.stop();
@@ -146,18 +168,18 @@ export class AudioService {
       utterance.voice = voice;
     }
 
-    // Acoustic pitch modulation for clear male / female distinction on all OS/browsers
+    // Acoustic pitch modulation for clear male / female distinction across Android, iOS, Windows, and macOS
     if (gender === 'male') {
       if (isMaleVoiceFound) {
         utterance.pitch = settings.pitch ?? 0.88;
       } else {
-        // Fallback pitch lowering to create a clear, natural masculine tone
-        utterance.pitch = settings.pitch ?? 0.78;
+        // Fallback pitch lowering for systems with single default voice (e.g. Android default TTS)
+        utterance.pitch = settings.pitch ?? 0.72;
         utterance.rate = (settings.speed ?? 1.0) * 0.95;
       }
     } else {
       // Female tone
-      utterance.pitch = settings.pitch ?? 1.12;
+      utterance.pitch = settings.pitch ?? 1.15;
       utterance.rate = (settings.speed ?? 1.0) * 1.02;
     }
 
