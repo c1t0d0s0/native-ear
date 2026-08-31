@@ -1,5 +1,70 @@
 import { DiffToken, EvaluationResult } from '../types';
 
+const WORD_TO_NUMBER_MAP: Record<string, string> = {
+  // Cardinals
+  zero: '0',
+  one: '1',
+  two: '2',
+  three: '3',
+  four: '4',
+  five: '5',
+  six: '6',
+  seven: '7',
+  eight: '8',
+  nine: '9',
+  ten: '10',
+  eleven: '11',
+  twelve: '12',
+  thirteen: '13',
+  fourteen: '14',
+  fifteen: '15',
+  sixteen: '16',
+  seventeen: '17',
+  eighteen: '18',
+  nineteen: '19',
+  twenty: '20',
+  thirty: '30',
+  forty: '40',
+  fifty: '50',
+  sixty: '60',
+  seventy: '70',
+  eighty: '80',
+  ninety: '90',
+  hundred: '100',
+  thousand: '1000',
+  million: '1000000',
+
+  // Ordinals
+  first: '1st',
+  second: '2nd',
+  third: '3rd',
+  fourth: '4th',
+  fifth: '5th',
+  sixth: '6th',
+  seventh: '7th',
+  eighth: '8th',
+  ninth: '9th',
+  tenth: '10th',
+  eleventh: '11th',
+  twelfth: '12th',
+  thirteenth: '13th',
+  fourteenth: '14th',
+  fifteenth: '15th',
+  sixteenth: '16th',
+  seventeenth: '17th',
+  eighteenth: '18th',
+  nineteenth: '19th',
+  twentieth: '20th',
+  thirtieth: '30th',
+  fortieth: '40th',
+  fiftieth: '50th',
+  sixtieth: '60th',
+  seventieth: '70th',
+  eightieth: '80th',
+  ninetieth: '90th',
+  hundredth: '100th',
+};
+
 export class EvaluationService {
   /**
    * Cleans a single token for comparison
@@ -14,6 +79,72 @@ export class EvaluationService {
       .replace(/^[^\w\d']+|[^\w\d']+$/g, '')
       .replace(/[.,!?;:"()[\]{}]/g, '')
       .trim();
+  }
+
+  /**
+   * Normalizes number words (e.g. "four" -> "4", "twenty-one" -> "21")
+   */
+  public static normalizeWordForComparison(word: string, strictPunctuation: boolean): string {
+    const cleaned = this.cleanWord(word, strictPunctuation);
+    if (strictPunctuation) {
+      return cleaned;
+    }
+
+    if (WORD_TO_NUMBER_MAP[cleaned]) {
+      return WORD_TO_NUMBER_MAP[cleaned];
+    }
+
+    // Compound numbers e.g. twenty-four -> 24
+    if (cleaned.includes('-')) {
+      const parts = cleaned.split('-');
+      if (parts.length === 2) {
+        const tens = WORD_TO_NUMBER_MAP[parts[0]];
+        const units = WORD_TO_NUMBER_MAP[parts[1]];
+        if (tens && units && /^\d+$/.test(tens)) {
+          if (/^\d+$/.test(units)) {
+            return String(parseInt(tens, 10) + parseInt(units, 10));
+          } else if (/^(\d+)(st|nd|rd|th)$/.test(units)) {
+            const uNum = units.replace(/(st|nd|rd|th)/, '');
+            const suffix = units.match(/(st|nd|rd|th)/)?.[0] || '';
+            return `${parseInt(tens, 10) + parseInt(uNum, 10)}${suffix}`;
+          }
+        }
+      }
+    }
+
+    return cleaned;
+  }
+
+  /**
+   * Checks if two words are equal, taking into account number word equivalences
+   * (e.g. "four" and "4", "fourth" and "4th", "21" and "twenty-one")
+   */
+  public static areWordsEqual(wordA: string, wordB: string, strictPunctuation = false): boolean {
+    const cleanA = this.cleanWord(wordA, strictPunctuation);
+    const cleanB = this.cleanWord(wordB, strictPunctuation);
+
+    if (cleanA === cleanB) {
+      return true;
+    }
+
+    if (strictPunctuation) {
+      return false;
+    }
+
+    const normA = this.normalizeWordForComparison(cleanA, false);
+    const normB = this.normalizeWordForComparison(cleanB, false);
+
+    if (normA === normB) {
+      return true;
+    }
+
+    // Ordinal to cardinal flexible match for voice recognition (e.g. "4th" and "4")
+    const stripOrdinal = (s: string) => s.replace(/(st|nd|rd|th)$/i, '');
+    if (stripOrdinal(normA) === stripOrdinal(normB) && /^\d+$/.test(stripOrdinal(normA))) {
+      return true;
+    }
+
+    return false;
   }
 
   /**
@@ -42,10 +173,7 @@ export class EvaluationService {
 
     for (let i = 1; i <= m; i++) {
       for (let j = 1; j <= n; j++) {
-        const expClean = this.cleanWord(expectedTokens[i - 1], strictPunctuation);
-        const subClean = this.cleanWord(submittedTokens[j - 1], strictPunctuation);
-
-        if (expClean === subClean) {
+        if (this.areWordsEqual(expectedTokens[i - 1], submittedTokens[j - 1], strictPunctuation)) {
           dp[i][j] = dp[i - 1][j - 1] + 1;
         } else {
           dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
@@ -61,10 +189,7 @@ export class EvaluationService {
 
     while (i > 0 || j > 0) {
       if (i > 0 && j > 0) {
-        const expClean = this.cleanWord(expectedTokens[i - 1], strictPunctuation);
-        const subClean = this.cleanWord(submittedTokens[j - 1], strictPunctuation);
-
-        if (expClean === subClean) {
+        if (this.areWordsEqual(expectedTokens[i - 1], submittedTokens[j - 1], strictPunctuation)) {
           reversedTokens.push({
             type: 'correct',
             expected: expectedTokens[i - 1],
@@ -80,7 +205,6 @@ export class EvaluationService {
 
       if (j > 0 && (i === 0 || dp[i][j - 1] >= dp[i - 1][j])) {
         // Extra word typed by user
-        // Check if previous was missing to merge as 'wrong' substitution
         reversedTokens.push({
           type: 'extra',
           actual: submittedTokens[j - 1],
