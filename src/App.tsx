@@ -246,11 +246,18 @@ export const App: React.FC = () => {
         handleNext();
         return;
       }
+
+      // Submit shortcut in shadowing mode: Enter (when result feedback is not showing and has spoken text)
+      if (!evaluationResult && practiceMode === 'shadowing' && inputValue.trim().length > 0 && e.key === 'Enter') {
+        e.preventDefault();
+        handleSubmit();
+        return;
+      }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [evaluationResult, handlePlayAudio, handleNext]);
+  }, [evaluationResult, practiceMode, inputValue, handlePlayAudio, handleNext, handleSubmit]);
 
   const isCurrentBookmarked = currentSentence ? stats.bookmarks.includes(currentSentence.id) : false;
 

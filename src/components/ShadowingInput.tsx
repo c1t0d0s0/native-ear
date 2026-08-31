@@ -79,19 +79,46 @@ export const ShadowingInput: React.FC<ShadowingInputProps> = ({
     setIsRecording(false);
   }, []);
 
-  const handleToggleRecording = () => {
+  const handleToggleRecording = useCallback(() => {
     if (isRecording) {
       handleStopRecording();
     } else {
       handleStartRecording();
     }
-  };
+  }, [isRecording, handleStopRecording, handleStartRecording]);
 
-  const handleClear = () => {
-    speechRecognitionService.stop();
+  const handleClear = useCallback(() => {
+    speechRecognitionService.abort();
     setIsRecording(false);
+    setErrorMessage(null);
     onClear();
-  };
+  }, [onClear]);
+
+  // Keyboard shortcut listener: 's' to toggle recording, 'a' to clear/retry
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      const activeTag = (document.activeElement?.tagName || '').toLowerCase();
+      if (activeTag === 'textarea' || activeTag === 'input') {
+        return;
+      }
+      if (e.ctrlKey || e.metaKey || e.altKey) {
+        return;
+      }
+
+      if (e.key === 's' || e.key === 'S') {
+        e.preventDefault();
+        handleToggleRecording();
+      } else if (e.key === 'a' || e.key === 'A') {
+        e.preventDefault();
+        handleClear();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handleToggleRecording, handleClear]);
 
   // Generate word hints (first letter of each word)
   const renderHints = () => {
@@ -156,7 +183,7 @@ export const ShadowingInput: React.FC<ShadowingInputProps> = ({
       {/* Compact Interactive Middle Grid: Record Button on Left, Live Transcript on Right */}
       <div className="flex flex-col sm:flex-row items-stretch gap-3">
         {/* Record Trigger Button Box */}
-        <div className="flex sm:flex-col items-center justify-between sm:justify-center gap-3 p-3 bg-slate-50 dark:bg-slate-900/80 rounded-xl border border-slate-200 dark:border-slate-700/60 sm:w-44 shrink-0">
+        <div className="flex sm:flex-col items-center justify-between sm:justify-center gap-3 p-3 bg-slate-50 dark:bg-slate-900/80 rounded-xl border border-slate-200 dark:border-slate-700/60 sm:w-48 shrink-0">
           <div className="relative">
             {isRecording && (
               <div className="absolute -inset-1.5 rounded-full bg-rose-500/30 animate-ping pointer-events-none" />
@@ -170,14 +197,14 @@ export const ShadowingInput: React.FC<ShadowingInputProps> = ({
                   ? 'bg-rose-600 hover:bg-rose-700 text-white ring-4 ring-rose-400/40'
                   : 'bg-gradient-to-tr from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white ring-2 ring-indigo-500/20 hover:scale-105'
               }`}
-              title={isRecording ? t.shadowingInput.stopRecording : t.shadowingInput.startRecording}
+              title={`${isRecording ? t.shadowingInput.stopRecording : t.shadowingInput.startRecording} [S]`}
             >
               {isRecording ? <MicOff className="w-6 h-6 animate-pulse" /> : <Mic className="w-6 h-6" />}
             </button>
           </div>
 
           <div className="text-right sm:text-center">
-            <div className="text-xs font-bold">
+            <div className="text-xs font-bold flex items-center justify-end sm:justify-center gap-1.5">
               {isRecording ? (
                 <span className="text-rose-600 dark:text-rose-400 animate-pulse flex items-center gap-1 justify-end sm:justify-center">
                   <span className="w-2 h-2 rounded-full bg-rose-500 animate-ping" />
@@ -186,8 +213,11 @@ export const ShadowingInput: React.FC<ShadowingInputProps> = ({
               ) : (
                 <span className="text-slate-800 dark:text-slate-200">{t.shadowingInput.startRecording}</span>
               )}
+              <kbd className="hidden sm:inline-block px-1.5 py-0.2 text-[10px] font-mono font-bold bg-slate-200/80 dark:bg-slate-700/80 text-slate-600 dark:text-slate-300 rounded border border-slate-300 dark:border-slate-600 shadow-xs">
+                S
+              </kbd>
             </div>
-            <p className="text-[10px] text-slate-500 dark:text-slate-400 hidden sm:block">
+            <p className="text-[10px] text-slate-500 dark:text-slate-400 hidden sm:block mt-0.5">
               {isRecording ? t.shadowingInput.listeningTooltip : t.shadowingInput.clickToSpeakTooltip}
             </p>
           </div>
@@ -201,11 +231,14 @@ export const ShadowingInput: React.FC<ShadowingInputProps> = ({
               <button
                 type="button"
                 onClick={handleClear}
-                className="flex items-center gap-1 text-[10px] font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition cursor-pointer"
-                title={t.shadowingInput.clear}
+                className="flex items-center gap-1 text-[10px] font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-700/50 px-1.5 py-0.5 rounded-md transition cursor-pointer"
+                title={`${t.shadowingInput.clear} [A]`}
               >
                 <RotateCcw className="w-3 h-3" />
                 <span>{t.shadowingInput.clear}</span>
+                <kbd className="px-1 py-0.2 text-[9px] font-mono font-bold bg-slate-200/90 dark:bg-slate-700/90 text-slate-600 dark:text-slate-300 rounded border border-slate-300 dark:border-slate-600">
+                  A
+                </kbd>
               </button>
             )}
           </div>
@@ -227,7 +260,7 @@ export const ShadowingInput: React.FC<ShadowingInputProps> = ({
         </div>
       </div>
 
-      {/* Action Footer: Word count & Submit */}
+      {/* Action Footer: Word count, Retry & Submit */}
       <div className="flex items-center justify-between gap-2 pt-1">
         <div className="text-[11px] text-slate-600 dark:text-slate-400 flex items-center gap-2">
           {onPlayAudio && (
@@ -246,6 +279,21 @@ export const ShadowingInput: React.FC<ShadowingInputProps> = ({
         </div>
 
         <div className="flex items-center gap-2">
+          {value.trim().length > 0 && (
+            <button
+              type="button"
+              onClick={handleClear}
+              className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700/60 transition cursor-pointer"
+              title={`${t.shadowingInput.clear} [A]`}
+            >
+              <RotateCcw className="w-3 h-3" />
+              <span>{t.shadowingInput.clear}</span>
+              <kbd className="px-1 py-0.2 text-[9px] font-mono font-bold bg-slate-200/90 dark:bg-slate-700/90 text-slate-600 dark:text-slate-300 rounded border border-slate-300 dark:border-slate-600">
+                A
+              </kbd>
+            </button>
+          )}
+
           <button
             type="button"
             onClick={onGiveUp}
@@ -272,3 +320,4 @@ export const ShadowingInput: React.FC<ShadowingInputProps> = ({
     </div>
   );
 };
+

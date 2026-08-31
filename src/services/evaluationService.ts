@@ -73,16 +73,18 @@ export class EvaluationService {
     if (strictPunctuation) {
       return word.trim();
     }
+    let w = (word || '').toLowerCase().trim();
+    // Normalize :00 times like "10:00" -> "10", "09:00" -> "9"
+    w = w.replace(/\b0?(\d{1,2}):00\b/g, '$1');
     // Remove punctuation around words, keep internal apostrophes (e.g. don't, o'clock)
-    return word
-      .toLowerCase()
+    return w
       .replace(/^[^\w\d']+|[^\w\d']+$/g, '')
       .replace(/[.,!?;:"()[\]{}]/g, '')
       .trim();
   }
 
   /**
-   * Normalizes number words (e.g. "four" -> "4", "twenty-one" -> "21")
+   * Normalizes number words (e.g. "four" -> "4", "twenty-one" -> "21", "10:00" -> "10")
    */
   public static normalizeWordForComparison(word: string, strictPunctuation: boolean): string {
     const cleaned = this.cleanWord(word, strictPunctuation);
@@ -117,7 +119,7 @@ export class EvaluationService {
 
   /**
    * Checks if two words are equal, taking into account number word equivalences
-   * (e.g. "four" and "4", "fourth" and "4th", "21" and "twenty-one")
+   * (e.g. "four" and "4", "fourth" and "4th", "21" and "twenty-one", "ten" and "10:00")
    */
   public static areWordsEqual(wordA: string, wordB: string, strictPunctuation = false): boolean {
     const cleanA = this.cleanWord(wordA, strictPunctuation);
@@ -148,10 +150,18 @@ export class EvaluationService {
   }
 
   /**
-   * Tokenizes text into word array
+   * Tokenizes text into word array with time normalization
    */
-  public static tokenize(text: string): string[] {
-    return text.trim().split(/\s+/).filter(w => w.length > 0);
+  public static tokenize(text: string, strictPunctuation = false): string[] {
+    if (!text || !text.trim()) return [];
+    let t = text.trim();
+    if (!strictPunctuation) {
+      // Normalize :00 times like "10:00" -> "10", "09:00" -> "9"
+      t = t.replace(/\b0?(\d{1,2}):00\b/g, '$1');
+      // Normalize other times like "10:30" -> "10 30"
+      t = t.replace(/\b0?(\d{1,2}):(\d{2})\b/g, '$1 $2');
+    }
+    return t.split(/\s+/).filter(w => w.length > 0);
   }
 
   /**
@@ -162,8 +172,8 @@ export class EvaluationService {
     submittedText: string,
     strictPunctuation = false
   ): EvaluationResult {
-    const expectedTokens = this.tokenize(expectedText);
-    const submittedTokens = this.tokenize(submittedText);
+    const expectedTokens = this.tokenize(expectedText, strictPunctuation);
+    const submittedTokens = this.tokenize(submittedText, strictPunctuation);
 
     const m = expectedTokens.length;
     const n = submittedTokens.length;
