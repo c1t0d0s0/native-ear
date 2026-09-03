@@ -168,19 +168,25 @@ export class AudioService {
       utterance.voice = voice;
     }
 
-    // Acoustic pitch modulation for clear male / female distinction across Android, iOS, Windows, and macOS
+    // Acoustic pitch and cadence modulation for clear male / female distinction across all platforms (especially Android)
+    const userPitch = settings.pitch ?? 1.0;
+    const speed = settings.speed ?? 1.0;
+
     if (gender === 'male') {
       if (isMaleVoiceFound) {
-        utterance.pitch = settings.pitch ?? 0.88;
+        // Native male voice present
+        utterance.pitch = Math.max(0.1, Math.min(2.0, userPitch * 0.90));
+        utterance.rate = speed;
       } else {
-        // Fallback pitch lowering for systems with single default voice (e.g. Android default TTS)
-        utterance.pitch = settings.pitch ?? 0.72;
-        utterance.rate = (settings.speed ?? 1.0) * 0.95;
+        // Crucial for Android: Single default voice systems.
+        // We modulate acoustic pitch down to 0.68 to transform speech into a deep, natural male voice.
+        utterance.pitch = Math.max(0.1, Math.min(2.0, userPitch * 0.68));
+        utterance.rate = speed * 0.92;
       }
     } else {
-      // Female tone
-      utterance.pitch = settings.pitch ?? 1.15;
-      utterance.rate = (settings.speed ?? 1.0) * 1.02;
+      // Female voice: bright, natural tone
+      utterance.pitch = Math.max(0.1, Math.min(2.0, userPitch * (isMaleVoiceFound ? 1.0 : 1.15)));
+      utterance.rate = speed * 1.02;
     }
 
     utterance.onstart = () => {
