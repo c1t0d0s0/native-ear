@@ -140,6 +140,9 @@ export interface Translations {
     femaleVoiceSub: string;
     maleVoice: string;
     maleVoiceSub: string;
+    characterVoiceTitle: string;
+    characterVoiceDesc: string;
+    autoVoice: string;
     testVoice: string;
     learningOptionsTitle: string;
     autoPlayTitle: string;
@@ -324,6 +327,9 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       femaleVoiceSub: 'US Female Voice',
       maleVoice: '男性ネイティブ',
       maleVoiceSub: 'US Male Voice',
+      characterVoiceTitle: '発話キャラクター (OS Voice)',
+      characterVoiceDesc: 'macOS, Windows, iOS等のシステムに搭載されたネイティブ音声から選択できます',
+      autoVoice: '自動選択 (推奨)',
       testVoice: 'テスト音声を再生',
       learningOptionsTitle: '学習オプション',
       autoPlayTitle: '問題切り替え時に自動再生',
@@ -506,6 +512,9 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       femaleVoiceSub: 'Natural American Accent',
       maleVoice: 'US Male Voice',
       maleVoiceSub: 'Natural American Accent',
+      characterVoiceTitle: 'Speaker Character (OS Voice)',
+      characterVoiceDesc: 'Select from native speech characters installed on macOS, Windows, iOS, etc.',
+      autoVoice: 'Auto-detect (Recommended)',
       testVoice: 'Play Sample Audio',
       learningOptionsTitle: 'Learning Options',
       autoPlayTitle: 'Auto-play on next question',

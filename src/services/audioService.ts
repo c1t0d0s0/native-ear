@@ -55,7 +55,20 @@ export class AudioService {
     return generalEn.length > 0 ? generalEn : all;
   }
 
-  private isMaleVoice(v: SpeechSynthesisVoice): boolean {
+  public getEnglishVoices(): SpeechSynthesisVoice[] {
+    const all = this.getVoices();
+    const enVoices = all.filter(v => v.lang.toLowerCase().startsWith('en'));
+    // Sort US English to the top, followed by UK, AU, etc.
+    return enVoices.sort((a, b) => {
+      const aUS = a.lang === 'en-US' || a.lang.startsWith('en_US');
+      const bUS = b.lang === 'en-US' || b.lang.startsWith('en_US');
+      if (aUS && !bUS) return -1;
+      if (!aUS && bUS) return 1;
+      return a.name.localeCompare(b.name);
+    });
+  }
+
+  public isMaleVoice(v: SpeechSynthesisVoice): boolean {
     const text = `${v.name} ${v.voiceURI}`.toLowerCase();
     const maleKeywords = [
       '#male', 'male_', 'male-', '-male', '_male', ' male', '(male)',
@@ -82,7 +95,7 @@ export class AudioService {
     return hasMale && !hasFemale;
   }
 
-  private isFemaleVoice(v: SpeechSynthesisVoice): boolean {
+  public isFemaleVoice(v: SpeechSynthesisVoice): boolean {
     const text = `${v.name} ${v.voiceURI}`.toLowerCase();
     const femaleKeywords = [
       '#female', 'female_', 'female-', '-female', '_female', ' female', '(female)',
@@ -104,6 +117,17 @@ export class AudioService {
     const hasFemale = femaleKeywords.some(kw => text.includes(kw));
     const hasMale = maleKeywords.some(kw => text.includes(kw));
     return hasFemale && !hasMale;
+  }
+
+  public getVoicesByGender(gender: VoiceGender): SpeechSynthesisVoice[] {
+    const englishVoices = this.getEnglishVoices();
+    if (gender === 'male') {
+      const explicitMales = englishVoices.filter(v => this.isMaleVoice(v));
+      return explicitMales.length > 0 ? explicitMales : englishVoices;
+    } else {
+      const explicitFemales = englishVoices.filter(v => this.isFemaleVoice(v));
+      return explicitFemales.length > 0 ? explicitFemales : englishVoices;
+    }
   }
 
   public findVoice(gender: VoiceGender): { voice: SpeechSynthesisVoice | null; isMaleVoiceFound: boolean } {
@@ -158,35 +182,52 @@ export class AudioService {
 
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US';
-    utterance.rate = settings.speed ?? 1.0;
     utterance.volume = settings.volume ?? 1.0;
 
     const gender = settings.gender ?? 'female';
-    const { voice, isMaleVoiceFound } = this.findVoice(gender);
+    let chosenVoice: SpeechSynthesisVoice | null = null;
+    let isMaleVoiceFound = false;
 
-    if (voice) {
-      utterance.voice = voice;
+    // 1. If explicit voiceURI is specified, use that exact voice
+    if (settings.voiceURI) {
+      const matched = this.getVoices().find(v => v.voiceURI === settings.voiceURI);
+      if (matched) {
+        chosenVoice = matched;
+        isMaleVoiceFound = this.isMaleVoice(matched);
+      }
     }
 
-    // Acoustic pitch and cadence modulation for clear male / female distinction across all platforms (especially Android)
+    // 2. Otherwise find the best matching voice for gender
+    if (!chosenVoice) {
+      const found = this.findVoice(gender);
+      chosenVoice = found.voice;
+      isMaleVoiceFound = found.isMaleVoiceFound;
+    }
+
+    if (chosenVoice) {
+      utterance.voice = chosenVoice;
+    }
+
     const userPitch = settings.pitch ?? 1.0;
     const speed = settings.speed ?? 1.0;
 
+    // Acoustic pitch modulation:
+    // If a real native male voice (e.g. Alex on macOS, David on Windows) is active,
+    // keep its natural character pitch (1.0). Only drop pitch if no male voice exists (e.g. Android).
     if (gender === 'male') {
       if (isMaleVoiceFound) {
-        // Native male voice present
-        utterance.pitch = Math.max(0.1, Math.min(2.0, userPitch * 0.90));
+        // Native male voice present (Alex, David, Daniel, Fred, etc.)
+        utterance.pitch = Math.max(0.1, Math.min(2.0, userPitch * 1.0));
         utterance.rate = speed;
       } else {
-        // Crucial for Android: Single default voice systems.
-        // We modulate acoustic pitch down to 0.68 to transform speech into a deep, natural male voice.
+        // Fallback for Android or systems with only a female default voice
         utterance.pitch = Math.max(0.1, Math.min(2.0, userPitch * 0.68));
         utterance.rate = speed * 0.92;
       }
     } else {
-      // Female voice: bright, natural tone
-      utterance.pitch = Math.max(0.1, Math.min(2.0, userPitch * (isMaleVoiceFound ? 1.0 : 1.15)));
-      utterance.rate = speed * 1.02;
+      // Female voice: keep natural speaker pitch
+      utterance.pitch = Math.max(0.1, Math.min(2.0, userPitch * 1.05));
+      utterance.rate = speed;
     }
 
     utterance.onstart = () => {

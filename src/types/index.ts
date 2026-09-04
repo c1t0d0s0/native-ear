@@ -36,6 +36,7 @@ export type VoiceGender = 'male' | 'female' | 'auto';
 
 export interface VoiceSettings {
   gender: VoiceGender;
+  voiceURI?: string;
   speed: number;
   pitch: number;
   volume: number;
