@@ -1,4 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0"/>
-  <path d="M15 8.5a2.5 2.5 0 0 0-5 0v2a2 2 0 0 0 4 0"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="logoBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080b14" />
+      <stop offset="25%" stop-color="#141838" />
+      <stop offset="60%" stop-color="#2a276b" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+
+    <!-- Center Ambient Glow -->
+    <radialGradient id="logoCenterGlow" cx="42%" cy="48%" r="52%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.35" />
+      <stop offset="45%" stop-color="#6366f1" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#141838" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Ear Stroke Gradient -->
+    <linearGradient id="logoEarGrad" x1="10%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#f8fafc" />
+      <stop offset="80%" stop-color="#e0e7ff" />
+      <stop offset="100%" stop-color="#c7d2fe" />
+    </linearGradient>
+
+    <!-- Inner Ear Helix Gradient -->
+    <linearGradient id="logoInnerEarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c7d2fe" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+
+    <!-- Sound Waves Gradient -->
+    <linearGradient id="logoWaveGrad" x1="0%" y1="10%" x2="100%" y2="90%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="45%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="logoSoftGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners for versatile display -->
+  <rect width="1024" height="1024" rx="220" fill="url(#logoBgGrad)" />
+  <rect width="1024" height="1024" rx="220" fill="url(#logoCenterGlow)" />
+
+  <g transform="translate(68, 38)">
+    <!-- Sound Waves -->
+    <g filter="url(#logoSoftGlow)">
+      <path d="M 330 400 A 130 130 0 0 0 330 620"
+            fill="none" stroke="url(#logoWaveGrad)" stroke-width="40" stroke-linecap="round" />
+      <path d="M 230 330 A 210 210 0 0 0 230 690"
+            fill="none" stroke="url(#logoWaveGrad)" stroke-width="36" stroke-linecap="round" opacity="0.9" />
+      <path d="M 130 270 A 290 290 0 0 0 130 750"
+            fill="none" stroke="url(#logoWaveGrad)" stroke-width="32" stroke-linecap="round" opacity="0.65" />
+    </g>
+
+    <!-- Ear Symbol -->
+    <g filter="url(#logoSoftGlow)">
+      <path d="M 430 455
+               A 220 220 0 1 1 870 455
+               C 870 658, 667 658, 667 794
+               A 118 118 0 1 1 430 794"
+            fill="none" stroke="url(#logoEarGrad)" stroke-width="64" stroke-linecap="round" stroke-linejoin="round" />
+
+      <path d="M 735 455
+               A 85 85 0 0 0 565 455
+               V 525
+               A 68 68 0 0 0 700 525"
+            fill="none" stroke="url(#logoInnerEarGrad)" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" />
+
+      <circle cx="430" cy="455" r="18" fill="#38bdf8" />
+      <circle cx="430" cy="455" r="10" fill="#ffffff" />
+    </g>
+
+    <!-- Sparkles -->
+    <path d="M 850 200 Q 850 225 875 225 Q 850 225 850 250 Q 850 225 825 225 Q 850 225 850 200 Z"
+          fill="#38bdf8" opacity="0.9" />
+    <path d="M 270 750 Q 270 765 285 765 Q 270 765 270 780 Q 270 765 255 765 Q 270 765 270 750 Z"
+          fill="#c084fc" opacity="0.75" />
+  </g>
 </svg>
