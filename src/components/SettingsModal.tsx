@@ -36,7 +36,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
     };
     loadVoices();
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      window.speechSynthesis.onvoiceschanged = loadVoices;
+      window.speechSynthesis.addEventListener('voiceschanged', loadVoices);
+      return () => {
+        window.speechSynthesis.removeEventListener('voiceschanged', loadVoices);
+      };
     }
   }, [isOpen]);
 
@@ -48,7 +51,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const handleGenderChange = (gender: VoiceGender) => {
     const updated = {
       gender,
-      voiceURI: undefined, // Reset character voice to auto-detect for selected gender
+      voiceURI: '', // Reset character voice to auto-detect for selected gender
     };
     onUpdateSettings(updated);
     audioService.speak(

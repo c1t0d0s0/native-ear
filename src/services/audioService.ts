@@ -12,7 +12,9 @@ export class AudioService {
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
       this.synth = window.speechSynthesis;
       this.loadVoices();
-      if (this.synth.onvoiceschanged !== undefined) {
+      if (this.synth.addEventListener) {
+        this.synth.addEventListener('voiceschanged', () => this.loadVoices());
+      } else {
         this.synth.onvoiceschanged = () => this.loadVoices();
       }
     }
@@ -75,9 +77,11 @@ export class AudioService {
       'david', 'alex', 'fred', 'daniel', 'mark', 'tom', 'george', 'guy',
       'brian', 'richard', 'james', 'john', 'oliver', 'aaron', 'arthur', 'gordon',
       'evan', 'nathan', 'christopher', 'eric', 'andrew', 'ryan', 'thomas',
+      'junior', 'ralph', 'albert', 'bruce', 'lee', 'russell', 'rishi',
       'standard-b', 'standard-d', 'standard-j', 'wavenet-b', 'wavenet-d', 'wavenet-j',
       'neural2-d', 'neural2-j', 'journey-d', 'polyglot-1', 'studio-b', 'studio-d',
       'uk english male', 'us male', 'guy online',
+      'google uk english male', 'marcus', 'ravi', 'steve', 'paul',
       '-iom', '-iob', '-iod', '-rjs', '-fis', '-aub', '-cjc', 'male_1', 'male_2', 'male_3'
     ];
     const femaleKeywords = [
@@ -87,6 +91,9 @@ export class AudioService {
       'steffi', 'standard-a', 'standard-c', 'standard-e', 'standard-f', 'standard-g',
       'standard-h', 'standard-i', 'wavenet-a', 'wavenet-c', 'wavenet-e', 'wavenet-f',
       'neural2-a', 'neural2-c', 'neural2-e', 'neural2-f', 'uk english female',
+      'zoe', 'nicky', 'fiona', 'moira', 'tessa', 'serena', 'stephanie', 'veena',
+      'sangeeta', 'kathy', 'princess', 'vicki', 'agnes',
+      'google us english', 'catherine', 'matilda', 'linda', 'martha', 'hazel',
       '-iol', '-iof'
     ];
 
@@ -104,6 +111,9 @@ export class AudioService {
       'steffi', 'standard-a', 'standard-c', 'standard-e', 'standard-f', 'standard-g',
       'standard-h', 'standard-i', 'wavenet-a', 'wavenet-c', 'wavenet-e', 'wavenet-f',
       'neural2-a', 'neural2-c', 'neural2-e', 'neural2-f', 'uk english female',
+      'zoe', 'nicky', 'fiona', 'moira', 'tessa', 'serena', 'stephanie', 'veena',
+      'sangeeta', 'kathy', 'princess', 'vicki', 'agnes',
+      'google us english', 'catherine', 'matilda', 'linda', 'martha', 'hazel',
       '-iol', '-iof'
     ];
     const maleKeywords = [
@@ -111,7 +121,12 @@ export class AudioService {
       'david', 'alex', 'fred', 'daniel', 'mark', 'tom', 'george', 'guy',
       'brian', 'richard', 'james', 'john', 'oliver', 'aaron', 'arthur', 'gordon',
       'evan', 'nathan', 'christopher', 'eric', 'andrew', 'ryan', 'thomas',
-      '-iom', '-iob', '-iod'
+      'junior', 'ralph', 'albert', 'bruce', 'lee', 'russell', 'rishi',
+      'standard-b', 'standard-d', 'standard-j', 'wavenet-b', 'wavenet-d', 'wavenet-j',
+      'neural2-d', 'neural2-j', 'journey-d', 'polyglot-1', 'studio-b', 'studio-d',
+      'uk english male', 'us male', 'guy online',
+      'google uk english male', 'marcus', 'ravi', 'steve', 'paul',
+      '-iom', '-iob', '-iod', '-rjs', '-fis', '-aub', '-cjc', 'male_1', 'male_2', 'male_3'
     ];
 
     const hasFemale = femaleKeywords.some(kw => text.includes(kw));
@@ -125,41 +140,47 @@ export class AudioService {
       const explicitMales = englishVoices.filter(v => this.isMaleVoice(v));
       return explicitMales.length > 0 ? explicitMales : englishVoices;
     } else {
+      // Return voices that are identified as female, or at least not male
       const explicitFemales = englishVoices.filter(v => this.isFemaleVoice(v));
-      return explicitFemales.length > 0 ? explicitFemales : englishVoices;
+      if (explicitFemales.length > 0) return explicitFemales;
+      const nonMales = englishVoices.filter(v => !this.isMaleVoice(v));
+      return nonMales.length > 0 ? nonMales : englishVoices;
     }
   }
 
-  public findVoice(gender: VoiceGender): { voice: SpeechSynthesisVoice | null; isMaleVoiceFound: boolean } {
+  public findVoice(gender: VoiceGender): { voice: SpeechSynthesisVoice | null; isMaleVoiceFound: boolean; isFemaleVoiceFound: boolean } {
     const usVoices = this.getUSVoices();
     const allVoices = this.getVoices();
 
     if (gender === 'male') {
-      // 1. Search in US English voices for explicit male keywords in name or voiceURI
+      // 1. Search in US English voices for explicit male keywords
       const usMale = usVoices.find(v => this.isMaleVoice(v));
-      if (usMale) return { voice: usMale, isMaleVoiceFound: true };
+      if (usMale) return { voice: usMale, isMaleVoiceFound: true, isFemaleVoiceFound: false };
 
       // 2. Search in any English voices for explicit male keywords
       const enMale = allVoices.find(v => v.lang.toLowerCase().startsWith('en') && this.isMaleVoice(v));
-      if (enMale) return { voice: enMale, isMaleVoiceFound: true };
+      if (enMale) return { voice: enMale, isMaleVoiceFound: true, isFemaleVoiceFound: false };
 
-      // 3. Search across all voices for explicit male keywords
-      const anyMale = allVoices.find(v => this.isMaleVoice(v));
-      if (anyMale) return { voice: anyMale, isMaleVoiceFound: true };
-
-      // Crucial: On Android, if NO explicit male voice is registered in the OS,
-      // do NOT force a female voice object into utterance.voice (which overrides pitch modulation).
-      // Returning null allows the Android TTS engine to lower pitch for default speech.
-      return { voice: null, isMaleVoiceFound: false };
+      // Crucial: On Android, if NO explicit male voice exists in OS, return null
+      // so speak() modulates pitch downwards (0.68) rather than forcing a female voice
+      return { voice: null, isMaleVoiceFound: false, isFemaleVoiceFound: false };
     } else {
       // Female voice search
+      // 1. Search in US English voices for explicit female keywords (e.g. Samantha, Victoria, Ava on macOS)
       const usFemale = usVoices.find(v => this.isFemaleVoice(v));
-      if (usFemale) return { voice: usFemale, isMaleVoiceFound: false };
+      if (usFemale) return { voice: usFemale, isMaleVoiceFound: false, isFemaleVoiceFound: true };
 
+      // 2. Search in all English voices for explicit female keywords (e.g. Serena, Karen, Moira)
       const enFemale = allVoices.find(v => v.lang.toLowerCase().startsWith('en') && this.isFemaleVoice(v));
-      if (enFemale) return { voice: enFemale, isMaleVoiceFound: false };
+      if (enFemale) return { voice: enFemale, isMaleVoiceFound: false, isFemaleVoiceFound: true };
 
-      return { voice: usVoices[0] || allVoices[0] || null, isMaleVoiceFound: false };
+      // 3. Crucial: Fallback must NEVER return a known male voice like Alex!
+      // Look for any English voice that is NOT male
+      const nonMale = allVoices.find(v => v.lang.toLowerCase().startsWith('en') && !this.isMaleVoice(v));
+      if (nonMale) return { voice: nonMale, isMaleVoiceFound: false, isFemaleVoiceFound: true };
+
+      // 4. If only male voices exist in the entire system, return null (allowing pitch-up fallback)
+      return { voice: null, isMaleVoiceFound: false, isFemaleVoiceFound: false };
     }
   }
 
@@ -188,16 +209,26 @@ export class AudioService {
     let chosenVoice: SpeechSynthesisVoice | null = null;
     let isMaleVoiceFound = false;
 
-    // 1. If explicit voiceURI is specified, use that exact voice
-    if (settings.voiceURI) {
+    // 1. If explicit voiceURI is specified, verify compatibility with requested gender
+    if (settings.voiceURI && settings.voiceURI.trim().length > 0) {
       const matched = this.getVoices().find(v => v.voiceURI === settings.voiceURI);
       if (matched) {
-        chosenVoice = matched;
-        isMaleVoiceFound = this.isMaleVoice(matched);
+        const isMale = this.isMaleVoice(matched);
+        const isFemale = this.isFemaleVoice(matched);
+
+        // Guard against mismatch: if user requested female, do NOT allow a male voice (e.g. leftover Alex)
+        if (gender === 'female' && isMale && !isFemale) {
+          chosenVoice = null;
+        } else if (gender === 'male' && isFemale && !isMale) {
+          chosenVoice = null;
+        } else {
+          chosenVoice = matched;
+          isMaleVoiceFound = isMale;
+        }
       }
     }
 
-    // 2. Otherwise find the best matching voice for gender
+    // 2. Otherwise auto-detect best voice matching gender
     if (!chosenVoice) {
       const found = this.findVoice(gender);
       chosenVoice = found.voice;
@@ -212,8 +243,6 @@ export class AudioService {
     const speed = settings.speed ?? 1.0;
 
     // Acoustic pitch modulation:
-    // If a real native male voice (e.g. Alex on macOS, David on Windows) is active,
-    // keep its natural character pitch (1.0). Only drop pitch if no male voice exists (e.g. Android).
     if (gender === 'male') {
       if (isMaleVoiceFound) {
         // Native male voice present (Alex, David, Daniel, Fred, etc.)
@@ -225,9 +254,16 @@ export class AudioService {
         utterance.rate = speed * 0.92;
       }
     } else {
-      // Female voice: keep natural speaker pitch
-      utterance.pitch = Math.max(0.1, Math.min(2.0, userPitch * 1.05));
-      utterance.rate = speed;
+      // Female voice:
+      if (chosenVoice && !this.isMaleVoice(chosenVoice)) {
+        // Genuine female voice (Samantha, Victoria, etc.)
+        utterance.pitch = Math.max(0.1, Math.min(2.0, userPitch * 1.0));
+        utterance.rate = speed;
+      } else {
+        // Fallback: If only male voices exist, shift pitch UP to produce a clear female voice
+        utterance.pitch = Math.max(0.1, Math.min(2.0, userPitch * 1.30));
+        utterance.rate = speed * 1.02;
+      }
     }
 
     utterance.onstart = () => {

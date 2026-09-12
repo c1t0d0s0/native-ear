@@ -44,7 +44,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
         {/* Voice Gender Switcher */}
         <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-900/60 p-0.5 rounded-xl border border-slate-200 dark:border-slate-700/60">
           <button
-            onClick={() => onUpdateSettings({ gender: 'female' })}
+            onClick={() => onUpdateSettings({ gender: 'female', voiceURI: '' })}
             className={`flex items-center gap-1 px-2 py-1 rounded-lg text-[11px] font-semibold transition cursor-pointer ${
               voiceSettings.gender === 'female'
                 ? 'bg-indigo-600 text-white shadow-sm'
@@ -56,7 +56,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
             <span>{t.audioPlayer.femaleVoice}</span>
           </button>
           <button
-            onClick={() => onUpdateSettings({ gender: 'male' })}
+            onClick={() => onUpdateSettings({ gender: 'male', voiceURI: '' })}
             className={`flex items-center gap-1 px-2 py-1 rounded-lg text-[11px] font-semibold transition cursor-pointer ${
               voiceSettings.gender === 'male'
                 ? 'bg-indigo-600 text-white shadow-sm'
