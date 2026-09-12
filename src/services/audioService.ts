@@ -70,14 +70,27 @@ export class AudioService {
     });
   }
 
+  public isNoveltyVoice(v: SpeechSynthesisVoice): boolean {
+    const text = `${v.name} ${v.voiceURI}`.toLowerCase();
+    const noveltyNames = [
+      'albert', 'bad news', 'bahh', 'bells', 'boing', 'bubbles',
+      'cellos', 'deranged', 'good news', 'hysterical', 'junior',
+      'kathy', 'pipe organ', 'princess', 'ralph', 'trinoids',
+      'whisper', 'zarvox', 'agnes', 'bruce', 'vicki', 'wobble',
+      'jester', 'organ'
+    ];
+    return noveltyNames.some(name => text.includes(name));
+  }
+
   public isMaleVoice(v: SpeechSynthesisVoice): boolean {
+    if (this.isNoveltyVoice(v)) return false;
     const text = `${v.name} ${v.voiceURI}`.toLowerCase();
     const maleKeywords = [
       '#male', 'male_', 'male-', '-male', '_male', ' male', '(male)',
-      'david', 'alex', 'fred', 'daniel', 'mark', 'tom', 'george', 'guy',
+      'fred', 'alex', 'david', 'daniel', 'mark', 'tom', 'george', 'guy',
       'brian', 'richard', 'james', 'john', 'oliver', 'aaron', 'arthur', 'gordon',
       'evan', 'nathan', 'christopher', 'eric', 'andrew', 'ryan', 'thomas',
-      'junior', 'ralph', 'albert', 'bruce', 'lee', 'russell', 'rishi',
+      'lee', 'russell', 'rishi',
       'standard-b', 'standard-d', 'standard-j', 'wavenet-b', 'wavenet-d', 'wavenet-j',
       'neural2-d', 'neural2-j', 'journey-d', 'polyglot-1', 'studio-b', 'studio-d',
       'uk english male', 'us male', 'guy online',
@@ -92,7 +105,7 @@ export class AudioService {
       'standard-h', 'standard-i', 'wavenet-a', 'wavenet-c', 'wavenet-e', 'wavenet-f',
       'neural2-a', 'neural2-c', 'neural2-e', 'neural2-f', 'uk english female',
       'zoe', 'nicky', 'fiona', 'moira', 'tessa', 'serena', 'stephanie', 'veena',
-      'sangeeta', 'kathy', 'princess', 'vicki', 'agnes',
+      'sangeeta',
       'google us english', 'catherine', 'matilda', 'linda', 'martha', 'hazel',
       '-iol', '-iof'
     ];
@@ -103,6 +116,7 @@ export class AudioService {
   }
 
   public isFemaleVoice(v: SpeechSynthesisVoice): boolean {
+    if (this.isNoveltyVoice(v)) return false;
     const text = `${v.name} ${v.voiceURI}`.toLowerCase();
     const femaleKeywords = [
       '#female', 'female_', 'female-', '-female', '_female', ' female', '(female)',
@@ -112,16 +126,16 @@ export class AudioService {
       'standard-h', 'standard-i', 'wavenet-a', 'wavenet-c', 'wavenet-e', 'wavenet-f',
       'neural2-a', 'neural2-c', 'neural2-e', 'neural2-f', 'uk english female',
       'zoe', 'nicky', 'fiona', 'moira', 'tessa', 'serena', 'stephanie', 'veena',
-      'sangeeta', 'kathy', 'princess', 'vicki', 'agnes',
+      'sangeeta',
       'google us english', 'catherine', 'matilda', 'linda', 'martha', 'hazel',
       '-iol', '-iof'
     ];
     const maleKeywords = [
       '#male', 'male_', 'male-', '-male', '_male', ' male', '(male)',
-      'david', 'alex', 'fred', 'daniel', 'mark', 'tom', 'george', 'guy',
+      'fred', 'alex', 'david', 'daniel', 'mark', 'tom', 'george', 'guy',
       'brian', 'richard', 'james', 'john', 'oliver', 'aaron', 'arthur', 'gordon',
       'evan', 'nathan', 'christopher', 'eric', 'andrew', 'ryan', 'thomas',
-      'junior', 'ralph', 'albert', 'bruce', 'lee', 'russell', 'rishi',
+      'lee', 'russell', 'rishi',
       'standard-b', 'standard-d', 'standard-j', 'wavenet-b', 'wavenet-d', 'wavenet-j',
       'neural2-d', 'neural2-j', 'journey-d', 'polyglot-1', 'studio-b', 'studio-d',
       'uk english male', 'us male', 'guy online',
@@ -135,16 +149,30 @@ export class AudioService {
   }
 
   public getVoicesByGender(gender: VoiceGender): SpeechSynthesisVoice[] {
-    const englishVoices = this.getEnglishVoices();
+    const englishVoices = this.getEnglishVoices().filter(v => !this.isNoveltyVoice(v));
     if (gender === 'male') {
       const explicitMales = englishVoices.filter(v => this.isMaleVoice(v));
-      return explicitMales.length > 0 ? explicitMales : englishVoices;
+      const list = explicitMales.length > 0 ? explicitMales : englishVoices;
+      return list.sort((a, b) => {
+        // Fred prioritized at top for male
+        const aFred = a.name.toLowerCase().includes('fred');
+        const bFred = b.name.toLowerCase().includes('fred');
+        if (aFred && !bFred) return -1;
+        if (!aFred && bFred) return 1;
+        return 0;
+      });
     } else {
       // Return voices that are identified as female, or at least not male
       const explicitFemales = englishVoices.filter(v => this.isFemaleVoice(v));
-      if (explicitFemales.length > 0) return explicitFemales;
-      const nonMales = englishVoices.filter(v => !this.isMaleVoice(v));
-      return nonMales.length > 0 ? nonMales : englishVoices;
+      const list = explicitFemales.length > 0 ? explicitFemales : englishVoices.filter(v => !this.isMaleVoice(v));
+      return list.sort((a, b) => {
+        // Samantha prioritized at top for female
+        const aSam = a.name.toLowerCase().includes('samantha');
+        const bSam = b.name.toLowerCase().includes('samantha');
+        if (aSam && !bSam) return -1;
+        if (!aSam && bSam) return 1;
+        return 0;
+      });
     }
   }
 
@@ -153,12 +181,29 @@ export class AudioService {
     const allVoices = this.getVoices();
 
     if (gender === 'male') {
-      // 1. Search in US English voices for explicit male keywords
-      const usMale = usVoices.find(v => this.isMaleVoice(v));
+      // 1. Prioritize Fred (macOS clear male voice requested by user)
+      const fred = allVoices.find(v => {
+        if (!v.lang.toLowerCase().startsWith('en')) return false;
+        const text = `${v.name} ${v.voiceURI}`.toLowerCase();
+        return text.includes('fred');
+      });
+      if (fred) return { voice: fred, isMaleVoiceFound: true, isFemaleVoiceFound: false };
+
+      // 2. High-quality natural US English male voices (excluding novelty)
+      const highQualityKeywords = ['alex', 'google uk english male', 'david', 'guy', 'daniel', 'oliver', 'george'];
+      const topMale = usVoices.find(v => {
+        if (this.isNoveltyVoice(v) || this.isFemaleVoice(v)) return false;
+        const text = `${v.name} ${v.voiceURI}`.toLowerCase();
+        return highQualityKeywords.some(kw => text.includes(kw));
+      });
+      if (topMale) return { voice: topMale, isMaleVoiceFound: true, isFemaleVoiceFound: false };
+
+      // 3. Search in US English voices for explicit male keywords (excluding novelty)
+      const usMale = usVoices.find(v => this.isMaleVoice(v) && !this.isNoveltyVoice(v));
       if (usMale) return { voice: usMale, isMaleVoiceFound: true, isFemaleVoiceFound: false };
 
-      // 2. Search in any English voices for explicit male keywords
-      const enMale = allVoices.find(v => v.lang.toLowerCase().startsWith('en') && this.isMaleVoice(v));
+      // 4. Search in any English voices for explicit male keywords (excluding novelty)
+      const enMale = allVoices.find(v => v.lang.toLowerCase().startsWith('en') && this.isMaleVoice(v) && !this.isNoveltyVoice(v));
       if (enMale) return { voice: enMale, isMaleVoiceFound: true, isFemaleVoiceFound: false };
 
       // Crucial: On Android, if NO explicit male voice exists in OS, return null
@@ -166,20 +211,36 @@ export class AudioService {
       return { voice: null, isMaleVoiceFound: false, isFemaleVoiceFound: false };
     } else {
       // Female voice search
-      // 1. Search in US English voices for explicit female keywords (e.g. Samantha, Victoria, Ava on macOS)
-      const usFemale = usVoices.find(v => this.isFemaleVoice(v));
+      // 1. Prioritize Samantha (macOS default female, exceptionally clear and requested by user)
+      const samantha = allVoices.find(v => {
+        if (!v.lang.toLowerCase().startsWith('en')) return false;
+        const text = `${v.name} ${v.voiceURI}`.toLowerCase();
+        return text.includes('samantha');
+      });
+      if (samantha) return { voice: samantha, isMaleVoiceFound: false, isFemaleVoiceFound: true };
+
+      // 2. High-quality natural US English female voices (excluding novelty)
+      const highQualityFemaleKeywords = ['google us english', 'natural', 'neural', 'victoria', 'ava', 'allison', 'jenny', 'aria', 'zoe'];
+      const topFemale = usVoices.find(v => {
+        if (this.isNoveltyVoice(v) || this.isMaleVoice(v)) return false;
+        const text = `${v.name} ${v.voiceURI}`.toLowerCase();
+        return highQualityFemaleKeywords.some(kw => text.includes(kw));
+      });
+      if (topFemale) return { voice: topFemale, isMaleVoiceFound: false, isFemaleVoiceFound: true };
+
+      // 3. Search in US English voices for explicit female keywords (excluding novelty)
+      const usFemale = usVoices.find(v => this.isFemaleVoice(v) && !this.isNoveltyVoice(v));
       if (usFemale) return { voice: usFemale, isMaleVoiceFound: false, isFemaleVoiceFound: true };
 
-      // 2. Search in all English voices for explicit female keywords (e.g. Serena, Karen, Moira)
-      const enFemale = allVoices.find(v => v.lang.toLowerCase().startsWith('en') && this.isFemaleVoice(v));
+      // 4. Search in all English voices for explicit female keywords (excluding novelty)
+      const enFemale = allVoices.find(v => v.lang.toLowerCase().startsWith('en') && this.isFemaleVoice(v) && !this.isNoveltyVoice(v));
       if (enFemale) return { voice: enFemale, isMaleVoiceFound: false, isFemaleVoiceFound: true };
 
-      // 3. Crucial: Fallback must NEVER return a known male voice like Alex!
-      // Look for any English voice that is NOT male
-      const nonMale = allVoices.find(v => v.lang.toLowerCase().startsWith('en') && !this.isMaleVoice(v));
+      // 5. Fallback: Search for any English voice that is NOT male and NOT novelty
+      const nonMale = allVoices.find(v => v.lang.toLowerCase().startsWith('en') && !this.isMaleVoice(v) && !this.isNoveltyVoice(v));
       if (nonMale) return { voice: nonMale, isMaleVoiceFound: false, isFemaleVoiceFound: true };
 
-      // 4. If only male voices exist in the entire system, return null (allowing pitch-up fallback)
+      // 6. Fallback if only male voices exist in the entire system
       return { voice: null, isMaleVoiceFound: false, isFemaleVoiceFound: false };
     }
   }

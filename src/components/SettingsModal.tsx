@@ -48,6 +48,14 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
     return audioService.getVoicesByGender(settings.gender);
   }, [voices, settings.gender, showAllVoices]);
 
+  const defaultVoiceName = useMemo(() => {
+    const found = audioService.findVoice(settings.gender);
+    if (found.voice) {
+      return found.voice.name;
+    }
+    return settings.gender === 'male' ? 'US Male' : 'US Female';
+  }, [settings.gender, voices]);
+
   const handleGenderChange = (gender: VoiceGender) => {
     const updated = {
       gender,
@@ -225,7 +233,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               className="w-full text-xs font-medium p-2.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-slate-100 focus:outline-hidden focus:ring-2 focus:ring-indigo-500 cursor-pointer shadow-xs"
             >
               <option value="">
-                🌟 {t.settingsModal.autoVoice} ({settings.gender === 'male' ? 'US Male' : 'US Female'})
+                🌟 {t.settingsModal.autoVoice} ({defaultVoiceName})
               </option>
               {filteredVoices.map((v) => {
                 const isSelected = settings.voiceURI === v.voiceURI;
@@ -242,7 +250,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               <span className="text-[10px] text-slate-500 dark:text-slate-400 truncate max-w-[280px]">
                 {settings.voiceURI
                   ? `選択中: ${voices.find((v) => v.voiceURI === settings.voiceURI)?.name || settings.voiceURI}`
-                  : `選択中: 自動選択 (${settings.gender === 'male' ? '男声' : '女声'})`}
+                  : `選択中: 自動選択 (${defaultVoiceName})`}
               </span>
               <button
                 type="button"
